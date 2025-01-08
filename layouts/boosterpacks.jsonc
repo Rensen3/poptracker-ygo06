@@ -1,0 +1,77 @@
+{
+  // sets layouts for shadred items grids
+  // bigger example: https://github.com/Cyb3RGER/sm_ap_tracker/blob/main/layouts/items.json
+  "shared_boosterpack_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "1, 1",
+            "item_size": 4,
+            "h_alignment": "left",
+            "rows": [
+              [
+                "legendofb.e.w.d.",
+                "metalraiders",
+                "pharaoh'sservant",
+                "pharaonicguardian",
+                "spellruler",
+                "labyrinthofnightmare",
+                "legacyofdarkness",
+                "magician'sforce",
+                "darkcrisis",
+                "invasionofchaos",
+                "ancientsanctuary",
+                "souloftheduelist",
+                "riseofdestiny",
+                "flamingeternity",
+                "thelostmillenium"
+                ],
+                [
+                "cyberneticrevolution",
+                "elementalenergy",
+                "shadowofinfinity",
+                "gamegiftcollection",
+                "specialgiftcollection",
+                "fairycollection",
+                "dragoncollection",
+                "warriorcollectiona",
+                "warriorcollectionb",
+                "fiendcollectiona",
+                "fiendcollectionb",
+                "machinecollectiona",
+                "machinecollectionb",
+                "spellcastercollectiona",
+                "spellcastercollectionb"
+                ],
+                [
+                "zombiecollection",
+                "specialmonstersa",
+                "specialmonstersb",
+                "reversecollection",
+                "lprecoverycollection",
+                "specialsummoncollectiona",
+                "specialsummoncollectionb",
+                "specialsummoncollectionc",
+                "equipmentcollection",
+                "continuousspell/trapa",
+                "continuousspell/trapb",
+                "quick/countercollection",
+                "directdamagecollection",
+                "directattackcollection",
+                "monsterdestroycollection"
+                ]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Final Campaign Opponents","type": "consumable",
+        "allow_disabled": true,
+        "img": "images/settings/final-campaign.png",
+        "codes": "finalcampaign",
+        "overlay_background": "#000000",
+        "min_quantity": 0,
+        "max_quantity": 24
+    },
+    {
+        "name": "Final Callenges","type": "consumable",
+        "allow_disabled": true,
+        "img": "images/settings/final-challenge.png",
+        "codes": "finalchallenge",
+        "overlay_background": "#000000",
+        "min_quantity": 0,
+        "max_quantity": 91
+    },
+    {
+        "name": "Tier 5 Column 4 Campaign Opponents","type": "consumable",
+        "allow_disabled": true,
+        "img": "images/settings/tier5C4-campaign.png",
+        "codes": "t5c4campaign",
+        "overlay_background": "#000000",
+        "min_quantity": 0,
+        "max_quantity": 24
+    },
+    {
+        "name": "Tier 5 Coulumn 4 Callenges","type": "consumable",
+        "allow_disabled": true,
+        "img": "images/settings/tier5c4-challenge.png",
+        "codes": "t5c4challenge",
+        "overlay_background": "#000000",
+        "min_quantity": 0,
+        "max_quantity": 91
+    },
+    {
+        "name": "Tier 5 Column 3 Campaign Opponents","type": "consumable",
+        "allow_disabled": true,
+        "img": "images/settings/tier5c3-campaign.png",
+        "codes": "t5c3campaign",
+        "overlay_background": "#000000",
+        "min_quantity": 0,
+        "max_quantity": 24
+    },
+    {
+        "name": "Tier 5 Coulumn 3 Callenges","type": "consumable",
+        "allow_disabled": true,
+        "img": "images/settings/tier5c3-challenge.png",
+        "codes": "t5c3challenge",
+        "overlay_background": "#000000",
+        "min_quantity": 0,
+        "max_quantity": 91
+    },
+    {
+        "name": "Callenges","type": "consumable",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "challenges",
+        "overlay_background": "#000000",
+        "min_quantity": 0,
+        "max_quantity": 91
+    }
+]

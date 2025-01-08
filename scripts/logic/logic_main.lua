@@ -45,7 +45,7 @@ end
 
 -- creates a lua object for the given name. it acts as a representation of a overworld region or indoor location and
 -- tracks its connected objects via the exit-table
-function Yu-Gi-Oh! 2006_location.new(name)
+function YuGiOh2006_location.new(name)
     local self = setmetatable({}, Yu-Gi-Oh! 2006_location)
     if name then
         named_locations[name] = self
@@ -109,7 +109,7 @@ function YuGiOh2006_location:connect_two_ways_entrance_door_stuck(name, exit, ru
 end
 
 -- checks for the accessibility of a regino/location given its own exit requirements
-function Yu-Gi-Oh! 2006_location:accessibility()
+function YuGiOh2006_location:accessibility()
     if self.staleness < staleness then
         return AccessibilityLevel.None
     else
@@ -118,7 +118,7 @@ function Yu-Gi-Oh! 2006_location:accessibility()
 end
 
 -- 
-function Yu-Gi-Oh! 2006_location:discover(accessibility, keys)
+function YuGiOh2006_location:discover(accessibility, keys)
 
     local change = false
     if accessibility > self:accessibility() then
@@ -156,7 +156,7 @@ function Yu-Gi-Oh! 2006_location:discover(accessibility, keys)
     end
 end
 
-entry_point = Yu-Gi-Oh! 2006_location.new("entry_point")
+entry_point = YuGiOh2006_location.new("entry_point")
 
 -- 
 function stateChanged()

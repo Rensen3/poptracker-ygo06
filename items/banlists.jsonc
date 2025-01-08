@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Banlist September 2005","type": "toggle",
+        "allow_disabled": true,
+        "img": "images/banlists/banlist september 2005.png",
+        "codes": "banlistseptember2005"
+    },
+    {
+        "name": "Banlist March 2005","type": "toggle",
+        "allow_disabled": true,
+        "img": "images/banlists/banlist march 2005.png",
+        "codes": "banlistmarch2005"
+    },
+    {
+        "name": "Banlist September 2004","type": "toggle",
+        "allow_disabled": true,
+        "img": "images/banlists/banlist september 2004.png",
+        "codes": "banlistseptember2004"
+    },
+    {
+        "name": "Banlist March 2004","type": "toggle",
+        "allow_disabled": true,
+        "img": "images/banlists/banlist march 2004.png",
+        "codes": "banlistmarch2004"
+    },
+    {
+        "name": "Banlist September 2003","type": "toggle",
+        "allow_disabled": true,
+        "img": "images/banlists/banlist september 2003.png",
+        "codes": "banlistseptember2003"
+    },
+    {
+        "name": "No Banlist","type": "toggle",
+        "allow_disabled": true,
+        "img": "images/banlists/no banlist.png",
+        "codes": "nobanlist"
+    }
+]

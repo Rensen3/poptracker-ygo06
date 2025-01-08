@@ -79,6 +79,23 @@ end
 -- apply everything needed from slot_data, called from onClear
 function apply_slot_data(slot_data)
 	-- put any code here that slot_data should affect (toggling setting items for example)
+	for key, value in pairs(slot_data) do
+		if key == "final_campaign_boss_campaign_opponents" then
+			Tracker:FindObjectForCode("finalcampaign").AcquiredCount = value
+		elseif key == "final_campaign_boss_challenges" then
+			Tracker:FindObjectForCode("finalchallenge").AcquiredCount = value
+		elseif key == "fourth_tier_5_campaign_boss_campaign_opponents" then
+			Tracker:FindObjectForCode("t5c4campaign").AcquiredCount = value
+		elseif key == "fourth_tier_5_campaign_boss_challenges" then
+			Tracker:FindObjectForCode("t5c4challenge").AcquiredCount = value
+		elseif key == "third_tier_5_campaign_boss_campaign_opponents" then
+			Tracker:FindObjectForCode("t5c3campaign").AcquiredCount = value
+		elseif key == "third_tier_5_campaign_boss_challenges" then
+			Tracker:FindObjectForCode("t5c3challenge").AcquiredCount = value
+		elseif key == "number_of_challenges" then
+			Tracker:FindObjectForCode("challenges").AcquiredCount = value
+		end
+	end
 end
 
 -- called right after an AP slot is connected
@@ -86,7 +103,7 @@ function onClear(slot_data)
 	-- use bulk update to pause logic updates until we are done resetting all items/locations
 	Tracker.BulkUpdate = true	
 	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-		print(string.format("called onClear, slot_data:\n%s", dump_table(slot_data)))
+		print(dump_table(slot_data))
 	end
 	CUR_INDEX = -1
 	-- reset locations

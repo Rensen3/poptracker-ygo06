@@ -1,0 +1,34 @@
+{
+    "banlist_grid": {
+      "type": "array",
+      "orientation": "vertical",
+      "margin": "0,0",
+      "content": [
+        {
+          "type": "array",
+          "orientation": "horizontal",
+          "margin": "0,0",
+          "content": [
+            {
+                "type": "itemgrid",
+                "item_margin": "1, 1",
+                "h_alignment": "left",
+                "item_size": 3,
+                "rows": [
+                  [
+                    "nobanlist",
+                    "banlistseptember2003",
+                    "banlistmarch2004"
+                  ],
+                  [
+                    "banlistseptember2004",
+                    "banlistmarch2005",
+                    "banlistseptember2005"
+                  ]
+                ]
+            }
+          ]
+        }
+      ]
+   }
+}

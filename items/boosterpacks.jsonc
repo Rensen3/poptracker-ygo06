@@ -1,0 +1,273 @@
+[
+  //more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#items
+  {
+    "name": "LEGEND OF B.E.W.D.","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/LEGEND OF BEWD.png",
+    "codes": "legendofb.e.w.d."
+    },
+    {
+    "name": "METAL RAIDERS","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/METAL RAIDERS.png",
+    "codes": "metalraiders"
+    },
+    {
+    "name": "PHARAOH'S SERVANT","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/PHARAOH'S SERVANT.png",
+    "codes": "pharaoh'sservant"
+    },
+    {
+    "name": "PHARAONIC GUARDIAN","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/PHARAONIC GUARDIAN.png",
+    "codes": "pharaonicguardian"
+    },
+    {
+    "name": "SPELL RULER","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/SPELL RULER.png",
+    "codes": "spellruler"
+    },
+    {
+    "name": "LABYRINTH OF NIGHTMARE","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/LABYRINTH OF NIGHTMARE.png",
+    "codes": "labyrinthofnightmare"
+    },
+    {
+    "name": "LEGACY OF DARKNESS","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/LEGACY OF DARKNESS.png",
+    "codes": "legacyofdarkness"
+    },
+    {
+    "name": "MAGICIAN'S FORCE","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/MAGICIAN'S FORCE.png",
+    "codes": "magician'sforce"
+    },
+    {
+    "name": "DARK CRISIS","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/DARK CRISIS.png",
+    "codes": "darkcrisis"
+    },
+    {
+    "name": "INVASION OF CHAOS","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/INVASION OF CHAOS.png",
+    "codes": "invasionofchaos"
+    },
+    {
+    "name": "ANCIENT SANCTUARY","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/ANCIENT SANCTUARY.png",
+    "codes": "ancientsanctuary"
+    },
+    {
+    "name": "SOUL OF THE DUELIST","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/SOUL OF THE DUELIST.png",
+    "codes": "souloftheduelist"
+    },
+    {
+    "name": "RISE OF DESTINY","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/RISE OF DESTINY.png",
+    "codes": "riseofdestiny"
+    },
+    {
+    "name": "FLAMING ETERNITY","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/FLAMING ETERNITY.png",
+    "codes": "flamingeternity"
+    },
+    {
+    "name": "THE LOST MILLENIUM","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/THE LOST MILLENIUM.png",
+    "codes": "thelostmillenium"
+    },
+    {
+    "name": "CYBERNETIC REVOLUTION","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/CYBERNETIC REVOLUTION.png",
+    "codes": "cyberneticrevolution"
+    },
+    {
+    "name": "ELEMENTAL ENERGY","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/ELEMENTAL ENERGY.png",
+    "codes": "elementalenergy"
+    },
+    {
+    "name": "SHADOW OF INFINITY","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/SHADOW OF INFINITY.png",
+    "codes": "shadowofinfinity"
+    },
+    {
+    "name": "GAME GIFT COLLECTION","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/GAME GIFT COLLECTION.png",
+    "codes": "gamegiftcollection"
+    },
+    {
+    "name": "Special Gift Collection","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/Special Gift Collection.png",
+    "codes": "specialgiftcollection"
+    },
+    {
+    "name": "Fairy Collection","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/Fairy Collection.png",
+    "codes": "fairycollection"
+    },
+    {
+    "name": "Dragon Collection","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/Dragon Collection.png",
+    "codes": "dragoncollection"
+    },
+    {
+    "name": "Warrior Collection A","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/Warrior Collection A.png",
+    "codes": "warriorcollectiona"
+    },
+    {
+    "name": "Warrior Collection B","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/Warrior Collection B.png",
+    "codes": "warriorcollectionb"
+    },
+    {
+    "name": "Fiend Collection A","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/Fiend Collection A.png",
+    "codes": "fiendcollectiona"
+    },
+    {
+    "name": "Fiend Collection B","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/Fiend Collection B.png",
+    "codes": "fiendcollectionb"
+    },
+    {
+    "name": "Machine Collection A","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/Machine Collection A.png",
+    "codes": "machinecollectiona"
+    },
+    {
+    "name": "Machine Collection B","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/Machine Collection B.png",
+    "codes": "machinecollectionb"
+    },
+    {
+    "name": "Spellcaster Collection A","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/Spellcaster Collection A.png",
+    "codes": "spellcastercollectiona"
+    },
+    {
+    "name": "Spellcaster Collection B","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/Spellcaster Collection B.png",
+    "codes": "spellcastercollectionb"
+    },
+    {
+    "name": "Zombie Collection","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/Zombie Collection.png",
+    "codes": "zombiecollection"
+    },
+    {
+    "name": "Special Monsters A","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/Special Monsters A.png",
+    "codes": "specialmonstersa"
+    },
+    {
+    "name": "Special Monsters B","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/Special Monsters B.png",
+    "codes": "specialmonstersb"
+    },
+    {
+    "name": "Reverse Collection","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/Reverse Collection.png",
+    "codes": "reversecollection"
+    },
+    {
+    "name": "LP Recovery Collection","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/LP Recovery Collection.png",
+    "codes": "lprecoverycollection"
+    },
+    {
+    "name": "Special Summon Collection A","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/Special Summon Collection A.png",
+    "codes": "specialsummoncollectiona"
+    },
+    {
+    "name": "Special Summon Collection B","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/Special Summon Collection B.png",
+    "codes": "specialsummoncollectionb"
+    },
+    {
+    "name": "Special Summon Collection C","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/Special Summon Collection C.png",
+    "codes": "specialsummoncollectionc"
+    },
+    {
+    "name": "Equipment Collection","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/Equipment Collection.png",
+    "codes": "equipmentcollection"
+    },
+    {
+    "name": "Continuous Spell/Trap A","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/Continuous SpellTrap A.png",
+    "codes": "continuousspell/trapa"
+    },
+    {
+    "name": "Continuous Spell/Trap B","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/Continuous SpellTrap B.png",
+    "codes": "continuousspell/trapb"
+    },
+    {
+    "name": "Quick/Counter Collection","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/QuickCounter Collection.png",
+    "codes": "quick/countercollection"
+    },
+    {
+    "name": "Direct Damage Collection","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/Direct Damage Collection.png",
+    "codes": "directdamagecollection"
+    },
+    {
+    "name": "Direct Attack Collection","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/Direct Attack Collection.png",
+    "codes": "directattackcollection"
+    },
+    {
+    "name": "Monster Destroy Collection","type": "toggle",
+    "allow_disabled": true,
+    "img": "images/boosterpacks/Monster Destroy Collection.png",
+    "codes": "monsterdestroycollection"
+    }
+]

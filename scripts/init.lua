@@ -24,7 +24,11 @@ ScriptHost:LoadScript("scripts/custom_items/progressiveTogglePlus.lua")
 ScriptHost:LoadScript("scripts/custom_items/progressiveTogglePlusWrapper.lua")
 
 -- Items
-Tracker:AddItems("items/items.jsonc")
+Tracker:AddItems("items/boosterpacks.jsonc")
+Tracker:AddItems("items/banlists.jsonc")
+
+-- Settings
+Tracker:AddItems("items/settings.jsonc")
 
 if not IS_ITEMS_ONLY then -- <--- use variant info to optimize loading
     -- Maps
@@ -34,7 +38,9 @@ if not IS_ITEMS_ONLY then -- <--- use variant info to optimize loading
 end
 
 -- Layout
-Tracker:AddLayouts("layouts/items.jsonc")
+Tracker:AddLayouts("layouts/boosterpacks.jsonc")
+Tracker:AddLayouts("layouts/banlists.jsonc")
+Tracker:AddLayouts("layouts/settings.jsonc")
 Tracker:AddLayouts("layouts/tracker.jsonc")
 Tracker:AddLayouts("layouts/broadcast.jsonc")
 
