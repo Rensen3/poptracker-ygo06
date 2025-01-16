@@ -1,0 +1,45 @@
+{
+    "opponents_grid": {
+        "type": "itemgrid",
+        "item_margin": "1, 1",
+        "h_alignment": "left",
+        "item_size": 4,
+        "rows": [
+            [
+              "campaigntier1column1",
+              "campaigntier1column2",
+              "campaigntier1column3",
+              "campaigntier1column4",
+              "campaigntier1column5"
+            ],
+            [
+              "campaigntier2column1",
+              "campaigntier2column2",
+              "campaigntier2column3",
+              "campaigntier2column4",
+              "campaigntier2column5"
+            ],
+            [
+              "campaigntier3column1",
+              "campaigntier3column2",
+              "campaigntier3column3",
+              "campaigntier3column4",
+              "campaigntier3column5"
+            ],
+            [
+              "campaigntier4column1",
+              "campaigntier4column2",
+              "campaigntier4column3",
+              "campaigntier4column4",
+              "campaigntier4column5"
+            ],
+            [
+              "campaigntier5column1",
+              "campaigntier5column2",
+              "campaigntier5column3",
+              "campaigntier5column4",
+              "campaigntier5column5"
+            ]
+        ]
+   }
+}

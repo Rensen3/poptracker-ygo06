@@ -1,0 +1,152 @@
+[
+    {
+        "name": "Tier 1 Column 1",
+        "type": "toggle",
+        "img": "images/campaign_opponents/kuriboh.png",
+        "codes": "campaigntier1column1"
+    },
+    {
+        "name": "Tier 1 Column 2",
+        "type": "toggle",
+        "img": "images/campaign_opponents/scapegoat.png",
+        "codes": "campaigntier1column2"
+    },
+    {
+        "name": "Tier 1 Column 3",
+        "type": "toggle",
+        "img": "images/campaign_opponents/skullservant.png",
+        "codes": "campaigntier1column3"
+    },
+    {
+        "name": "Tier 1 Column 4",
+        "type": "toggle",
+        "img": "images/campaign_opponents/watapon.png",
+        "codes": "campaigntier1column4"
+    },
+    {
+        "name": "Tier 1 Column 5",
+        "type": "toggle",
+        "img": "images/campaign_opponents/whitemagicianpikeru.png",
+        "codes": "campaigntier1column5"
+    },
+    {
+        "name": "Tier 2 Column 1",
+        "type": "toggle",
+        "img": "images/campaign_opponents/batterymanc.png",
+        "codes": "campaigntier2column1"
+    },
+    {
+        "name": "Tier 2 Column 2",
+        "type": "toggle",
+        "img": "images/campaign_opponents/ojamayellow.png",
+        "codes": "campaigntier2column2"
+    },
+    {
+        "name": "Tier 2 Column 3",
+        "type": "toggle",
+        "img": "images/campaign_opponents/goblinking.png",
+        "codes": "campaigntier2column3"
+    },
+    {
+        "name": "Tier 2 Column 4",
+        "type": "toggle",
+        "img": "images/campaign_opponents/desfrog.png",
+        "codes": "campaigntier2column4"
+    },
+    {
+        "name": "Tier 2 Column 5",
+        "type": "toggle",
+        "img": "images/campaign_opponents/waterdragon.png",
+        "codes": "campaigntier2column5"
+    },
+    {
+        "name": "Tier 3 Column 1",
+        "type": "toggle",
+        "img": "images/campaign_opponents/redeyesdarknessdragon.png",
+        "codes": "campaigntier3column1"
+    },
+    {
+        "name": "Tier 3 Column 2",
+        "type": "toggle",
+        "img": "images/campaign_opponents/vampiregenesis.png",
+        "codes": "campaigntier3column2"
+    },
+    {
+        "name": "Tier 3 Column 3",
+        "type": "toggle",
+        "img": "images/campaign_opponents/infernalflameemperor.png",
+        "codes": "campaigntier3column3"
+    },
+    {
+        "name": "Tier 3 Column 4",
+        "type": "toggle",
+        "img": "images/campaign_opponents/neodaedalus.png",
+        "codes": "campaigntier3column4"
+    },
+    {
+        "name": "Tier 3 Column 5",
+        "type": "toggle",
+        "img": "images/campaign_opponents/heliosduomegiste.png",
+        "codes": "campaigntier3column5"
+    },
+    {
+        "name": "Tier 4 Column 1",
+        "type": "toggle",
+        "img": "images/campaign_opponents/gilfordthelegend.png",
+        "codes": "campaigntier4column1"
+    },
+    {
+        "name": "Tier 4 Column 2",
+        "type": "toggle",
+        "img": "images/campaign_opponents/darkeradicatorwarlock.png",
+        "codes": "campaigntier4column2"
+    },
+    {
+        "name": "Tier 4 Column 3",
+        "type": "toggle",
+        "img": "images/campaign_opponents/guardianexode.png",
+        "codes": "campaigntier4column3"
+    },
+    {
+        "name": "Tier 4 Column 4",
+        "type": "toggle",
+        "img": "images/campaign_opponents/goldd.png",
+        "codes": "campaigntier4column4"
+    },
+    {
+        "name": "Tier 5 Column 5",
+        "type": "toggle",
+        "img": "images/campaign_opponents/elemtalheroerikshielder.png",
+        "codes": "campaigntier4column5"
+    },
+    {
+        "name": "Tier 5 Column 1",
+        "type": "toggle",
+        "img": "images/campaign_opponents/raviel.png",
+        "codes": "campaigntier5column1"
+    },
+    {
+        "name": "Tier 5 Column 2",
+        "type": "toggle",
+        "img": "images/campaign_opponents/horusblackflamedragon.png",
+        "codes": "campaigntier5column2"
+    },
+    {
+        "name": "Tier 5 Column 3",
+        "type": "toggle",
+        "img": "images/campaign_opponents/stronghold.png",
+        "codes": "campaigntier5column3"
+    },
+    {
+        "name": "Tier 5 Column 4",
+        "type": "toggle",
+        "img": "images/campaign_opponents/sacredphoenixofnephthys.png",
+        "codes": "campaigntier5column4"
+    },
+    {
+        "name": "Tier 5 Column 5",
+        "type": "toggle",
+        "img": "images/campaign_opponents/cyberenddragon.png",
+        "codes": "campaigntier5column5"
+    },
+]

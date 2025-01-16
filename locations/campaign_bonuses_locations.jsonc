@@ -1,0 +1,1257 @@
+[
+    {
+        "name": "Campaign Bonuses",
+        "children": [
+            {
+                "name": "Trivial Bonuses",
+                "sections": [
+                    {
+                        "name": "Battle Damage"
+                    },
+                    {
+                        "name": "Battle Damage Only Bonus"
+                    },
+                    {
+                        "name": "Destroyed in Battle Bonus"
+                    },
+                    {
+                        "name": "Spell Card Bonus"
+                    },
+                    {
+                        "name": "Trap Card Bonus"
+                    },
+                    {
+                        "name": "No Special Summon Bonus"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 10,
+                        "y": 50
+                    },
+                ]
+            },
+            {
+                "name": "Easy Bonuses",
+                "sections": [
+                    {
+                        "name": "No Damage Bonus",
+                        "access_rules": [
+                            "$has_at_least_n_beaten|3"
+                        ]
+                    },
+                    {
+                        "name": "Exactly 0 LP Bonus",
+                        "access_rules": [
+                            "$has_at_least_n_beaten|3"
+                        ]
+                    },
+                    {
+                        "name": "Reversal Finish Bonus",
+                        "access_rules": [
+                            "$has_at_least_n_beaten|3"
+                        ]
+                    },
+                    {
+                        "name": "Quick Finish Bonus",
+                        "access_rules": [
+                            "$has_at_least_n_beaten|6"
+                        ]
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 25,
+                        "y": 50
+                    },
+                ]
+            },
+            {
+                "name": "Max ATK Bonus",
+                "sections": [
+                    {
+                        "name": "Attack with over 3000 ATK",
+                        "item_count": 1,
+                        "access_rules": [
+                             "maxatkbonus1, maxatkbonus2, maxatkbonus3, maxatkbonus4, maxatkbonus5"
+                         ],
+                    },
+                    {
+                        "name": "Max ATK 1",
+                        "hosted_item": "maxatkbonus1",
+                        "access_rules": ["$card_rule|maxatkbonus1"],
+                        "visibility_rules": ["$card_visibility|maxatkbonus1"],
+                    },
+                    {
+                        "name": "Max ATK 2",
+                        "hosted_item": "maxatkbonus2",
+                        "access_rules": ["$card_rule|maxatkbonus2"],
+                        "visibility_rules": ["$card_visibility|maxatkbonus2"],
+                    },
+                    {
+                        "name": "Max ATK 3",
+                        "hosted_item": "maxatkbonus3",
+                        "access_rules": ["$card_rule|maxatkbonus3"],
+                        "visibility_rules": ["$card_visibility|maxatkbonus3"],
+                    },
+                    {
+                        "name": "Max ATK 4",
+                        "hosted_item": "maxatkbonus4",
+                        "access_rules": ["$card_rule|maxatkbonus4"],
+                        "visibility_rules": ["$card_visibility|maxatkbonus4"],
+                    },
+                    {
+                        "name": "Max ATK 5",
+                        "hosted_item": "maxatkbonus5",
+                        "access_rules": ["$card_rule|maxatkbonus5"],
+                        "visibility_rules": ["$card_visibility|maxatkbonus5"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 40,
+                        "y": 50
+                    }
+                ]
+            },
+            {
+                "name": "Max Damage Bonus",
+                "sections": [
+                    {
+                        "name": "Deal over 4000 at once",
+                        "item_count": 1,
+                        "access_rules": [
+                             "maxdamagebonus1, maxdamagebonus2, maxdamagebonus3, maxdamagebonus4, maxdamagebonus5"
+                         ],
+                    },
+                    {
+                        "name": "Max Damage 1",
+                        "hosted_item": "maxdamagebonus1",
+                        "access_rules": ["$card_rule|maxdamagebonus1"],
+                        "visibility_rules": ["$card_visibility|maxdamagebonus1"],
+                    },
+                    {
+                        "name": "Max Damage 2",
+                        "hosted_item": "maxdamagebonus2",
+                        "access_rules": ["$card_rule|maxdamagebonus2"],
+                        "visibility_rules": ["$card_visibility|maxdamagebonus2"],
+                    },
+                    {
+                        "name": "Max Damage 3",
+                        "hosted_item": "maxdamagebonus3",
+                        "access_rules": ["$card_rule|maxdamagebonus3"],
+                        "visibility_rules": ["$card_visibility|maxdamagebonus3"],
+                    },
+                    {
+                        "name": "Max Damage 4",
+                        "hosted_item": "maxdamagebonus4",
+                        "access_rules": ["$card_rule|maxdamagebonus4"],
+                        "visibility_rules": ["$card_visibility|maxdamagebonus4"],
+                    },
+                    {
+                        "name": "Max Damage 5",
+                        "hosted_item": "maxdamagebonus5",
+                        "access_rules": ["$card_rule|maxdamagebonus5"],
+                        "visibility_rules": ["$card_visibility|maxdamagebonus5"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 55,
+                        "y": 50
+                    }
+                ]
+            },
+            {
+                "name": "Tribute Summon Bonus",
+                "sections": [
+                    {
+                        "name": "Bonus",
+                        "item_count": 1,
+                        "access_rules": [
+                             "tributesummonbonus1, tributesummonbonus2, tributesummonbonus3, tributesummonbonus4, tributesummonbonus5"
+                         ],
+                    },
+                    {
+                        "name": "Tribute Summon 1",
+                        "hosted_item": "tributesummonbonus1",
+                        "access_rules": ["$card_rule|tributesummonbonus1"],
+                        "visibility_rules": ["$card_visibility|tributesummonbonus1"],
+                    },
+                    {
+                        "name": "Tribute Summon 2",
+                        "hosted_item": "tributesummonbonus2",
+                        "access_rules": ["$card_rule|tributesummonbonus2"],
+                        "visibility_rules": ["$card_visibility|tributesummonbonus2"],
+                    },
+                    {
+                        "name": "Tribute Summon 3",
+                        "hosted_item": "tributesummonbonus3",
+                        "access_rules": ["$card_rule|tributesummonbonus3"],
+                        "visibility_rules": ["$card_visibility|tributesummonbonus3"],
+                    },
+                    {
+                        "name": "Tribute Summon 4",
+                        "hosted_item": "tributesummonbonus4",
+                        "access_rules": ["$card_rule|tributesummonbonus4"],
+                        "visibility_rules": ["$card_visibility|tributesummonbonus4"],
+                    },
+                    {
+                        "name": "Tribute Summon 5",
+                        "hosted_item": "tributesummonbonus5",
+                        "access_rules": ["$card_rule|tributesummonbonus5"],
+                        "visibility_rules": ["$card_visibility|tributesummonbonus5"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 70,
+                        "y": 50
+                    }
+                ]
+            },
+            {
+                "name": "Fusion Summon Bonus",
+                "sections": [
+                    {
+                        "name": "Bonus",
+                        "item_count": 1,
+                        "access_rules": [
+                             "fusionsummonbonus1, fusionsummonbonus2, fusionsummonbonus3, fusionsummonbonus4, fusionsummonbonus5, fusionsummonbonus6, fusionsummonbonus7, fusionsummonbonus8, fusionsummonbonus9, fusionsummonbonus10, fusionsummonbonus11, fusionsummonbonus12"
+                         ],
+                    },
+                    {
+                        "name": "Fusion Summon 1",
+                        "hosted_item": "fusionsummonbonus1",
+                        "access_rules": ["$card_rule|fusionsummonbonus1"],
+                        "visibility_rules": ["$card_visibility|fusionsummonbonus1"],
+                    },
+                    {
+                        "name": "Fusion Summon 2",
+                        "hosted_item": "fusionsummonbonus2",
+                        "access_rules": ["$card_rule|fusionsummonbonus2"],
+                        "visibility_rules": ["$card_visibility|fusionsummonbonus2"],
+                    },
+                    {
+                        "name": "Fusion Summon 3",
+                        "hosted_item": "fusionsummonbonus3",
+                        "access_rules": ["$card_rule|fusionsummonbonus3"],
+                        "visibility_rules": ["$card_visibility|fusionsummonbonus3"],
+                    },
+                    {
+                        "name": "Fusion Summon 4",
+                        "hosted_item": "fusionsummonbonus4",
+                        "access_rules": ["$card_rule|fusionsummonbonus4"],
+                        "visibility_rules": ["$card_visibility|fusionsummonbonus4"],
+                    },
+                    {
+                        "name": "Fusion Summon 5",
+                        "hosted_item": "fusionsummonbonus5",
+                        "access_rules": ["$card_rule|fusionsummonbonus5"],
+                        "visibility_rules": ["$card_visibility|fusionsummonbonus5"],
+                    },
+                    {
+                        "name": "Fusion Summon 6",
+                        "hosted_item": "fusionsummonbonus6",
+                        "access_rules": ["$card_rule|fusionsummonbonus6"],
+                        "visibility_rules": ["$card_visibility|fusionsummonbonus6"],
+                    },
+                    {
+                        "name": "Fusion Summon 7",
+                        "hosted_item": "fusionsummonbonus7",
+                        "access_rules": ["$card_rule|fusionsummonbonus7"],
+                        "visibility_rules": ["$card_visibility|fusionsummonbonus7"],
+                    },
+                    {
+                        "name": "Fusion Summon 8",
+                        "hosted_item": "fusionsummonbonus8",
+                        "access_rules": ["$card_rule|fusionsummonbonus8"],
+                        "visibility_rules": ["$card_visibility|fusionsummonbonus8"],
+                    },
+                    {
+                        "name": "Fusion Summon 9",
+                        "hosted_item": "fusionsummonbonus9",
+                        "access_rules": ["$card_rule|fusionsummonbonus9"],
+                        "visibility_rules": ["$card_visibility|fusionsummonbonus9"],
+                    },
+                    {
+                        "name": "Fusion Summon 10",
+                        "hosted_item": "fusionsummonbonus10",
+                        "access_rules": ["$card_rule|fusionsummonbonus10"],
+                        "visibility_rules": ["$card_visibility|fusionsummonbonus10"],
+                    },
+                    {
+                        "name": "Fusion Summon 11",
+                        "hosted_item": "fusionsummonbonus11",
+                        "access_rules": ["$card_rule|fusionsummonbonus11"],
+                        "visibility_rules": ["$card_visibility|fusionsummonbonus11"],
+                    },
+                    {
+                        "name": "Fusion Summon 12",
+                        "hosted_item": "fusionsummonbonus12",
+                        "access_rules": ["$card_rule|fusionsummonbonus12"],
+                        "visibility_rules": ["$card_visibility|fusionsummonbonus12"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 85,
+                        "y": 50
+                    }
+                ]
+            },
+            {
+                "name": "Ritual Summon Bonus",
+                "sections": [
+                    {
+                        "name": "Bonus",
+                        "item_count": 1,
+                        "access_rules": [
+                             "ritualsummonbonus1, ritualsummonbonus2, ritualsummonbonus3, ritualsummonbonus4, ritualsummonbonus5"
+                         ],
+                    },
+                    {
+                        "name": "Ritual Summon 1",
+                        "hosted_item": "ritualsummonbonus1",
+                        "access_rules": ["$card_rule|ritualsummonbonus1"],
+                        "visibility_rules": ["$card_visibility|ritualsummonbonus1"],
+                    },
+                    {
+                        "name": "Ritual Summon 2",
+                        "hosted_item": "ritualsummonbonus2",
+                        "access_rules": ["$card_rule|ritualsummonbonus2"],
+                        "visibility_rules": ["$card_visibility|ritualsummonbonus2"],
+                    },
+                    {
+                        "name": "Ritual Summon 3",
+                        "hosted_item": "ritualsummonbonus3",
+                        "access_rules": ["$card_rule|ritualsummonbonus3"],
+                        "visibility_rules": ["$card_visibility|ritualsummonbonus3"],
+                    },
+                    {
+                        "name": "Ritual Summon 4",
+                        "hosted_item": "ritualsummonbonus4",
+                        "access_rules": ["$card_rule|ritualsummonbonus4"],
+                        "visibility_rules": ["$card_visibility|ritualsummonbonus4"],
+                    },
+                    {
+                        "name": "Ritual Summon 5",
+                        "hosted_item": "ritualsummonbonus5",
+                        "access_rules": ["$card_rule|ritualsummonbonus5"],
+                        "visibility_rules": ["$card_visibility|ritualsummonbonus5"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 100,
+                        "y": 50
+                    }
+                ]
+            },
+            {
+                "name": "No Spell Cards Bonus",
+                "sections": [
+                    {
+                        "name": "Bonus",
+                        "item_count": 1,
+                        "access_rules": [
+                             "nospellcardsbonus1, nospellcardsbonus2, nospellcardsbonus3, nospellcardsbonus4, nospellcardsbonus5"
+                         ],
+                    },
+                    {
+                        "name": "No Spell Cards 1",
+                        "hosted_item": "nospellcardsbonus1",
+                        "access_rules": ["$card_rule|nospellcardsbonus1"],
+                        "visibility_rules": ["$card_visibility|nospellcardsbonus1"],
+                    },
+                    {
+                        "name": "No Spell Cards 2",
+                        "hosted_item": "nospellcardsbonus2",
+                        "access_rules": ["$card_rule|nospellcardsbonus2"],
+                        "visibility_rules": ["$card_visibility|nospellcardsbonus2"],
+                    },
+                    {
+                        "name": "No Spell Cards 3",
+                        "hosted_item": "nospellcardsbonus3",
+                        "access_rules": ["$card_rule|nospellcardsbonus3"],
+                        "visibility_rules": ["$card_visibility|nospellcardsbonus3"],
+                    },
+                    {
+                        "name": "No Spell Cards 4",
+                        "hosted_item": "nospellcardsbonus4",
+                        "access_rules": ["$card_rule|nospellcardsbonus4"],
+                        "visibility_rules": ["$card_visibility|nospellcardsbonus4"],
+                    },
+                    {
+                        "name": "No Spell Cards 5",
+                        "hosted_item": "nospellcardsbonus5",
+                        "access_rules": ["$card_rule|nospellcardsbonus5"],
+                        "visibility_rules": ["$card_visibility|nospellcardsbonus5"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 115,
+                        "y": 50
+                    }
+                ]
+            },
+            {
+                "name": "No Trap Cards Bonus",
+                "sections": [
+                    {
+                        "name": "Bonus",
+                        "item_count": 1,
+                        "access_rules": [
+                             "notrapcardsbonus1, notrapcardsbonus2, notrapcardsbonus3, notrapcardsbonus4, notrapcardsbonus5"
+                         ],
+                    },
+                    {
+                        "name": "No Trap Cards 1",
+                        "hosted_item": "notrapcardsbonus1",
+                        "access_rules": ["$card_rule|notrapcardsbonus1"],
+                        "visibility_rules": ["$card_visibility|notrapcardsbonus1"],
+                    },
+                    {
+                        "name": "No Trap Cards 2",
+                        "hosted_item": "notrapcardsbonus2",
+                        "access_rules": ["$card_rule|notrapcardsbonus2"],
+                        "visibility_rules": ["$card_visibility|notrapcardsbonus2"],
+                    },
+                    {
+                        "name": "No Trap Cards 3",
+                        "hosted_item": "notrapcardsbonus3",
+                        "access_rules": ["$card_rule|notrapcardsbonus3"],
+                        "visibility_rules": ["$card_visibility|notrapcardsbonus3"],
+                    },
+                    {
+                        "name": "No Trap Cards 4",
+                        "hosted_item": "notrapcardsbonus4",
+                        "access_rules": ["$card_rule|notrapcardsbonus4"],
+                        "visibility_rules": ["$card_visibility|notrapcardsbonus4"],
+                    },
+                    {
+                        "name": "No Trap Cards 5",
+                        "hosted_item": "notrapcardsbonus5",
+                        "access_rules": ["$card_rule|notrapcardsbonus5"],
+                        "visibility_rules": ["$card_visibility|notrapcardsbonus5"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 130,
+                        "y": 50
+                    }
+                ]
+            },
+            {
+                "name": "Over 20000 LP Bonus",
+                "sections": [
+                    {
+                        "name": "Bonus",
+                        "item_count": 1,
+                        "access_rules": [
+                             "over20000lpbonus1, over20000lpbonus2, over20000lpbonus3, over20000lpbonus4, over20000lpbonus5, over20000lpbonus6, over20000lpbonus7, over20000lpbonus8, over20000lpbonus9"
+                         ],
+                    },
+                    {
+                        "name": "Over 20000 LP 1",
+                        "hosted_item": "over20000lpbonus1",
+                        "access_rules": ["$card_rule|over20000lpbonus1"],
+                        "visibility_rules": ["$card_visibility|over20000lpbonus1"],
+                    },
+                    {
+                        "name": "Over 20000 LP 2",
+                        "hosted_item": "over20000lpbonus2",
+                        "access_rules": ["$card_rule|over20000lpbonus2"],
+                        "visibility_rules": ["$card_visibility|over20000lpbonus2"],
+                    },
+                    {
+                        "name": "Over 20000 LP 3",
+                        "hosted_item": "over20000lpbonus3",
+                        "access_rules": ["$card_rule|over20000lpbonus3"],
+                        "visibility_rules": ["$card_visibility|over20000lpbonus3"],
+                    },
+                    {
+                        "name": "Over 20000 LP 4",
+                        "hosted_item": "over20000lpbonus4",
+                        "access_rules": ["$card_rule|over20000lpbonus4"],
+                        "visibility_rules": ["$card_visibility|over20000lpbonus4"],
+                    },
+                    {
+                        "name": "Over 20000 LP 5",
+                        "hosted_item": "over20000lpbonus5",
+                        "access_rules": ["$card_rule|over20000lpbonus5"],
+                        "visibility_rules": ["$card_visibility|over20000lpbonus5"],
+                    },
+                    {
+                        "name": "Over 20000 LP 6",
+                        "hosted_item": "over20000lpbonus6",
+                        "access_rules": ["$card_rule|over20000lpbonus6"],
+                        "visibility_rules": ["$card_visibility|over20000lpbonus6"],
+                    },
+                    {
+                        "name": "Over 20000 LP 7",
+                        "hosted_item": "over20000lpbonus7",
+                        "access_rules": ["$card_rule|over20000lpbonus7"],
+                        "visibility_rules": ["$card_visibility|over20000lpbonus7"],
+                    },
+                    {
+                        "name": "Over 20000 LP 8",
+                        "hosted_item": "over20000lpbonus8",
+                        "access_rules": ["$card_rule|over20000lpbonus8"],
+                        "visibility_rules": ["$card_visibility|over20000lpbonus8"],
+                    },
+                    {
+                        "name": "Over 20000 LP 9",
+                        "hosted_item": "over20000lpbonus9",
+                        "access_rules": ["$card_rule|over20000lpbonus9"],
+                        "visibility_rules": ["$card_visibility|over20000lpbonus9"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 145,
+                        "y": 50
+                    }
+                ]
+            },
+            {
+                "name": "Low LP Bonus",
+                "sections": [
+                    {
+                        "name": "500LP or less",
+                        "item_count": 1,
+                        "access_rules": [
+                             "lowlpbonus1, lowlpbonus2, lowlpbonus3, lowlpbonus4, lowlpbonus5"
+                         ],
+                    },
+                    {
+                        "name": "Low LP 1",
+                        "hosted_item": "lowlpbonus1",
+                        "access_rules": ["$card_rule|lowlpbonus1"],
+                        "visibility_rules": ["$card_visibility|lowlpbonus1"],
+                    },
+                    {
+                        "name": "Low LP 2",
+                        "hosted_item": "lowlpbonus2",
+                        "access_rules": ["$card_rule|lowlpbonus2"],
+                        "visibility_rules": ["$card_visibility|lowlpbonus2"],
+                    },
+                    {
+                        "name": "Low LP 3",
+                        "hosted_item": "lowlpbonus3",
+                        "access_rules": ["$card_rule|lowlpbonus3"],
+                        "visibility_rules": ["$card_visibility|lowlpbonus3"],
+                    },
+                    {
+                        "name": "Low LP 4",
+                        "hosted_item": "lowlpbonus4",
+                        "access_rules": ["$card_rule|lowlpbonus4"],
+                        "visibility_rules": ["$card_visibility|lowlpbonus4"],
+                    },
+                    {
+                        "name": "Low LP 5",
+                        "hosted_item": "lowlpbonus5",
+                        "access_rules": ["$card_rule|lowlpbonus5"],
+                        "visibility_rules": ["$card_visibility|lowlpbonus5"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 160,
+                        "y": 50
+                    }
+                ]
+            },
+            {
+                "name": "Extremely Low LP Bonus",
+                "sections": [
+                    {
+                        "name": "Less than 100LP",
+                        "item_count": 1,
+                        "access_rules": [
+                             "extremelylowlpbonus1, extremelylowlpbonus2, extremelylowlpbonus3, extremelylowlpbonus4, extremelylowlpbonus5"
+                         ],
+                    },
+                    {
+                        "name": "Extremely Low LP 1",
+                        "hosted_item": "extremelylowlpbonus1",
+                        "access_rules": ["$card_rule|extremelylowlpbonus1"],
+                        "visibility_rules": ["$card_visibility|extremelylowlpbonus1"],
+                    },
+                    {
+                        "name": "Extremely Low LP 2",
+                        "hosted_item": "extremelylowlpbonus2",
+                        "access_rules": ["$card_rule|extremelylowlpbonus2"],
+                        "visibility_rules": ["$card_visibility|extremelylowlpbonus2"],
+                    },
+                    {
+                        "name": "Extremely Low LP 3",
+                        "hosted_item": "extremelylowlpbonus3",
+                        "access_rules": ["$card_rule|extremelylowlpbonus3"],
+                        "visibility_rules": ["$card_visibility|extremelylowlpbonus3"],
+                    },
+                    {
+                        "name": "Extremely Low LP 4",
+                        "hosted_item": "extremelylowlpbonus4",
+                        "access_rules": ["$card_rule|extremelylowlpbonus4"],
+                        "visibility_rules": ["$card_visibility|extremelylowlpbonus4"],
+                    },
+                    {
+                        "name": "Extremely Low LP 5",
+                        "hosted_item": "extremelylowlpbonus5",
+                        "access_rules": ["$card_rule|extremelylowlpbonus5"],
+                        "visibility_rules": ["$card_visibility|extremelylowlpbonus5"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 175,
+                        "y": 50
+                    }
+                ]
+            },
+            {
+                "name": "Low Deck Bonus",
+                "sections": [
+                    {
+                        "name": "5 or less Cards left",
+                        "item_count": 1,
+                        "access_rules": [
+                             "lowdeckbonus1, lowdeckbonus2, lowdeckbonus3, lowdeckbonus4, lowdeckbonus5"
+                         ],
+                    },
+                    {
+                        "name": "Low Deck 1",
+                        "hosted_item": "lowdeckbonus1",
+                        "access_rules": ["$card_rule|lowdeckbonus1"],
+                        "visibility_rules": ["$card_visibility|lowdeckbonus1"],
+                    },
+                    {
+                        "name": "Low Deck 2",
+                        "hosted_item": "lowdeckbonus2",
+                        "access_rules": ["$card_rule|lowdeckbonus2"],
+                        "visibility_rules": ["$card_visibility|lowdeckbonus2"],
+                    },
+                    {
+                        "name": "Low Deck 3",
+                        "hosted_item": "lowdeckbonus3",
+                        "access_rules": ["$card_rule|lowdeckbonus3"],
+                        "visibility_rules": ["$card_visibility|lowdeckbonus3"],
+                    },
+                    {
+                        "name": "Low Deck 4",
+                        "hosted_item": "lowdeckbonus4",
+                        "access_rules": ["$card_rule|lowdeckbonus4"],
+                        "visibility_rules": ["$card_visibility|lowdeckbonus4"],
+                    },
+                    {
+                        "name": "Low Deck 5",
+                        "hosted_item": "lowdeckbonus5",
+                        "access_rules": ["$card_rule|lowdeckbonus5"],
+                        "visibility_rules": ["$card_visibility|lowdeckbonus5"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 190,
+                        "y": 50
+                    }
+                ]
+            },
+            {
+                "name": "Extremely Low Deck Bonus",
+                "sections": [
+                    {
+                        "name": "Win with no cards in your deck",
+                        "item_count": 1,
+                        "access_rules": [
+                             "extremelylowdeckbonus1, extremelylowdeckbonus2, extremelylowdeckbonus3, extremelylowdeckbonus4, extremelylowdeckbonus5"
+                         ],
+                    },
+                    {
+                        "name": "Extremely Low Deck 1",
+                        "hosted_item": "extremelylowdeckbonus1",
+                        "access_rules": ["$card_rule|extremelylowdeckbonus1"],
+                        "visibility_rules": ["$card_visibility|extremelylowdeckbonus1"],
+                    },
+                    {
+                        "name": "Extremely Low Deck 2",
+                        "hosted_item": "extremelylowdeckbonus2",
+                        "access_rules": ["$card_rule|extremelylowdeckbonus2"],
+                        "visibility_rules": ["$card_visibility|extremelylowdeckbonus2"],
+                    },
+                    {
+                        "name": "Extremely Low Deck 3",
+                        "hosted_item": "extremelylowdeckbonus3",
+                        "access_rules": ["$card_rule|extremelylowdeckbonus3"],
+                        "visibility_rules": ["$card_visibility|extremelylowdeckbonus3"],
+                    },
+                    {
+                        "name": "Extremely Low Deck 4",
+                        "hosted_item": "extremelylowdeckbonus4",
+                        "access_rules": ["$card_rule|extremelylowdeckbonus4"],
+                        "visibility_rules": ["$card_visibility|extremelylowdeckbonus4"],
+                    },
+                    {
+                        "name": "Extremely Low Deck 5",
+                        "hosted_item": "extremelylowdeckbonus5",
+                        "access_rules": ["$card_rule|extremelylowdeckbonus5"],
+                        "visibility_rules": ["$card_visibility|extremelylowdeckbonus5"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 205,
+                        "y": 50
+                    }
+                ]
+            },
+            {
+                "name": "Effect Damage Only Bonus",
+                "sections": [
+                    {
+                        "name": "Damage or alt win",
+                        "item_count": 1,
+                        "access_rules": [
+                             "effectdamageonlybonus1, effectdamageonlybonus2, effectdamageonlybonus3, effectdamageonlybonus4, effectdamageonlybonus5",
+                             "@Campaign Bonuses/Last Turn Finish Bonus/Bonus",
+                             "@Campaign Bonuses/Destiny Board Finish Bonus/Bonus",
+                             "@Campaign Bonuses/Exodia Finish Bonus/Bonus"
+                         ],
+                    },
+                    {
+                        "name": "Effect Damage Only 1",
+                        "hosted_item": "effectdamageonlybonus1",
+                        "access_rules": ["$card_rule|effectdamageonlybonus1"],
+                        "visibility_rules": ["$card_visibility|effectdamageonlybonus1"],
+                    },
+                    {
+                        "name": "Effect Damage Only 2",
+                        "hosted_item": "effectdamageonlybonus2",
+                        "access_rules": ["$card_rule|effectdamageonlybonus2"],
+                        "visibility_rules": ["$card_visibility|effectdamageonlybonus2"],
+                    },
+                    {
+                        "name": "Effect Damage Only 3",
+                        "hosted_item": "effectdamageonlybonus3",
+                        "access_rules": ["$card_rule|effectdamageonlybonus3"],
+                        "visibility_rules": ["$card_visibility|effectdamageonlybonus3"],
+                    },
+                    {
+                        "name": "Effect Damage Only 4",
+                        "hosted_item": "effectdamageonlybonus4",
+                        "access_rules": ["$card_rule|effectdamageonlybonus4"],
+                        "visibility_rules": ["$card_visibility|effectdamageonlybonus4"],
+                    },
+                    {
+                        "name": "Effect Damage Only 5",
+                        "hosted_item": "effectdamageonlybonus5",
+                        "access_rules": ["$card_rule|effectdamageonlybonus5"],
+                        "visibility_rules": ["$card_visibility|effectdamageonlybonus5"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 220,
+                        "y": 50
+                    }
+                ]
+            },
+            {
+                "name": "No More Cards Bonus",
+                "sections": [
+                    {
+                        "name": "Win by deckout",
+                        "item_count": 1,
+                        "access_rules": [
+                             "nomorecardsbonus1, nomorecardsbonus2, nomorecardsbonus3, nomorecardsbonus4, nomorecardsbonus5"
+                         ],
+                    },
+                    {
+                        "name": "No More Cards 1",
+                        "hosted_item": "nomorecardsbonus1",
+                        "access_rules": ["$card_rule|nomorecardsbonus1"],
+                        "visibility_rules": ["$card_visibility|nomorecardsbonus1"],
+                    },
+                    {
+                        "name": "No More Cards 2",
+                        "hosted_item": "nomorecardsbonus2",
+                        "access_rules": ["$card_rule|nomorecardsbonus2"],
+                        "visibility_rules": ["$card_visibility|nomorecardsbonus2"],
+                    },
+                    {
+                        "name": "No More Cards 3",
+                        "hosted_item": "nomorecardsbonus3",
+                        "access_rules": ["$card_rule|nomorecardsbonus3"],
+                        "visibility_rules": ["$card_visibility|nomorecardsbonus3"],
+                    },
+                    {
+                        "name": "No More Cards 4",
+                        "hosted_item": "nomorecardsbonus4",
+                        "access_rules": ["$card_rule|nomorecardsbonus4"],
+                        "visibility_rules": ["$card_visibility|nomorecardsbonus4"],
+                    },
+                    {
+                        "name": "No More Cards 5",
+                        "hosted_item": "nomorecardsbonus5",
+                        "access_rules": ["$card_rule|nomorecardsbonus5"],
+                        "visibility_rules": ["$card_visibility|nomorecardsbonus5"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 10,
+                        "y": 65
+                    }
+                ]
+            },
+            {
+                "name": "Opponent's Turn Finish Bonus",
+                "sections": [
+                    {
+                        "name": "Bonus",
+                        "item_count": 1,
+                        "access_rules": [
+                             "opponentsturnfinishbonus1, opponentsturnfinishbonus2, opponentsturnfinishbonus3, opponentsturnfinishbonus4, opponentsturnfinishbonus5"
+                         ],
+                    },
+                    {
+                        "name": "Opponent's Turn Finish 1",
+                        "hosted_item": "opponentsturnfinishbonus1",
+                        "access_rules": ["$card_rule|opponentsturnfinishbonus1"],
+                        "visibility_rules": ["$card_visibility|opponentsturnfinishbonus1"],
+                    },
+                    {
+                        "name": "Opponent's Turn Finish 2",
+                        "hosted_item": "opponentsturnfinishbonus2",
+                        "access_rules": ["$card_rule|opponentsturnfinishbonus2"],
+                        "visibility_rules": ["$card_visibility|opponentsturnfinishbonus2"],
+                    },
+                    {
+                        "name": "Opponent's Turn Finish 3",
+                        "hosted_item": "opponentsturnfinishbonus3",
+                        "access_rules": ["$card_rule|opponentsturnfinishbonus3"],
+                        "visibility_rules": ["$card_visibility|opponentsturnfinishbonus3"],
+                    },
+                    {
+                        "name": "Opponent's Turn Finish 4",
+                        "hosted_item": "opponentsturnfinishbonus4",
+                        "access_rules": ["$card_rule|opponentsturnfinishbonus4"],
+                        "visibility_rules": ["$card_visibility|opponentsturnfinishbonus4"],
+                    },
+                    {
+                        "name": "Opponent's Turn Finish 5",
+                        "hosted_item": "opponentsturnfinishbonus5",
+                        "access_rules": ["$card_rule|opponentsturnfinishbonus5"],
+                        "visibility_rules": ["$card_visibility|opponentsturnfinishbonus5"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 25,
+                        "y": 65
+                    }
+                ]
+            },
+            {
+                "name": "Exodia Finish Bonus",
+                "sections": [
+                    {
+                        "name": "Bonus",
+                        "item_count": 1,
+                        "access_rules": [
+                             "exodiafinishbonus1, exodiafinishbonus2, exodiafinishbonus3, exodiafinishbonus4, exodiafinishbonus5, exodiafinishbonus6"
+                         ],
+                    },
+                    {
+                        "name": "Exodia Finish 1",
+                        "hosted_item": "exodiafinishbonus1",
+                        "access_rules": ["$card_rule|exodiafinishbonus1"],
+                        "visibility_rules": ["$card_visibility|exodiafinishbonus1"],
+                    },
+                    {
+                        "name": "Exodia Finish 2",
+                        "hosted_item": "exodiafinishbonus2",
+                        "access_rules": ["$card_rule|exodiafinishbonus2"],
+                        "visibility_rules": ["$card_visibility|exodiafinishbonus2"],
+                    },
+                    {
+                        "name": "Exodia Finish 3",
+                        "hosted_item": "exodiafinishbonus3",
+                        "access_rules": ["$card_rule|exodiafinishbonus3"],
+                        "visibility_rules": ["$card_visibility|exodiafinishbonus3"],
+                    },
+                    {
+                        "name": "Exodia Finish 4",
+                        "hosted_item": "exodiafinishbonus4",
+                        "access_rules": ["$card_rule|exodiafinishbonus4"],
+                        "visibility_rules": ["$card_visibility|exodiafinishbonus4"],
+                    },
+                    {
+                        "name": "Exodia Finish 5",
+                        "hosted_item": "exodiafinishbonus5",
+                        "access_rules": ["$card_rule|exodiafinishbonus5"],
+                        "visibility_rules": ["$card_visibility|exodiafinishbonus5"],
+                    },
+                    {
+                        "name": "Exodia Finish 6",
+                        "hosted_item": "exodiafinishbonus6",
+                        "access_rules": ["$card_rule|exodiafinishbonus6"],
+                        "visibility_rules": ["$card_visibility|exodiafinishbonus6"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 40,
+                        "y": 65
+                    }
+                ]
+            },
+            {
+                "name": "Last Turn Finish Bonus",
+                "sections": [
+                    {
+                        "name": "Bonus",
+                        "item_count": 1,
+                        "access_rules": [
+                             "lastturnfinishbonus1, lastturnfinishbonus2, lastturnfinishbonus3, lastturnfinishbonus4, lastturnfinishbonus5"
+                         ],
+                    },
+                    {
+                        "name": "Last Turn Finish 1",
+                        "hosted_item": "lastturnfinishbonus1",
+                        "access_rules": ["$card_rule|lastturnfinishbonus1"],
+                        "visibility_rules": ["$card_visibility|lastturnfinishbonus1"],
+                    },
+                    {
+                        "name": "Last Turn Finish 2",
+                        "hosted_item": "lastturnfinishbonus2",
+                        "access_rules": ["$card_rule|lastturnfinishbonus2"],
+                        "visibility_rules": ["$card_visibility|lastturnfinishbonus2"],
+                    },
+                    {
+                        "name": "Last Turn Finish 3",
+                        "hosted_item": "lastturnfinishbonus3",
+                        "access_rules": ["$card_rule|lastturnfinishbonus3"],
+                        "visibility_rules": ["$card_visibility|lastturnfinishbonus3"],
+                    },
+                    {
+                        "name": "Last Turn Finish 4",
+                        "hosted_item": "lastturnfinishbonus4",
+                        "access_rules": ["$card_rule|lastturnfinishbonus4"],
+                        "visibility_rules": ["$card_visibility|lastturnfinishbonus4"],
+                    },
+                    {
+                        "name": "Last Turn Finish 5",
+                        "hosted_item": "lastturnfinishbonus5",
+                        "access_rules": ["$card_rule|lastturnfinishbonus5"],
+                        "visibility_rules": ["$card_visibility|lastturnfinishbonus5"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 55,
+                        "y": 65
+                    }
+                ]
+            },
+            {
+                "name": "Final Countdown Finish Bonus",
+                "sections": [
+                    {
+                        "name": "Bonus",
+                        "item_count": 1,
+                        "access_rules": [
+                             "finalcountdownfinishbonus1, finalcountdownfinishbonus2, finalcountdownfinishbonus3, finalcountdownfinishbonus4, finalcountdownfinishbonus5"
+                         ],
+                    },
+                    {
+                        "name": "Final Countdown Finish 1",
+                        "hosted_item": "finalcountdownfinishbonus1",
+                        "access_rules": ["$card_rule|finalcountdownfinishbonus1"],
+                        "visibility_rules": ["$card_visibility|finalcountdownfinishbonus1"],
+                    },
+                    {
+                        "name": "Final Countdown Finish 2",
+                        "hosted_item": "finalcountdownfinishbonus2",
+                        "access_rules": ["$card_rule|finalcountdownfinishbonus2"],
+                        "visibility_rules": ["$card_visibility|finalcountdownfinishbonus2"],
+                    },
+                    {
+                        "name": "Final Countdown Finish 3",
+                        "hosted_item": "finalcountdownfinishbonus3",
+                        "access_rules": ["$card_rule|finalcountdownfinishbonus3"],
+                        "visibility_rules": ["$card_visibility|finalcountdownfinishbonus3"],
+                    },
+                    {
+                        "name": "Final Countdown Finish 4",
+                        "hosted_item": "finalcountdownfinishbonus4",
+                        "access_rules": ["$card_rule|finalcountdownfinishbonus4"],
+                        "visibility_rules": ["$card_visibility|finalcountdownfinishbonus4"],
+                    },
+                    {
+                        "name": "Final Countdown Finish 5",
+                        "hosted_item": "finalcountdownfinishbonus5",
+                        "access_rules": ["$card_rule|finalcountdownfinishbonus5"],
+                        "visibility_rules": ["$card_visibility|finalcountdownfinishbonus5"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 70,
+                        "y": 65
+                    }
+                ]
+            },
+            {
+                "name": "Destiny Board Finish Bonus",
+                "sections": [
+                    {
+                        "name": "Bonus",
+                        "item_count": 1,
+                        "access_rules": [
+                             "destinyboardfinishbonus1, destinyboardfinishbonus2, destinyboardfinishbonus3, destinyboardfinishbonus4, destinyboardfinishbonus5, destinyboardfinishbonus6, destinyboardfinishbonus7, destinyboardfinishbonus8, destinyboardfinishbonus9, destinyboardfinishbonus10"
+                         ],
+                    },
+                    {
+                        "name": "Destiny Board Finish 1",
+                        "hosted_item": "destinyboardfinishbonus1",
+                        "access_rules": ["$card_rule|destinyboardfinishbonus1"],
+                        "visibility_rules": ["$card_visibility|destinyboardfinishbonus1"],
+                    },
+                    {
+                        "name": "Destiny Board Finish 2",
+                        "hosted_item": "destinyboardfinishbonus2",
+                        "access_rules": ["$card_rule|destinyboardfinishbonus2"],
+                        "visibility_rules": ["$card_visibility|destinyboardfinishbonus2"],
+                    },
+                    {
+                        "name": "Destiny Board Finish 3",
+                        "hosted_item": "destinyboardfinishbonus3",
+                        "access_rules": ["$card_rule|destinyboardfinishbonus3"],
+                        "visibility_rules": ["$card_visibility|destinyboardfinishbonus3"],
+                    },
+                    {
+                        "name": "Destiny Board Finish 4",
+                        "hosted_item": "destinyboardfinishbonus4",
+                        "access_rules": ["$card_rule|destinyboardfinishbonus4"],
+                        "visibility_rules": ["$card_visibility|destinyboardfinishbonus4"],
+                    },
+                    {
+                        "name": "Destiny Board Finish 5",
+                        "hosted_item": "destinyboardfinishbonus5",
+                        "access_rules": ["$card_rule|destinyboardfinishbonus5"],
+                        "visibility_rules": ["$card_visibility|destinyboardfinishbonus5"],
+                    },
+                    {
+                        "name": "Destiny Board Finish 6",
+                        "hosted_item": "destinyboardfinishbonus6",
+                        "access_rules": ["$card_rule|destinyboardfinishbonus6"],
+                        "visibility_rules": ["$card_visibility|destinyboardfinishbonus6"],
+                    },
+                    {
+                        "name": "Destiny Board Finish 7",
+                        "hosted_item": "destinyboardfinishbonus7",
+                        "access_rules": ["$card_rule|destinyboardfinishbonus7"],
+                        "visibility_rules": ["$card_visibility|destinyboardfinishbonus7"],
+                    },
+                    {
+                        "name": "Destiny Board Finish 8",
+                        "hosted_item": "destinyboardfinishbonus8",
+                        "access_rules": ["$card_rule|destinyboardfinishbonus8"],
+                        "visibility_rules": ["$card_visibility|destinyboardfinishbonus8"],
+                    },
+                    {
+                        "name": "Destiny Board Finish 9",
+                        "hosted_item": "destinyboardfinishbonus9",
+                        "access_rules": ["$card_rule|destinyboardfinishbonus9"],
+                        "visibility_rules": ["$card_visibility|destinyboardfinishbonus9"],
+                    },
+                    {
+                        "name": "Destiny Board Finish 10",
+                        "hosted_item": "destinyboardfinishbonus10",
+                        "access_rules": ["$card_rule|destinyboardfinishbonus10"],
+                        "visibility_rules": ["$card_visibility|destinyboardfinishbonus10"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 85,
+                        "y": 65
+                    }
+                ]
+            },
+            {
+                "name": "Yata-Garasu Finish Bonus",
+                "sections": [
+                    {
+                        "name": "Yata-Lock",
+                        "item_count": 1,
+                        "access_rules": [
+                             "banlistseptember2003, yata-garasufinishbonus1, yata-garasufinishbonus2, yata-garasufinishbonus3, yata-garasufinishbonus4, yata-garasufinishbonus5",
+                             "nobanlist, yata-garasufinishbonus1, yata-garasufinishbonus2, yata-garasufinishbonus3, yata-garasufinishbonus4, yata-garasufinishbonus5"
+                         ],
+                    },
+                    {
+                        "name": "Yata-Garasu Finish 1",
+                        "hosted_item": "yata-garasufinishbonus1",
+                        "access_rules": ["$card_rule|yata-garasufinishbonus1"],
+                        "visibility_rules": ["$card_visibility|yata-garasufinishbonus1"],
+                    },
+                    {
+                        "name": "Yata-Garasu Finish 2",
+                        "hosted_item": "yata-garasufinishbonus2",
+                        "access_rules": ["$card_rule|yata-garasufinishbonus2"],
+                        "visibility_rules": ["$card_visibility|yata-garasufinishbonus2"],
+                    },
+                    {
+                        "name": "Yata-Garasu Finish 3",
+                        "hosted_item": "yata-garasufinishbonus3",
+                        "access_rules": ["$card_rule|yata-garasufinishbonus3"],
+                        "visibility_rules": ["$card_visibility|yata-garasufinishbonus3"],
+                    },
+                    {
+                        "name": "Yata-Garasu Finish 4",
+                        "hosted_item": "yata-garasufinishbonus4",
+                        "access_rules": ["$card_rule|yata-garasufinishbonus4"],
+                        "visibility_rules": ["$card_visibility|yata-garasufinishbonus4"],
+                    },
+                    {
+                        "name": "Yata-Garasu Finish 5",
+                        "hosted_item": "yata-garasufinishbonus5",
+                        "access_rules": ["$card_rule|yata-garasufinishbonus5"],
+                        "visibility_rules": ["$card_visibility|yata-garasufinishbonus5"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 100,
+                        "y": 65
+                    }
+                ]
+            },
+            {
+                "name": "Skull Servant Finish Bonus",
+                "sections": [
+                    {
+                        "name": "Deal the final blow",
+                        "item_count": 1,
+                        "access_rules": [
+                             "skullservantfinishbonus1, skullservantfinishbonus2, skullservantfinishbonus3, skullservantfinishbonus4, skullservantfinishbonus5"
+                         ],
+                    },
+                    {
+                        "name": "Skull Servant Finish 1",
+                        "hosted_item": "skullservantfinishbonus1",
+                        "access_rules": ["$card_rule|skullservantfinishbonus1"],
+                        "visibility_rules": ["$card_visibility|skullservantfinishbonus1"],
+                    },
+                    {
+                        "name": "Skull Servant Finish 2",
+                        "hosted_item": "skullservantfinishbonus2",
+                        "access_rules": ["$card_rule|skullservantfinishbonus2"],
+                        "visibility_rules": ["$card_visibility|skullservantfinishbonus2"],
+                    },
+                    {
+                        "name": "Skull Servant Finish 3",
+                        "hosted_item": "skullservantfinishbonus3",
+                        "access_rules": ["$card_rule|skullservantfinishbonus3"],
+                        "visibility_rules": ["$card_visibility|skullservantfinishbonus3"],
+                    },
+                    {
+                        "name": "Skull Servant Finish 4",
+                        "hosted_item": "skullservantfinishbonus4",
+                        "access_rules": ["$card_rule|skullservantfinishbonus4"],
+                        "visibility_rules": ["$card_visibility|skullservantfinishbonus4"],
+                    },
+                    {
+                        "name": "Skull Servant Finish 5",
+                        "hosted_item": "skullservantfinishbonus5",
+                        "access_rules": ["$card_rule|skullservantfinishbonus5"],
+                        "visibility_rules": ["$card_visibility|skullservantfinishbonus5"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 115,
+                        "y": 65
+                    }
+                ]
+            },
+            {
+                "name": "Konami Bonus",
+                "sections": [
+                    {
+                        "name": "Win with 5730 LP",
+                        "item_count": 1,
+                        "access_rules": [
+                             "konamibonus1, konamibonus2, konamibonus3, konamibonus4, konamibonus5"
+                         ],
+                    },
+                    {
+                        "name": "Konami 1",
+                        "hosted_item": "konamibonus1",
+                        "access_rules": ["$card_rule|konamibonus1"],
+                        "visibility_rules": ["$card_visibility|konamibonus1"],
+                    },
+                    {
+                        "name": "Konami 2",
+                        "hosted_item": "konamibonus2",
+                        "access_rules": ["$card_rule|konamibonus2"],
+                        "visibility_rules": ["$card_visibility|konamibonus2"],
+                    },
+                    {
+                        "name": "Konami 3",
+                        "hosted_item": "konamibonus3",
+                        "access_rules": ["$card_rule|konamibonus3"],
+                        "visibility_rules": ["$card_visibility|konamibonus3"],
+                    },
+                    {
+                        "name": "Konami 4",
+                        "hosted_item": "konamibonus4",
+                        "access_rules": ["$card_rule|konamibonus4"],
+                        "visibility_rules": ["$card_visibility|konamibonus4"],
+                    },
+                    {
+                        "name": "Konami 5",
+                        "hosted_item": "konamibonus5",
+                        "access_rules": ["$card_rule|konamibonus5"],
+                        "visibility_rules": ["$card_visibility|konamibonus5"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 130,
+                        "y": 65
+                    }
+                ]
+            },
+        ]
+    }
+]

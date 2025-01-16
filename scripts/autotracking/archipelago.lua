@@ -6,6 +6,8 @@
 -- if you run into issues when touching A LOT of items/locations here, see the comment about Tracker.AllowDeferredLogicUpdate in autotracking.lua
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
+ScriptHost:LoadScript("scripts/autotracking/card_id_mapping.lua")
+ScriptHost:LoadScript("scripts/autotracking/card_amount.lua")
 
 CUR_INDEX = -1
 LOCAL_ITEMS = {}
@@ -27,7 +29,7 @@ function resetItem(item_code, item_type)
 		elseif item_type == "consumable" then
 			obj.AcquiredCount = 0
 		elseif item_type == "custom" then
-			-- your code for your custom lua items goes here
+			obj:reset()
 		elseif item_type == "static" and AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
 			print(string.format("resetItem: tried to reset static item %s", item_code))
 		elseif item_type == "composite_toggle" and AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -78,6 +80,7 @@ end
 
 -- apply everything needed from slot_data, called from onClear
 function apply_slot_data(slot_data)
+	-- print(dump_table(slot_data))
 	-- put any code here that slot_data should affect (toggling setting items for example)
 	for key, value in pairs(slot_data) do
 		if key == "final_campaign_boss_campaign_opponents" then
@@ -94,17 +97,60 @@ function apply_slot_data(slot_data)
 			Tracker:FindObjectForCode("t5c3challenge").AcquiredCount = value
 		elseif key == "number_of_challenges" then
 			Tracker:FindObjectForCode("challenges").AcquiredCount = value
+		elseif key == "progression_cards" then
+			for bonus, data in pairs(CARD_AMOUNT) do
+				local card_number = 1
+				local lower_bonus = bonus:lower():gsub(" ", ""):gsub("'","")
+				card_number = apply_progression_cards(slot_data, bonus, card_number, bonus)
+				for _, additional_key in ipairs(data[2]) do
+					card_number = apply_progression_cards(slot_data, bonus, card_number, additional_key)
+				end
+				while card_number <= data[1] do
+					local card = find_card_by_code(lower_bonus..card_number)
+					if card == nil then
+						print("ERROR: not enough slots for '"..bonus.."' Index: "..card_number)
+					else
+						card:setCId(0)
+					end
+					card_number = card_number + 1
+				end
+			end
+			if tableHasKey(slot_data, "progression_cards_in_start") then
+				for _, card_id in ipairs(slot_data["progression_cards_in_start"]) do
+					for _, card in ipairs(find_card(card_id)) do
+						card:setActive(true)
+						card:addInPack("start", true)
+					end
+				end
+			end
 		end
 	end
 end
+
+function apply_progression_cards(slot_data, bonus, card_number, additional_key)
+	local lower_bonus = bonus:lower():gsub(" ", ""):gsub("'","")
+	if tableHasKey(slot_data["progression_cards"], additional_key) then
+		for _, card_id in ipairs(slot_data["progression_cards"][additional_key]) do
+			local card = find_card_by_code(lower_bonus..card_number)
+			local item = Tracker:FindObjectForCode(lower_bonus..card_number)
+			if card == nil then
+				print("ERROR: not enough slots for '"..bonus.."' Index: "..card_number)
+			else
+				card:setCId(card_id)
+				item.Name = CARD_ID[card_id]
+				card_number = card_number + 1
+			end
+		end
+	end
+	return card_number
+end
+
 
 -- called right after an AP slot is connected
 function onClear(slot_data)
 	-- use bulk update to pause logic updates until we are done resetting all items/locations
 	Tracker.BulkUpdate = true	
-	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-		print(dump_table(slot_data))
-	end
+	-- print(dump_table(slot_data))
 	CUR_INDEX = -1
 	-- reset locations
 	for _, mapping_entry in pairs(LOCATION_MAPPING) do
@@ -150,6 +196,9 @@ function onClear(slot_data)
 				print(string.format("onClear: skipping empty item_table"))
 			end
 		end
+	end
+	for _, card in ipairs(card_items) do
+		card:setInPack({})
 	end
 	apply_slot_data(slot_data)
 	LOCAL_ITEMS = {}
@@ -221,43 +270,26 @@ end
 
 -- called when a location gets cleared
 function onLocation(location_id, location_name)
-	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-		print(string.format("called onLocation: %s, %s", location_id, location_name))
+	local value = LOCATION_MAPPING[location_id]
+	if not value then
+	  if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+		print(string.format("onLocation: could not find location mapping for id %s", location_id))
+	  end
+	  return
 	end
-	if not AUTOTRACKER_ENABLE_LOCATION_TRACKING then
-		return
-	end
-	local mapping_entry = LOCATION_MAPPING[location_id]
-	if not mapping_entry then
-		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-			print(string.format("onLocation: could not find location mapping for id %s", location_id))
+	for _, code in pairs(value) do
+	  local object = Tracker:FindObjectForCode(code)
+	  if object then
+		if code:sub(1, 1) == "@" then
+		  object.AvailableChestCount = object.AvailableChestCount - 1
+		else
+		  object.Active = true
 		end
-		return
+	  elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+		  print(string.format("onLocation: could not find object for code %s", code))
+	  end
 	end
-	for _, location_table in pairs(mapping_entry) do
-		if location_table then
-			local location_code = location_table[1]
-			if location_code then
-				local obj = Tracker:FindObjectForCode(location_code)
-				if obj then
-					if location_code:sub(1, 1) == "@" then
-						obj.AvailableChestCount = obj.AvailableChestCount - 1
-					else
-						-- increment hosted item
-						local item_type = location_table[2]
-						incrementItem(location_code, item_type)
-					end
-				elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-					print(string.format("onLocation: could not find object for code %s", location_code))
-				end
-			elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-				print(string.format("onLocation: skipping location_table with no location_code"))
-			end
-		elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-			print(string.format("onLocation: skipping empty location_table"))
-		end
-	end
-end
+  end
 
 -- called when a locations is scouted
 function onScout(location_id, location_name, item_id, item_name, item_player)

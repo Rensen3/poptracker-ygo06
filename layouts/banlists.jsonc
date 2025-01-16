@@ -13,7 +13,7 @@
                 "type": "itemgrid",
                 "item_margin": "1, 1",
                 "h_alignment": "left",
-                "item_size": 3,
+                "item_size": 4,
                 "rows": [
                   [
                     "nobanlist",

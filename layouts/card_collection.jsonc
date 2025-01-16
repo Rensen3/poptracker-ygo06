@@ -1,0 +1,117 @@
+{
+    "collection_groups": {
+        "type": "dock",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+                {
+                "type": "group",
+                "header": "Obtain Final Countdown",
+                "dock": "left",
+                "content": [
+                    {
+                    "type": "dock",
+                    "orientation": "horizontal",
+                    "margin": "0,0",
+                    "content": [
+                        {
+                        "type": "map",
+                        "h_alignment": "right",
+                        "dock": "right",
+                        "max_height": 50,
+                        "maps": [
+                            "map1"
+                        ]
+                        },
+                        {
+                        "type": "itemgrid",
+                        "item_margin": "0, 0",
+                        "h_alignment": "left",
+                        "dock": "left",
+                        "item_size": 96,
+                        "rows": [
+                            [
+                            "finalcountdown"
+                            ]
+                        ]
+                    }
+                    ]
+                }
+                ]
+            },
+            {
+                "type": "group",
+                "header": "Obtain Ojama Delta Hurricane and its required cards",
+                "dock": "right",
+                "content": [
+                    {
+                    "type": "array",
+                    "orientation": "horizontal",
+                    "margin": "0,0",
+                    "content": [
+                        {
+                        "type": "map",
+                        "h_alignment": "left",
+                        "dock": "left",
+                        "max_height": 50,
+                        "maps": [
+                            "ojamamap"
+                        ]
+                        },
+                        {
+                        "type": "itemgrid",
+                        "item_margin": "0, 0",
+                        "h_alignment": "right",
+                        "dock": "right",
+                        "item_size": 96,
+                        "rows": [
+                            [
+                            "ojamadeltahurricane",
+                            "ojamagreen",
+                            "ojamayellow",
+                            "ojamablack"
+                            ]
+                        ]
+                    }
+                    ]
+                }
+                ]    
+            },
+            {
+                "type": "group",
+                "header": "Obtain Victory D.",
+                "dock": "bottom",
+                "content": [
+                    {
+                    "type": "array",
+                    "orientation": "horizontal",
+                    "margin": "0,0",
+                    "content": [
+                        {
+                        "type": "map",
+                        "h_alignment": "left",
+                        "dock": "left",
+                        "max_height": 50,
+                        "maps": [
+                            "map2"
+                        ]
+                        },
+                        {
+                        "type": "itemgrid",
+                        "item_margin": "0, 0",
+                        "h_alignment": "right",
+                        "dock": "right",
+                        "item_size": 96,
+                        "rows": [
+                            [
+                            "victoryd"
+                            ]
+                        ]
+                    }
+                    ]
+                }
+            ]    
+        }
+        ]
+    }
+}

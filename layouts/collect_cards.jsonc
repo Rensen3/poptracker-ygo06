@@ -1,0 +1,328 @@
+{
+    "collection_groups": {
+        "type": "array",
+        "orientation": "vertical",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "content": [
+                    {
+                        "type": "group",
+                        "header": "Obtain Final Countdown",
+                        "h_alignment": "left",
+                        "content": [
+                            {
+                                "type": "dock",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "dock": "left",
+                                        "height": 96,
+                                        "maps":[
+                                            "map1"
+                                        ]
+                                    },
+                                    {
+                                        "type": "itemgrid",
+                                        "height": 96,
+                                        "margin": "64, 64, 0, 0",
+                                        "dock": "right",
+                                        "item_size": 96,
+                                        "rows": [
+                                            [
+                                                "finalcountdown"
+                                            ]
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "group",
+                        "max_height": 10, 
+                        "header": "Obtain Victory D.",
+                        "h_alignment": "left",
+                        "content": [
+                            {
+                                "type": "dock",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "height": 10,
+                                        "weight": 10,
+                                        "dock": "left",
+                                        "maps":[
+                                            "map2"
+                                        ]
+                                    },
+                                    {
+                                        "type": "itemgrid",
+                                        "height": 96,
+                                        "item_size": 96,
+                                        "dock": "right",
+                                        "rows": [
+                                            [
+                                                "victoryd"
+                                            ]
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "group",
+                        "max_height": 10, 
+                        "header": "Obtain Hamon, Lord of Striking Thunder",
+                        "h_alignment": "left",
+                        "content": [
+                            {
+                                "type": "dock",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "height": 10,
+                                        "weight": 10,
+                                        "dock": "left",
+                                        "maps":[
+                                            "hamonmap"
+                                        ]
+                                    },
+                                    {
+                                        "type": "itemgrid",
+                                        "height": 96,
+                                        "dock": "right",
+                                        "item_size": 96,
+                                        "rows": [
+                                            [
+                                                "hamon"
+                                            ]
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "group",
+                        "max_height": 10, 
+                        "header": "Obtain Raviel, Lord of Phantasms",
+                        "h_alignment": "left",
+                        "content": [
+                            {
+                                "type": "dock",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "height": 10,
+                                        "weight": 10,
+                                        "dock": "left",
+                                        "maps":[
+                                            "ravielmap"
+                                        ]
+                                    },
+                                    {
+                                        "type": "itemgrid",
+                                        "height": 96,
+                                        "dock": "right",
+                                        "item_size": 96,
+                                        "rows": [
+                                            [
+                                                "raviel"
+                                            ]
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "group",
+                        "max_height": 10, 
+                        "header": "Obtain Uria, Lord of Searing Flames",
+                        "h_alignment": "left",
+                        "content": [
+                            {
+                                "type": "dock",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "height": 10,
+                                        "weight": 10,
+                                        "dock": "left",
+                                        "maps":[
+                                            "uriamap"
+                                        ]
+                                    },
+                                    {
+                                        "type": "itemgrid",
+                                        "height": 96,
+                                        "dock": "right",
+                                        "item_size": 96,
+                                        "rows": [
+                                            [
+                                                "uria"
+                                            ]
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "content": [
+                    {
+                        "type": "group",
+                        "max_height": 10, 
+                        "header": "Obtain Ojama Delta Hurricane and its required cards",
+                        "h_alignment": "left",
+                        "content": [
+                            {
+                                "type": "dock",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "dock": "left",
+                                        "height": 10,
+                                        "weight": 10,
+                                        "maps":[
+                                            "ojamamap"
+                                        ]
+                                    },
+                                    {
+                                        "type": "itemgrid",
+                                        "dock": "right",
+                                        "height": 96,
+                                        "item_size": 96,
+                                        "rows": [
+                                            [
+                                                "ojamadeltahurricane",
+                                                "ojamagreen",
+                                                "ojamayellow",
+                                                "ojamablack"
+                                            ]
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "group",
+                        "max_height": 10, 
+                        "header": "Obtain Victory D.",
+                        "h_alignment": "left",
+                        "content": [
+                            {
+                                "type": "dock",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "height": 10,
+                                        "weight": 10,
+                                        "dock": "left",
+                                        "maps":[
+                                            "map2"
+                                        ]
+                                    },
+                                    {
+                                        "type": "itemgrid",
+                                        "height": 96,
+                                        "dock": "right",
+                                        "item_size": 96,
+                                        "rows": [
+                                            [
+                                                "victoryd"
+                                            ]
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "content": [
+                    {
+                        "type": "group",
+                        "max_height": 10, 
+                        "header": "Obtain Ojama Delta Hurricane and its required cards",
+                        "h_alignment": "left",
+                        "content": [
+                            {
+                                "type": "dock",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "dock": "left",
+                                        "height": 10,
+                                        "weight": 10,
+                                        "maps":[
+                                            "ojamamap"
+                                        ]
+                                    },
+                                    {
+                                        "type": "itemgrid",
+                                        "dock": "right",
+                                        "height": 96,
+                                        "item_size": 96,
+                                        "rows": [
+                                            [
+                                                "ojamadeltahurricane",
+                                                "ojamagreen",
+                                                "ojamayellow",
+                                                "ojamablack"
+                                            ]
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "group",
+                        "max_height": 10, 
+                        "header": "Obtain Victory D.",
+                        "h_alignment": "left",
+                        "content": [
+                            {
+                                "type": "dock",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "height": 10,
+                                        "weight": 10,
+                                        "dock": "left",
+                                        "maps":[
+                                            "map2"
+                                        ]
+                                    },
+                                    {
+                                        "type": "itemgrid",
+                                        "height": 96,
+                                        "dock": "right",
+                                        "item_size": 96,
+                                        "rows": [
+                                            [
+                                                "victoryd"
+                                            ]
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,229 @@
+[
+    {
+        "name": "Beat Campaign",
+        "children": [
+            {
+                "name": "Tier 1",
+                "sections": [
+                    {
+                        "name": "Duelist Bonus Level 1",
+                        "access_rules": [
+                            "$has_at_least_n_tier_t_beaten|1|1"
+                        ]
+                    },
+                    {
+                        "name": "1 Win",
+                        "access_rules": [
+                            "$has_at_least_n_tier_t_beaten|1|1"
+                        ]
+                    },
+                    {
+                        "name": "3 Wins A",
+                        "access_rules": [
+                            "$has_at_least_n_tier_t_beaten|1|3"
+                        ]
+                    },
+                    {
+                        "name": "3 Wins B",
+                        "access_rules": [
+                            "$has_at_least_n_tier_t_beaten|1|3"
+                        ]
+                    },
+                    {
+                        "name": "5 Wins A",
+                        "access_rules": [
+                            "$has_at_least_n_tier_t_beaten|1|5"
+                        ]
+                    },
+                    {
+                        "name": "5 Wins B",
+                        "access_rules": [
+                            "$has_at_least_n_tier_t_beaten|1|5"
+                        ]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 10,
+                        "y": 30
+                    },
+                ]
+            },
+            {
+                "name": "Tier 2",
+                "sections": [
+                    {
+                        "name": "Duelist Bonus Level 2",
+                        "access_rules": [
+                            "$has_at_least_n_tier_t_beaten|2|1"
+                        ]
+                    },
+                    {
+                        "name": "1 Win",
+                        "access_rules": [
+                            "$has_at_least_n_tier_t_beaten|2|1"
+                        ]
+                    },
+                    {
+                        "name": "3 Wins A",
+                        "access_rules": [
+                            "$has_at_least_n_tier_t_beaten|2|3"
+                        ]
+                    },
+                    {
+                        "name": "3 Wins B",
+                        "access_rules": [
+                            "$has_at_least_n_tier_t_beaten|2|3"
+                        ]
+                    },
+                    {
+                        "name": "5 Wins A",
+                        "access_rules": [
+                            "$has_at_least_n_tier_t_beaten|2|5"
+                        ]
+                    },
+                    {
+                        "name": "5 Wins B",
+                        "access_rules": [
+                            "$has_at_least_n_tier_t_beaten|2|5"
+                        ]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 25,
+                        "y": 30
+                    },
+                ]
+            },
+            {
+                "name": "Tier 3",
+                "sections": [
+                    {
+                        "name": "Duelist Bonus Level 3",
+                        "access_rules": [
+                            "$has_at_least_n_tier_t_beaten|3|1"
+                        ]
+                    },
+                    {
+                        "name": "1 Win",
+                        "access_rules": [
+                            "$has_at_least_n_tier_t_beaten|3|1"
+                        ]
+                    },
+                    {
+                        "name": "3 Wins A",
+                        "access_rules": [
+                            "$has_at_least_n_tier_t_beaten|3|3"
+                        ]
+                    },
+                    {
+                        "name": "3 Wins B",
+                        "access_rules": [
+                            "$has_at_least_n_tier_t_beaten|3|3"
+                        ]
+                    },
+                    {
+                        "name": "5 Wins A",
+                        "access_rules": [
+                            "$has_at_least_n_tier_t_beaten|3|5"
+                        ]
+                    },
+                    {
+                        "name": "5 Wins B",
+                        "access_rules": [
+                            "$has_at_least_n_tier_t_beaten|3|5"
+                        ]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 40,
+                        "y": 30
+                    },
+                ]
+            },
+            {
+                "name": "Tier 4",
+                "sections": [
+                    {
+                        "name": "Duelist Bonus Level 4",
+                        "access_rules": [
+                            "$has_at_least_n_tier_t_beaten|4|1"
+                        ]
+                    },
+                    {
+                        "name": "5 Wins A",
+                        "access_rules": [
+                            "$has_at_least_n_tier_t_beaten|4|5"
+                        ]
+                    },
+                    {
+                        "name": "5 Wins B",
+                        "access_rules": [
+                            "$has_at_least_n_tier_t_beaten|4|5"
+                        ]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 55,
+                        "y": 30
+                    },
+                ]
+            },
+            {
+                "name": "Tier 5",
+                "sections": [
+                    {
+                        "name": "Duelist Bonus Level 5",
+                        "access_rules": [
+                            "$has_at_least_n_tier_t_beaten|5|1"
+                        ]
+                    },
+                    {
+                        "name": "Column 1 Win",
+                        "access_rules": [
+                            "campaigntier5column1"
+                        ]
+                    },
+                    {
+                        "name": "Column 2 Win",
+                        "access_rules": [
+                            "campaigntier5column2"
+                        ]
+                    },
+                    {
+                        "name": "Column 3 Win",
+                        "access_rules": [
+                            "campaigntier5column3"
+                        ]
+                    },
+                    {
+                        "name": "Column 4 Win",
+                        "access_rules": [
+                            "campaigntier5column4"
+                        ]
+                    },
+                    {
+                        "name": "Goal",
+                        "access_rules": [
+                            "campaigntier5column5"
+                        ]
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 70,
+                        "y": 30
+                    },
+                ]
+            },
+        ]
+    }
+]

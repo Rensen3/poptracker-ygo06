@@ -39,6 +39,17 @@
                 "type": "layout",
                 "key": "banlist_grid"
               }
+            },
+            {
+              "type": "group",
+              "header": "Campaign",
+              "dock": "left",
+              "content": [
+                {
+                  "type": "layout",
+                  "key": "opponents_grid"
+                }
+              ]
             }
           ]
         },
@@ -46,16 +57,7 @@
           "type": "tabbed",
           "tabs": [
             {
-              "title": "Map 1",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "map1"
-                ]
-              }
-            },
-            {
-              "title": "Map 2",
+              "title": "Obtain Cards",
               "content": {
                 "type": "map",
                 "maps": [
@@ -109,19 +111,27 @@
           ]
         },
         {
+          "type": "dock",
+          "dock": "left",
+          "content": [
+            {
+              "type": "group",
+              "header": "Campaign",
+              "dock": "left",
+              "content": [
+                {
+                  "type": "layout",
+                  "key": "opponents_grid"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "type": "tabbed",
           "tabs": [
             {
-              "title": "Map 1",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "map1"
-                ]
-              }
-            },
-            {
-              "title": "Map 2",
+              "title": "Obtain Cards",
               "content": {
                 "type": "map",
                 "maps": [

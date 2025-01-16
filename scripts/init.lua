@@ -20,12 +20,17 @@ ScriptHost:LoadScript("scripts/logic/logic.lua")
 
 -- Custom Items
 ScriptHost:LoadScript("scripts/custom_items/class.lua")
-ScriptHost:LoadScript("scripts/custom_items/progressiveTogglePlus.lua")
-ScriptHost:LoadScript("scripts/custom_items/progressiveTogglePlusWrapper.lua")
+ScriptHost:LoadScript("scripts/custom_items/yugioh_card_wrapper.lua")
+ScriptHost:LoadScript("scripts/custom_items/yugioh_card.lua")
+ScriptHost:LoadScript("scripts/create_cards.lua")
+
+create_cards()
 
 -- Items
 Tracker:AddItems("items/boosterpacks.jsonc")
 Tracker:AddItems("items/banlists.jsonc")
+Tracker:AddItems("items/campaign_opponents.jsonc")
+-- Tracker:AddItems("items/cards.jsonc")
 
 -- Settings
 Tracker:AddItems("items/settings.jsonc")
@@ -34,17 +39,28 @@ if not IS_ITEMS_ONLY then -- <--- use variant info to optimize loading
     -- Maps
     Tracker:AddMaps("maps/maps.jsonc")
     -- Locations
-    Tracker:AddLocations("locations/locations.jsonc")
+    Tracker:AddLocations("locations/collect_locations.jsonc")
+    Tracker:AddLocations("locations/campaign_locations.jsonc")
+    Tracker:AddLocations("locations/campaign_bonuses_locations.jsonc")
 end
 
 -- Layout
 Tracker:AddLayouts("layouts/boosterpacks.jsonc")
 Tracker:AddLayouts("layouts/banlists.jsonc")
+Tracker:AddLayouts("layouts/campaign_opponents.jsonc")
 Tracker:AddLayouts("layouts/settings.jsonc")
 Tracker:AddLayouts("layouts/tracker.jsonc")
 Tracker:AddLayouts("layouts/broadcast.jsonc")
+-- Tracker:AddLayouts("layouts/card_collection.jsonc")
+Tracker:AddLayouts("layouts/collect_cards.jsonc")
 
 -- AutoTracking for Poptracker
 if PopVersion and PopVersion >= "0.18.0" then
     ScriptHost:LoadScript("scripts/autotracking.lua")
 end
+
+ScriptHost:LoadScript("scripts/boosterpack_watcher.lua")
+ScriptHost:LoadScript("scripts/goal_watcher.lua")
+
+initialize_watch_items()
+initialize_campaign_watch_items()

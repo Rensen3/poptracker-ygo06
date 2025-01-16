@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Fissure","type": "toggle",
+        "allow_disabled": true,
+        "img": "/images/cards/c667.jpg",
+        "codes": "fissure",
+        "max_quantity": 3
+    },
+    {
+        "name": "Final Countdown","type": "toggle",
+        "allow_disabled": true,
+        "img": "/images/cards/c1384.jpg",
+        "codes": "finalcountdown",
+        "max_quantity": 3
+    },
+    {
+        "name": "Victory D.","type": "toggle",
+        "allow_disabled": true,
+        "img": "/images/cards/c1446.jpg",
+        "codes": "victoryd",
+        "max_quantity": 3
+    }
+]

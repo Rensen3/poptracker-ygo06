@@ -1,0 +1,574 @@
+[
+  {
+    "name": "Obtain Cards",
+    "children": [
+      {
+        "name": "Final Countdown",
+        "sections": [
+          {
+            "name":"Obtain Cards",
+            "access_rules": [
+              "finalcountdown"
+            ],
+          },
+          {
+            "name":"Final Countdown",
+            "hosted_item": "finalcountdown",
+            "access_rules": ["$card_rule|finalcountdown"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "map2",
+            "x": 10,
+            "y": 10
+          },
+        ]
+      },
+      {
+        "name": "Victory D.",
+        "sections": [
+          {
+            "name":"Obtain Cards",
+            "access_rules": [
+              "victoryd"
+            ],
+          },
+          {
+            "name": "Victory Dragon",
+            "hosted_item": "victoryd",
+            "access_rules": ["$card_rule|victoryd"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "map2",
+            "x": 25,
+            "y": 10
+          }
+        ]
+      },
+      {
+        "name": "Ojama Delta Hurricane and its required cards",
+        "sections": [
+          {
+            "name":"Obtain Cards",
+            "access_rules": [
+              "ojamadeltahurricane, ojamagreen, ojamayellow, ojamablack"
+            ],
+          },
+          {
+            "name":"Ojama Delta Hurricane",
+            "hosted_item": "ojamadeltahurricane",
+            "access_rules": ["$card_rule|ojamadeltahurricane"]
+          },
+          {
+            "name":"Ojama Green",
+            "hosted_item": "ojamagreen",
+            "access_rules": ["$card_rule|ojamagreen"]
+          },
+          {
+            "name":"Ojama Yellow",
+            "hosted_item": "ojamayellow",
+            "access_rules": ["$card_rule|ojamayellow"]
+          },
+          {
+            "name":"Ojama Black",
+            "hosted_item": "ojamablack",
+            "access_rules": ["$card_rule|ojamablack"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "map2",
+            "x": 40,
+            "y": 10
+          }
+        ]
+      },
+      {
+        "name": "Hamon, Lord of Striking Thunder",
+        "sections": [
+          {
+            "name": "Obtain Cards",
+            "item_count": 1,
+            "access_rules": [
+              "hamon"
+            ],
+          },
+          {
+            "name": "Hamon, Lord of Striking Thunder",
+            "hosted_item": "hamon",
+            "access_rules": ["$card_rule|hamon"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "map2",
+            "x": 55,
+            "y": 10
+          }
+        ]
+      },
+      {
+        "name": "Uria, Lord of Searing Flames",
+        "sections": [
+          {
+            "name": "Obtain Cards",
+            "item_count": 1,
+            "access_rules": [
+              "uria"
+            ],
+          },
+          {
+            "name": "Uria, Lord of Searing Flames",
+            "hosted_item": "uria",
+            "access_rules": ["$card_rule|uria"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "map2",
+            "x": 70,
+            "y": 10
+          }
+        ]
+      },
+      {
+        "name": "Huge Revolution and its required cards",
+        "sections": [
+          {
+            "name": "Obtain Cards",
+            "item_count": 1,
+            "access_rules": [
+              "hugerevolution, oppressedpeople, unitedresistance, peoplerunningabout"
+            ]
+          },
+          {
+            "name": "Huge Revolution",
+            "hosted_item": "hugerevolution",
+            "access_rules": ["$card_rule|hugerevolution"]
+           },
+           {
+            "name": "Oppressed People",
+            "hosted_item": "oppressedpeople",
+            "access_rules": ["$card_rule|oppressedpeople"]
+           },
+           {
+            "name": "United Resistance",
+            "hosted_item": "unitedresistance",
+            "access_rules": ["$card_rule|unitedresistance"]
+           },
+           {
+            "name": "People Running About",
+            "hosted_item": "peoplerunningabout",
+            "access_rules": ["$card_rule|peoplerunningabout"]
+           }
+        ],
+        "map_locations": [
+          {
+            "map": "map2",
+            "x": 85,
+            "y": 10
+          }
+        ]
+      },
+      {
+        "name": "Perfectly Ultimate Great Moth and its required cards",
+        "sections": [
+          {
+            "name": "Obtain Cards",
+            "item_count": 1,
+            "access_rules": [
+              "perfectlyultimategreatmoth, petitmoth, cocoonofevolution"
+            ]
+          },
+          {
+            "name": "Perfectly Ultimate Great Moth",
+            "hosted_item": "perfectlyultimategreatmoth",
+            "access_rules": ["$card_rule|perfectlyultimategreatmoth"]
+           },
+           {
+            "name": "Petit Moth",
+            "hosted_item": "petitmoth",
+            "access_rules": ["$card_rule|petitmoth"]
+           },
+           {
+            "name": "Cocoon of Evolution",
+            "hosted_item": "cocoonofevolution",
+            "access_rules": ["$card_rule|cocoonofevolution"]
+           }
+        ],
+        "map_locations": [
+          {
+            "map": "map2",
+            "x": 100,
+            "y": 10
+          }
+        ]
+      },
+      {
+        "name": "Valkyrion the Magna Warrior and its required cards",
+        "sections": [
+          {
+            "name": "Obtain Cards",
+            "item_count": 1,
+            "access_rules": [
+              "valkyrionthemagnawarrior, alphathemagnetwarrior, betathemagnetwarrior, gammathemagnetwarrior"
+            ]
+          },
+          {
+            "name": "Valkyrion the Magna Warrior",
+            "hosted_item": "valkyrionthemagnawarrior",
+            "access_rules": ["$card_rule|valkyrionthemagnawarrior"]
+           },
+           {
+            "name": "Alpha The Magnet Warrior",
+            "hosted_item": "alphathemagnetwarrior",
+            "access_rules": ["$card_rule|alphathemagnetwarrior"]
+           },
+           {
+            "name": "Beta The Magnet Warrior",
+            "hosted_item": "betathemagnetwarrior",
+            "access_rules": ["$card_rule|betathemagnetwarrior"]
+           },
+           {
+            "name": "Gamma The Magnet Warrior",
+            "hosted_item": "gammathemagnetwarrior",
+            "access_rules": ["$card_rule|gammathemagnetwarrior"]
+           },
+        ],
+        "map_locations": [
+          {
+            "map": "map2",
+            "x": 115,
+            "y": 10
+          }
+        ]
+      },
+      {
+        "name": "Dark Sage and its required cards",
+        "sections": [
+          {
+            "name": "Obtain Cards",
+            "item_count": 1,
+            "access_rules": [
+              "darksage, darkmagician, timewizard"
+            ]
+          },
+          {
+            "name": "Dark Sage",
+            "hosted_item": "darksage",
+            "access_rules": ["$card_rule|darksage"]
+           },
+           {
+            "name": "Dark Magician",
+            "hosted_item": "darkmagician",
+            "access_rules": ["$card_rule|darkmagician"]
+           },
+           {
+            "name": "Time Wizard",
+            "hosted_item": "timewizard",
+            "access_rules": ["$card_rule|timewizard"]
+           },
+        ],
+        "map_locations": [
+          {
+            "map": "map2",
+            "x": 130,
+            "y": 10
+          }
+        ]
+      },
+      {
+        "name": "Destiny Board and its letters",
+        "sections": [
+          {
+            "name": "Obtain Cards",
+            "item_count": 1,
+            "access_rules": [
+              "destinyboard, spiritmessagei, spiritmessagen, spiritmessagea, spiritmessagel"
+            ]
+          },
+          {
+            "name": "Destiny Board",
+            "hosted_item": "destinyboard",
+            "access_rules": ["$card_rule|destinyboard"]
+           },
+           {
+            "name": "Spirit Message 'I'",
+            "hosted_item": "spiritmessagei",
+            "access_rules": ["$card_rule|spiritmessagei"]
+           },
+           {
+            "name": "Spirit Message 'N'",
+            "hosted_item": "spiritmessagen",
+            "access_rules": ["$card_rule|spiritmessagen"]
+           },
+           {
+            "name": "Spirit Message 'A'",
+            "hosted_item": "spiritmessagea",
+            "access_rules": ["$card_rule|spiritmessagea"]
+           },
+           {
+            "name": "Spirit Message 'L'",
+            "hosted_item": "spiritmessagel",
+            "access_rules": ["$card_rule|spiritmessagel"]
+           },
+        ],
+        "map_locations": [
+          {
+            "map": "map2",
+            "x": 145,
+            "y": 10
+          }
+        ]
+      },
+      {
+        "name": "XYZ-Dragon Cannon fusions and their materials",
+        "sections": [
+          {
+            "name": "Obtain Cards",
+            "item_count": 1,
+            "access_rules": [
+              "x-headcannon, y-dragonhead, z-metaltank, xy-dragoncannon, xz-tankcannon, yz-tankdragon, xyz-dragoncannon"
+            ]
+          },
+          {
+            "name": "X-Head Cannon",
+            "hosted_item": "x-headcannon",
+            "access_rules": ["$card_rule|x-headcannon"]
+           },
+           {
+            "name": "Y-Dragon Head",
+            "hosted_item": "y-dragonhead",
+            "access_rules": ["$card_rule|y-dragonhead"]
+           },
+           {
+            "name": "Z-Metal Tank",
+            "hosted_item": "z-metaltank",
+            "access_rules": ["$card_rule|z-metaltank"]
+           },
+           {
+            "name": "XY-Dragon Cannon",
+            "hosted_item": "xy-dragoncannon",
+            "access_rules": ["$card_rule|xy-dragoncannon"]
+           },
+           {
+            "name": "XZ-Tank Cannon",
+            "hosted_item": "xz-tankcannon",
+            "access_rules": ["$card_rule|xz-tankcannon"]
+           },
+           {
+            "name": "YZ-Tank Dragon",
+            "hosted_item": "yz-tankdragon",
+            "access_rules": ["$card_rule|yz-tankdragon"]
+           },
+           {
+            "name": "XYZ-Dragon Cannon",
+            "hosted_item": "xyz-dragoncannon",
+            "access_rules": ["$card_rule|xyz-dragoncannon"]
+           },
+        ],
+        "map_locations": [
+          {
+            "map": "map2",
+            "x": 160,
+            "y": 10
+          }
+        ]
+      },
+      {
+        "name": "VWXYZ-Dragon Catapult Cannon and the fusion materials",
+        "sections": [
+          {
+            "name": "Obtain Cards",
+            "item_count": 1,
+            "access_rules": [
+              "x-headcannon, y-dragonhead, z-metaltank, xyz-dragoncannon, v-tigerjet, w-wingcatapult, vw-tigercatapult, vwxyz-dragoncatapultcannon"
+            ]
+          },
+          {
+            "name": "X-Head Cannon",
+            "hosted_item": "x-headcannon",
+            "access_rules": ["$card_rule|x-headcannon"]
+           },
+           {
+            "name": "Y-Dragon Head",
+            "hosted_item": "y-dragonhead",
+            "access_rules": ["$card_rule|y-dragonhead"]
+           },
+           {
+            "name": "Z-Metal Tank",
+            "hosted_item": "z-metaltank",
+            "access_rules": ["$card_rule|z-metaltank"]
+           },
+           {
+            "name": "XYZ-Dragon Cannon",
+            "hosted_item": "xyz-dragoncannon",
+            "access_rules": ["$card_rule|xyz-dragoncannon"]
+           },
+           {
+            "name": "V-Tiger Jet",
+            "hosted_item": "v-tigerjet",
+            "access_rules": ["$card_rule|v-tigerjet"]
+           },
+           {
+            "name": "W-Wing Catapult",
+            "hosted_item": "w-wingcatapult",
+            "access_rules": ["$card_rule|w-wingcatapult"]
+           },
+           {
+            "name": "VW-Tiger Catapult",
+            "hosted_item": "vw-tigercatapult",
+            "access_rules": ["$card_rule|vw-tigercatapult"]
+           },
+           {
+            "name": "VWXYZ-Dragon Catapult Cannon",
+            "hosted_item": "vwxyz-dragoncatapultcannon",
+            "access_rules": ["$card_rule|vwxyz-dragoncatapultcannon"]
+           },
+        ],
+        "map_locations": [
+          {
+            "map": "map2",
+            "x": 175,
+            "y": 10
+          }
+        ]
+      },
+      {
+        "name": "Gate Guardian and its pieces",
+        "sections": [
+          {
+            "name": "Obtain Cards",
+            "item_count": 1,
+            "access_rules": [
+              "gateguardian, kazejin, suijin, sangaofthethunder"
+            ]
+          },
+          {
+            "name": "Gate Guardian",
+            "hosted_item": "gateguardian",
+            "access_rules": ["$card_rule|gateguardian"]
+           },
+           {
+            "name": "Kazejin",
+            "hosted_item": "kazejin",
+            "access_rules": ["$card_rule|kazejin"]
+           },
+           {
+            "name": "Suijin",
+            "hosted_item": "suijin",
+            "access_rules": ["$card_rule|suijin"]
+           },
+           {
+            "name": "Sanga of the Thunder",
+            "hosted_item": "sangaofthethunder",
+            "access_rules": ["$card_rule|sangaofthethunder"]
+           },
+        ],
+        "map_locations": [
+          {
+            "map": "map2",
+            "x": 190,
+            "y": 10
+          }
+        ]
+      },
+      {
+        "name": "Dark Scorpion Combination and its required cards",
+        "sections": [
+          {
+            "name": "Obtain Cards",
+            "item_count": 1,
+            "access_rules": [
+              "darkscorpioncombination, donzaloog, darkscorpion-chicktheyellow, darkscorpion-meanaethethorn, darkscorpion-gorgthestrong, cliffthetrapremover"
+            ]
+          },
+          {
+            "name": "Dark Scorpion Combination",
+            "hosted_item": "darkscorpioncombination",
+            "access_rules": ["$card_rule|darkscorpioncombination"]
+           },
+           {
+            "name": "Don Zaloog",
+            "hosted_item": "donzaloog",
+            "access_rules": ["$card_rule|donzaloog"]
+           },
+           {
+            "name": "Dark Scorpion - Chick the Yellow",
+            "hosted_item": "darkscorpion-chicktheyellow",
+            "access_rules": ["$card_rule|darkscorpion-chicktheyellow"]
+           },
+           {
+            "name": "Dark Scorpion - Meanae the Thorn",
+            "hosted_item": "darkscorpion-meanaethethorn",
+            "access_rules": ["$card_rule|darkscorpion-meanaethethorn"]
+           },
+           {
+            "name": "Dark Scorpion - Gorg the Strong",
+            "hosted_item": "darkscorpion-gorgthestrong",
+            "access_rules": ["$card_rule|darkscorpion-gorgthestrong"]
+           },
+           {
+            "name": "Cliff the Trap Remover",
+            "hosted_item": "cliffthetrapremover",
+            "access_rules": ["$card_rule|cliffthetrapremover"]
+           },
+        ],
+        "map_locations": [
+          {
+            "map": "map2",
+            "x": 205,
+            "y": 10
+          }
+        ]
+      },
+      {
+        "name": "Obtain all pieces of Exodia",
+        "sections": [
+          {
+            "name": "Obtain Cards",
+            "item_count": 1,
+            "access_rules": [
+              "exodiatheforbiddenone, leftarmoftheforbiddenone, rightarmoftheforbiddenone, leftlegoftheforbiddenone, rightlegoftheforbiddenone"
+            ]
+          },
+          {
+            "name": "Exodia the Forbidden One",
+            "hosted_item": "exodiatheforbiddenone",
+            "access_rules": ["$card_rule|exodiatheforbiddenone"]
+           },
+           {
+            "name": "Left Arm of the Forbidden One",
+            "hosted_item": "leftarmoftheforbiddenone",
+            "access_rules": ["$card_rule|leftarmoftheforbiddenone"]
+           },
+           {
+            "name": "Right Arm of the Forbidden One",
+            "hosted_item": "rightarmoftheforbiddenone",
+            "access_rules": ["$card_rule|rightarmoftheforbiddenone"]
+           },
+           {
+            "name": "Left Leg of the Forbidden One",
+            "hosted_item": "leftlegoftheforbiddenone",
+            "access_rules": ["$card_rule|leftlegoftheforbiddenone"]
+           },
+           {
+            "name": "Right Leg of the Forbidden One",
+            "hosted_item": "rightlegoftheforbiddenone",
+            "access_rules": ["$card_rule|rightlegoftheforbiddenone"]
+           },
+        ],
+        "map_locations": [
+          {
+            "map": "map2",
+            "x": 220,
+            "y": 10
+          }
+        ]
+      }
+    ]
+  }
+]

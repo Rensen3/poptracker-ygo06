@@ -13,3 +13,55 @@ function has_more_then_n_consumable(n)
     end
     return 0 -- 0 => no access
 end
+
+function card_rule(code)
+    local card = find_card_by_code(code)
+    if card ~= nil then
+        for pack, pack_active in pairs(card:getInPack()) do
+            if pack_active then
+                return 1
+            end
+        end
+    end
+    return 0
+end
+
+function has_at_least_n_tier_t_beaten(t, n)
+    local i = 5
+    local beaten = 0
+    while i > 0 do
+        local item = Tracker:FindObjectForCode("campaigntier"..t.."column"..i)
+        if item ~= nil and item.Active then 
+            beaten = beaten + 1
+        end
+        i = i - 1
+    end
+    if beaten >= tonumber(n) then
+        return 1
+    end
+    return 0
+end
+
+function has_at_least_n_beaten(n)
+    local beaten = 0
+    local t = 5
+    while t > 0 do
+        local i = 5
+        while i > 0 do
+            local item = Tracker:FindObjectForCode("campaigntier"..t.."column"..i)
+            if item ~= nil and item.Active then 
+                beaten = beaten + 1
+            end
+            i = i - 1
+        end
+        t = t - 1
+    end
+    if beaten >= tonumber(n) then
+        return 1
+    end
+    return 0
+end
+
+function card_visibility(cardcode)
+    return find_card_by_code(cardcode):getCId() ~= 0
+end

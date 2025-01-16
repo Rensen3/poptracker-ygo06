@@ -1,3 +1,6 @@
+bool_to_number={ [true]=1, [false]=0 }
+
+
 -- from https://stackoverflow.com/questions/9168058/how-to-dump-a-table-to-console
 -- dumps a table in a readable string
 function dump_table(o, depth)
@@ -18,5 +21,31 @@ function dump_table(o, depth)
         return s .. tabs .. '}'
     else
         return tostring(o)
+    end
+end
+
+function tableContains(table, element)
+    for _, value in pairs(table) do
+      if value == element then
+        return true
+      end
+    end
+    return false
+end
+
+function tableHasKey(table, element)
+    for key, value in pairs(table) do
+      if key == element then
+        return true
+      end
+    end
+    return false
+end
+
+function removeFromArray(array, element)
+    for i, value in ipairs(array) do
+        if value == element then
+            table.remove(array, i)
+        end
     end
 end
