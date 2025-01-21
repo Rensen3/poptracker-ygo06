@@ -2,9 +2,9 @@
   //more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#maps
   {
     "name": "map1",
-    "location_size": 15,
-    "location_border_thickness": 2,
-    "img": "images/maps/card_shop.png"
+    "location_size": 10,
+    "location_border_thickness": 1,
+    "img": "images/maps/main_menu.png"
   },
   {
     "name": "map2",

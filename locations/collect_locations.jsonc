@@ -111,6 +111,30 @@
         ]
       },
       {
+        "name": "Raviel, Lord of Phantasms",
+        "sections": [
+          {
+            "name": "Obtain Cards",
+            "item_count": 1,
+            "access_rules": [
+              "raviel"
+            ],
+          },
+          {
+            "name": "Raviel, Lord of Phantasms",
+            "hosted_item": "raviel",
+            "access_rules": ["$card_rule|raviel"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "map2",
+            "x": 70,
+            "y": 10
+          }
+        ]
+      },
+      {
         "name": "Uria, Lord of Searing Flames",
         "sections": [
           {
@@ -129,7 +153,7 @@
         "map_locations": [
           {
             "map": "map2",
-            "x": 70,
+            "x": 85,
             "y": 10
           }
         ]
@@ -168,7 +192,7 @@
         "map_locations": [
           {
             "map": "map2",
-            "x": 85,
+            "x": 100,
             "y": 10
           }
         ]
@@ -202,7 +226,7 @@
         "map_locations": [
           {
             "map": "map2",
-            "x": 100,
+            "x": 115,
             "y": 10
           }
         ]
@@ -241,7 +265,7 @@
         "map_locations": [
           {
             "map": "map2",
-            "x": 115,
+            "x": 130,
             "y": 10
           }
         ]
@@ -275,7 +299,7 @@
         "map_locations": [
           {
             "map": "map2",
-            "x": 130,
+            "x": 145,
             "y": 10
           }
         ]
@@ -319,7 +343,7 @@
         "map_locations": [
           {
             "map": "map2",
-            "x": 145,
+            "x": 160,
             "y": 10
           }
         ]
@@ -373,7 +397,7 @@
         "map_locations": [
           {
             "map": "map2",
-            "x": 160,
+            "x": 175,
             "y": 10
           }
         ]
@@ -432,7 +456,7 @@
         "map_locations": [
           {
             "map": "map2",
-            "x": 175,
+            "x": 190,
             "y": 10
           }
         ]
@@ -471,7 +495,7 @@
         "map_locations": [
           {
             "map": "map2",
-            "x": 190,
+            "x": 205,
             "y": 10
           }
         ]
@@ -520,7 +544,7 @@
         "map_locations": [
           {
             "map": "map2",
-            "x": 205,
+            "x": 220,
             "y": 10
           }
         ]
@@ -564,7 +588,7 @@
         "map_locations": [
           {
             "map": "map2",
-            "x": 220,
+            "x": 235,
             "y": 10
           }
         ]

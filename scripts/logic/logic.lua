@@ -65,3 +65,21 @@ end
 function card_visibility(cardcode)
     return find_card_by_code(cardcode):getCId() ~= 0
 end
+
+challenge_alias = {
+    ["TD37 Uria Lord of Searing Flames"] = "TD37 Uria, Lord of Searing Flames",
+    ["TD38 Hamon Lord of Striking Thunder"] = "TD38 Hamon, Lord of Striking Thunder",
+    ["TD39 Raviel Lord of Phantasms"] = "TD39 Raviel, Lord of Phantasms"
+}
+
+function challenge_visibility(challenge)
+    if tableContains(challenge_alias, challenge) then
+        challenge = challenge_alias[challenge]
+    end
+    return not tableContains(REMOVED_CHALLENGES, challenge)
+end
+
+function diffuculty_level(level)
+    level = tonumber(level)
+    return level >= Difficulty_Beaters and level >= Difficulty_Monster_Removal and level >= Difficulty_Backrow_Removal
+end

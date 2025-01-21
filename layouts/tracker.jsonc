@@ -131,11 +131,20 @@
           "type": "tabbed",
           "tabs": [
             {
-              "title": "Obtain Cards",
+              "title": "Campaign",
               "content": {
                 "type": "map",
                 "maps": [
                   "map2"
+                ]
+              }
+            },
+            {
+              "title": "Challenges",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "map1"
                 ]
               }
             }

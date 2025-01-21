@@ -7,11 +7,11 @@
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/card_id_mapping.lua")
-ScriptHost:LoadScript("scripts/autotracking/card_amount.lua")
 
 CUR_INDEX = -1
 LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
+REMOVED_CHALLENGES = {}
 
 -- resets an item to its initial state
 function resetItem(item_code, item_type)
@@ -97,38 +97,25 @@ function apply_slot_data(slot_data)
 			Tracker:FindObjectForCode("t5c3challenge").AcquiredCount = value
 		elseif key == "number_of_challenges" then
 			Tracker:FindObjectForCode("challenges").AcquiredCount = value
+		elseif key == "removed challenges" then
+			REMOVED_CHALLENGES = slot_data["removed challenges"]
 		elseif key == "progression_cards" then
-			for bonus, data in pairs(CARD_AMOUNT) do
-				local card_number = 1
-				local lower_bonus = bonus:lower():gsub(" ", ""):gsub("'","")
-				card_number = apply_progression_cards(slot_data, bonus, card_number, bonus)
-				for _, additional_key in ipairs(data[2]) do
-					card_number = apply_progression_cards(slot_data, bonus, card_number, additional_key)
-				end
-				while card_number <= data[1] do
-					local card = find_card_by_code(lower_bonus..card_number)
-					if card == nil then
-						print("ERROR: not enough slots for '"..bonus.."' Index: "..card_number)
-					else
-						card:setCId(0)
-					end
-					card_number = card_number + 1
-				end
-			end
-			if tableHasKey(slot_data, "progression_cards_in_start") then
-				for _, card_id in ipairs(slot_data["progression_cards_in_start"]) do
-					for _, card in ipairs(find_card(card_id)) do
-						card:setActive(true)
-						card:addInPack("start", true)
-					end
-				end
-			end
+			--ScriptHost:RunScriptAsync("scripts/autotracking/progression_cards.lua", {
+			--	["progression_cards"] = slot_data["progression_cards"],
+			--	["progression_cards_in_start"] = slot_data["progression_cards_in_start"],
+			--	["CARD_AMOUNT"] = CARD_AMOUNT,
+			--	["dump_table"] = dump_table,
+			--	["find_card_by_code"] = find_card_by_code,
+			--	["tableHasKey"] = tableHasKey,
+			--	["find_card"] = find_card
+			--})
+			progression_card_slot_data(slot_data)
 		end
 	end
 end
 
 function apply_progression_cards(slot_data, bonus, card_number, additional_key)
-	local lower_bonus = bonus:lower():gsub(" ", ""):gsub("'","")
+	local lower_bonus = bonus:lower():gsub(" ", ""):gsub("'",""):gsub(",","")
 	if tableHasKey(slot_data["progression_cards"], additional_key) then
 		for _, card_id in ipairs(slot_data["progression_cards"][additional_key]) do
 			local card = find_card_by_code(lower_bonus..card_number)
@@ -145,12 +132,43 @@ function apply_progression_cards(slot_data, bonus, card_number, additional_key)
 	return card_number
 end
 
+function progression_card_slot_data(args)
+	print("Running Slot Data")
+	for bonus, data in pairs(CARD_AMOUNT) do
+		local card_number = 1
+		local lower_bonus = bonus:lower():gsub(" ", ""):gsub("'",""):gsub(",","")
+		card_number = apply_progression_cards(args, bonus, card_number, bonus)
+		for _, additional_key in ipairs(data[2]) do
+			card_number = apply_progression_cards(args, bonus, card_number, additional_key)
+		end
+		while card_number <= data[1] do
+			local card = find_card_by_code(lower_bonus..card_number)
+			if card == nil then
+				print("ERROR: not enough slots for '"..lower_bonus.."' Index: "..card_number)
+			else
+				card:setCId(0)
+			end
+			card_number = card_number + 1
+		end
+		Archipelago:StatusUpdate(Archipelago.ClientStatus.PLAYING)
+	end
+	if tableHasKey(args, "progression_cards_in_start") then
+    	for _, card_id in ipairs(args["progression_cards_in_start"]) do
+        	for _, card in ipairs(find_card(card_id)) do
+				card:setActive(true)
+				card:addInPack("start", true)
+    	   	end
+		end
+    end
+end
 
 -- called right after an AP slot is connected
 function onClear(slot_data)
 	-- use bulk update to pause logic updates until we are done resetting all items/locations
 	Tracker.BulkUpdate = true	
 	-- print(dump_table(slot_data))
+	PLAYER_NUMBER = Archipelago.PlayerNumber or -1
+	TEAM_NUMBER = Archipelago.TeamNumber or 0
 	CUR_INDEX = -1
 	-- reset locations
 	for _, mapping_entry in pairs(LOCATION_MAPPING) do
@@ -198,15 +216,18 @@ function onClear(slot_data)
 		end
 	end
 	for _, card in ipairs(card_items) do
-		card:setInPack({})
+		card:reset()
 	end
 	apply_slot_data(slot_data)
 	LOCAL_ITEMS = {}
 	GLOBAL_ITEMS = {}
-	-- manually run snes interface functions after onClear in case we need to update them (i.e. because they need slot_data)
-	if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
-		-- add snes interface functions here
-	end
+	COLLECTION_ID = "ygo06_collection_"..TEAM_NUMBER.."_"..PLAYER_NUMBER
+	beaten_co = {}
+	beaten_cha = {}
+	Archipelago:SetNotify({COLLECTION_ID})
+	Archipelago:Get({COLLECTION_ID})
+	COLLECTED_IN_BOOSTER = slot_data["progression_cards_in_booster"]
+	updateCollection({})
 	Tracker.BulkUpdate = false
 end
 
@@ -291,6 +312,36 @@ function onLocation(location_id, location_name)
 	end
   end
 
+function updateCollection(collection_data)
+	print("Collection_Data: ")
+	if type(collection_data) ~= 'table' then
+		print(collection_data)
+		return
+	end
+	print(dump_table(collection_data))
+	for card_id, amount in pairs(collection_data) do
+		for _, card in ipairs(find_card(tonumber(card_id))) do
+			card:setActive(amount > 0)
+		end
+	end
+end
+
+function onNotify(key, value, old_value)
+	print("onNotify "..key)
+	if value ~= old_value then
+		if key == COLLECTION_ID then
+			updateCollection(value)
+		end
+	end
+end
+
+function onNotifyLaunch(key, value)
+	print("onNotifyLaunch "..key)
+	if key == COLLECTION_ID then
+		updateCollection(value)
+	end
+end
+
 -- called when a locations is scouted
 function onScout(location_id, location_name, item_id, item_name, item_player)
 	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -319,3 +370,5 @@ if AUTOTRACKER_ENABLE_LOCATION_TRACKING then
 end
 -- Archipelago:AddScoutHandler("scout handler", onScout)
 -- Archipelago:AddBouncedHandler("bounce handler", onBounce)
+Archipelago:AddSetReplyHandler("notify handler", onNotify)
+Archipelago:AddRetrievedHandler("notify launch handler", onNotifyLaunch)

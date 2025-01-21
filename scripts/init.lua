@@ -30,6 +30,7 @@ create_cards()
 Tracker:AddItems("items/boosterpacks.jsonc")
 Tracker:AddItems("items/banlists.jsonc")
 Tracker:AddItems("items/campaign_opponents.jsonc")
+Tracker:AddItems("items/challenges.jsonc")
 -- Tracker:AddItems("items/cards.jsonc")
 
 -- Settings
@@ -42,6 +43,7 @@ if not IS_ITEMS_ONLY then -- <--- use variant info to optimize loading
     Tracker:AddLocations("locations/collect_locations.jsonc")
     Tracker:AddLocations("locations/campaign_locations.jsonc")
     Tracker:AddLocations("locations/campaign_bonuses_locations.jsonc")
+    Tracker:AddLocations("locations/challenges.jsonc")
 end
 
 -- Layout
@@ -58,7 +60,7 @@ Tracker:AddLayouts("layouts/collect_cards.jsonc")
 if PopVersion and PopVersion >= "0.18.0" then
     ScriptHost:LoadScript("scripts/autotracking.lua")
 end
-
+ScriptHost:LoadScript("scripts/autotracking/card_amount.lua")
 ScriptHost:LoadScript("scripts/boosterpack_watcher.lua")
 ScriptHost:LoadScript("scripts/goal_watcher.lua")
 

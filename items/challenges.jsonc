@@ -1,0 +1,639 @@
+[
+    {
+        "name": "LD01 All except Level 4 forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld01allexceptlevel4forbiddenunlock"
+     },
+     {
+        "name": "LD02 Medium/high Level forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld02medium/highlevelforbiddenunlock"
+     },
+     {
+        "name": "LD03 ATK 1500 or more forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld03atk1500ormoreforbiddenunlock"
+     },
+     {
+        "name": "LD04 Flip Effects forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld04flipeffectsforbiddenunlock"
+     },
+     {
+        "name": "LD05 Tributes forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld05tributesforbiddenunlock"
+     },
+     {
+        "name": "LD06 Traps forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld06trapsforbiddenunlock"
+     },
+     {
+        "name": "LD07 Large Deck A Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld07largedeckaunlock"
+     },
+     {
+        "name": "LD08 Large Deck B Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld08largedeckbunlock"
+     },
+     {
+        "name": "LD09 Sets Forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld09setsforbiddenunlock"
+     },
+     {
+        "name": "LD10 All except LV monsters forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld10allexceptlvmonstersforbiddenunlock"
+     },
+     {
+        "name": "LD11 All except Fairies forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld11allexceptfairiesforbiddenunlock"
+     },
+     {
+        "name": "LD12 All except Wind forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld12allexceptwindforbiddenunlock"
+     },
+     {
+        "name": "LD13 All except monsters forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld13allexceptmonstersforbiddenunlock"
+     },
+     {
+        "name": "LD14 Level 3 or below forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld14level3orbelowforbiddenunlock"
+     },
+     {
+        "name": "LD15 DEF 1500 or less forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld15def1500orlessforbiddenunlock"
+     },
+     {
+        "name": "LD16 Effect Monsters forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld16effectmonstersforbiddenunlock"
+     },
+     {
+        "name": "LD17 Spells forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld17spellsforbiddenunlock"
+     },
+     {
+        "name": "LD18 Attacks forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld18attacksforbiddenunlock"
+     },
+     {
+        "name": "LD19 All except E-Hero's forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld19allexcepte-hero'sforbiddenunlock"
+     },
+     {
+        "name": "LD20 All except Warriors forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld20allexceptwarriorsforbiddenunlock"
+     },
+     {
+        "name": "LD21 All except Dark forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld21allexceptdarkforbiddenunlock"
+     },
+     {
+        "name": "LD22 All limited cards forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld22alllimitedcardsforbiddenunlock"
+     },
+     {
+        "name": "LD23 Refer to Mar 05 Banlist Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld23refertomar05banlistunlock"
+     },
+     {
+        "name": "LD24 Refer to Sept 04 Banlist Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld24refertosept04banlistunlock"
+     },
+     {
+        "name": "LD25 Low Life Points Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld25lowlifepointsunlock"
+     },
+     {
+        "name": "LD26 All except Toons forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld26allexcepttoonsforbiddenunlock"
+     },
+     {
+        "name": "LD27 All except Spirits forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld27allexceptspiritsforbiddenunlock"
+     },
+     {
+        "name": "LD28 All except Dragons forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld28allexceptdragonsforbiddenunlock"
+     },
+     {
+        "name": "LD29 All except Spellcasters forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld29allexceptspellcastersforbiddenunlock"
+     },
+     {
+        "name": "LD30 All except Light forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld30allexceptlightforbiddenunlock"
+     },
+     {
+        "name": "LD31 All except Fire forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld31allexceptfireforbiddenunlock"
+     },
+     {
+        "name": "LD32 Decks with multiples forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld32deckswithmultiplesforbiddenunlock"
+     },
+     {
+        "name": "LD33 Special Summons forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld33specialsummonsforbiddenunlock"
+     },
+     {
+        "name": "LD34 Normal Summons forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld34normalsummonsforbiddenunlock"
+     },
+     {
+        "name": "LD35 All except Zombies forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld35allexceptzombiesforbiddenunlock"
+     },
+     {
+        "name": "LD36 All except Earth forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld36allexceptearthforbiddenunlock"
+     },
+     {
+        "name": "LD37 All except Water forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld37allexceptwaterforbiddenunlock"
+     },
+     {
+        "name": "LD38 Refer to Mar 04 Banlist Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld38refertomar04banlistunlock"
+     },
+     {
+        "name": "LD39 Monsters forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld39monstersforbiddenunlock"
+     },
+     {
+        "name": "LD40 Refer to Sept 05 Banlist Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld40refertosept05banlistunlock"
+     },
+     {
+        "name": "LD41 Refer to Sept 03 Banlist Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "ld41refertosept03banlistunlock"
+     },
+     {
+        "name": "TD01 Battle Damage Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td01battledamageunlock"
+     },
+     {
+        "name": "TD02 Deflected Damage Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td02deflecteddamageunlock"
+     },
+     {
+        "name": "TD03 Normal Summon Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td03normalsummonunlock"
+     },
+     {
+        "name": "TD04 Ritual Summon Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td04ritualsummonunlock"
+     },
+     {
+        "name": "TD05 Special Summon A Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td05specialsummonaunlock"
+     },
+     {
+        "name": "TD06 20x Spell Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td0620xspellunlock"
+     },
+     {
+        "name": "TD07 10x Trap Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td0710xtrapunlock"
+     },
+     {
+        "name": "TD08 Draw Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td08drawunlock"
+     },
+     {
+        "name": "TD09 Hand Destruction Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td09handdestructionunlock"
+     },
+     {
+        "name": "TD10 During Opponent's Turn Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td10duringopponent'sturnunlock"
+     },
+     {
+        "name": "TD11 Recover Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td11recoverunlock"
+     },
+     {
+        "name": "TD12 Remove Monsters by Effect Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td12removemonstersbyeffectunlock"
+     },
+     {
+        "name": "TD13 Flip Summon Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td13flipsummonunlock"
+     },
+     {
+        "name": "TD14 Special Summon B Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td14specialsummonbunlock"
+     },
+     {
+        "name": "TD15 Token Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td15tokenunlock"
+     },
+     {
+        "name": "TD16 Union Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td16unionunlock"
+     },
+     {
+        "name": "TD17 10x Quick Spell Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td1710xquickspellunlock"
+     },
+     {
+        "name": "TD18 The Forbidden Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td18theforbiddenunlock"
+     },
+     {
+        "name": "TD19 20 Turns Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td1920turnsunlock"
+     },
+     {
+        "name": "TD20 Deck Destruction Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td20deckdestructionunlock"
+     },
+     {
+        "name": "TD21 Victory D. Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td21victoryd.unlock"
+     },
+     {
+        "name": "TD22 The Preventers Fight Back Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td22thepreventersfightbackunlock"
+     },
+     {
+        "name": "TD23 Huge Revolution Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td23hugerevolutionunlock"
+     },
+     {
+        "name": "TD24 Victory in 5 Turns Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td24victoryin5turnsunlock"
+     },
+     {
+        "name": "TD25 Moth Grows Up Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td25mothgrowsupunlock"
+     },
+     {
+        "name": "TD26 Magnetic Power Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td26magneticpowerunlock"
+     },
+     {
+        "name": "TD27 Dark Sage Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td27darksageunlock"
+     },
+     {
+        "name": "TD28 Direct Damage Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td28directdamageunlock"
+     },
+     {
+        "name": "TD29 Destroy Monsters in Battle Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td29destroymonstersinbattleunlock"
+     },
+     {
+        "name": "TD30 Tribute Summon Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td30tributesummonunlock"
+     },
+     {
+        "name": "TD31 Special Summon C Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td31specialsummoncunlock"
+     },
+     {
+        "name": "TD32 Toon Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td32toonunlock"
+     },
+     {
+        "name": "TD33 10x Counter Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td3310xcounterunlock"
+     },
+     {
+        "name": "TD34 Destiny Board Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td34destinyboardunlock"
+     },
+     {
+        "name": "TD35 Huge Damage in a Turn Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td35hugedamageinaturnunlock"
+     },
+     {
+        "name": "TD36 V-Z In the House Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td36v-zinthehouseunlock"
+     },
+     {
+        "name": "TD37 Uria, Lord of Searing Flames Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td37urialordofsearingflamesunlock"
+     },
+     {
+        "name": "TD38 Hamon, Lord of Striking Thunder Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td38hamonlordofstrikingthunderunlock"
+     },
+     {
+        "name": "TD39 Raviel, Lord of Phantasms Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td39raviellordofphantasmsunlock"
+     },
+     {
+        "name": "TD40 Make a Chain Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td40makeachainunlock"
+     },
+     {
+        "name": "TD41 The Gatekeeper Stands Tall Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td41thegatekeeperstandstallunlock"
+     },
+     {
+        "name": "TD42 Serious Damage Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td42seriousdamageunlock"
+     },
+     {
+        "name": "TD43 Return Monsters with Effects Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td43returnmonsterswitheffectsunlock"
+     },
+     {
+        "name": "TD44 Fusion Summon Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td44fusionsummonunlock"
+     },
+     {
+        "name": "TD45 Big Damage at once Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td45bigdamageatonceunlock"
+     },
+     {
+        "name": "TD46 XYZ In the House Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td46xyzinthehouseunlock"
+     },
+     {
+        "name": "TD47 Spell Counter Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td47spellcounterunlock"
+     },
+     {
+        "name": "TD48 Destroy Monsters with Effects Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td48destroymonsterswitheffectsunlock"
+     },
+     {
+        "name": "TD49 Plunder Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td49plunderunlock"
+     },
+     {
+        "name": "TD50 Dark Scorpion Combination Unlock",
+        "type": "toggle",
+        "allow_disabled": true,
+        "img": "images/settings/challenges.png",
+        "codes": "td50darkscorpioncombinationunlock"
+     },
+]

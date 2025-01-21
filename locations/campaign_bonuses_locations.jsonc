@@ -1252,6 +1252,204 @@
                     }
                 ]
             },
+            {
+                "name": "Beaters",
+                "sections": [
+                    {
+                        "name": "Beaters 1",
+                        "hosted_item": "beaters1",
+                        "access_rules": ["$card_rule|beaters1"],
+                        "visibility_rules": ["$card_visibility|beaters1"],
+                    },
+                    {
+                        "name": "Beaters 2",
+                        "hosted_item": "beaters2",
+                        "access_rules": ["$card_rule|beaters2"],
+                        "visibility_rules": ["$card_visibility|beaters2"],
+                    },
+                    {
+                        "name": "Beaters 3",
+                        "hosted_item": "beaters3",
+                        "access_rules": ["$card_rule|beaters3"],
+                        "visibility_rules": ["$card_visibility|beaters3"],
+                    },
+                    {
+                        "name": "Beaters 4",
+                        "hosted_item": "beaters4",
+                        "access_rules": ["$card_rule|beaters4"],
+                        "visibility_rules": ["$card_visibility|beaters4"],
+                    },
+                    {
+                        "name": "Beaters 5",
+                        "hosted_item": "beaters5",
+                        "access_rules": ["$card_rule|beaters5"],
+                        "visibility_rules": ["$card_visibility|beaters5"],
+                    },
+                    {
+                        "name": "Beaters 6",
+                        "hosted_item": "beaters6",
+                        "access_rules": ["$card_rule|beaters6"],
+                        "visibility_rules": ["$card_visibility|beaters6"],
+                    },
+                    {
+                        "name": "Beaters 7",
+                        "hosted_item": "beaters7",
+                        "access_rules": ["$card_rule|beaters7"],
+                        "visibility_rules": ["$card_visibility|beaters7"],
+                    },
+                    {
+                        "name": "Beaters 8",
+                        "hosted_item": "beaters8",
+                        "access_rules": ["$card_rule|beaters8"],
+                        "visibility_rules": ["$card_visibility|beaters8"],
+                    },
+                    {
+                        "name": "Beaters 9",
+                        "hosted_item": "beaters9",
+                        "access_rules": ["$card_rule|beaters9"],
+                        "visibility_rules": ["$card_visibility|beaters9"],
+                    },
+                    {
+                        "name": "Beaters 10",
+                        "hosted_item": "beaters10",
+                        "access_rules": ["$card_rule|beaters10"],
+                        "visibility_rules": ["$card_visibility|beaters10"],
+                    },
+                    {
+                        "name": "Beaters 11",
+                        "hosted_item": "beaters11",
+                        "access_rules": ["$card_rule|beaters11"],
+                        "visibility_rules": ["$card_visibility|beaters11"],
+                    },
+                    {
+                        "name": "Beaters 12",
+                        "hosted_item": "beaters12",
+                        "access_rules": ["$card_rule|beaters12"],
+                        "visibility_rules": ["$card_visibility|beaters12"],
+                    },
+                    {
+                        "name": "Beaters 13",
+                        "hosted_item": "beaters13",
+                        "access_rules": ["$card_rule|beaters13"],
+                        "visibility_rules": ["$card_visibility|beaters13"],
+                    },
+                    {
+                        "name": "Beaters 14",
+                        "hosted_item": "beaters14",
+                        "access_rules": ["$card_rule|beaters14"],
+                        "visibility_rules": ["$card_visibility|beaters14"],
+                    },
+                    {
+                        "name": "Beaters 15",
+                        "hosted_item": "beaters15",
+                        "access_rules": ["$card_rule|beaters15"],
+                        "visibility_rules": ["$card_visibility|beaters15"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 10,
+                        "y": 85
+                    }
+                ]
+            },
+            {
+                "name": "Monster Removal",
+                "sections": [
+                    {
+                        "name": "Monster Removal 1",
+                        "hosted_item": "monsterremoval1",
+                        "access_rules": ["$card_rule|monsterremoval1"],
+                        "visibility_rules": ["$card_visibility|monsterremoval1"],
+                    },
+                    {
+                        "name": "Monster Removal 2",
+                        "hosted_item": "monsterremoval2",
+                        "access_rules": ["$card_rule|monsterremoval2"],
+                        "visibility_rules": ["$card_visibility|monsterremoval2"],
+                    },
+                    {
+                        "name": "Monster Removal 3",
+                        "hosted_item": "monsterremoval3",
+                        "access_rules": ["$card_rule|monsterremoval3"],
+                        "visibility_rules": ["$card_visibility|monsterremoval3"],
+                    },
+                    {
+                        "name": "Monster Removal 4",
+                        "hosted_item": "monsterremoval4",
+                        "access_rules": ["$card_rule|monsterremoval4"],
+                        "visibility_rules": ["$card_visibility|monsterremoval4"],
+                    },
+                    {
+                        "name": "Monster Removal 5",
+                        "hosted_item": "monsterremoval5",
+                        "access_rules": ["$card_rule|monsterremoval5"],
+                        "visibility_rules": ["$card_visibility|monsterremoval5"],
+                    },
+                    {
+                        "name": "Monster Removal 6",
+                        "hosted_item": "monsterremoval6",
+                        "access_rules": ["$card_rule|monsterremoval6"],
+                        "visibility_rules": ["$card_visibility|monsterremoval6"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 25,
+                        "y": 85
+                    }
+                ]
+            },
+            {
+                "name": "Backrow Removal",
+                "sections": [
+                    {
+                        "name": "Backrow Removal 1",
+                        "hosted_item": "backrowremoval1",
+                        "access_rules": ["$card_rule|backrowremoval1"],
+                        "visibility_rules": ["$card_visibility|backrowremoval1"],
+                    },
+                    {
+                        "name": "Backrow Removal 2",
+                        "hosted_item": "backrowremoval2",
+                        "access_rules": ["$card_rule|backrowremoval2"],
+                        "visibility_rules": ["$card_visibility|backrowremoval2"],
+                    },
+                    {
+                        "name": "Backrow Removal 3",
+                        "hosted_item": "backrowremoval3",
+                        "access_rules": ["$card_rule|backrowremoval3"],
+                        "visibility_rules": ["$card_visibility|backrowremoval3"],
+                    },
+                    {
+                        "name": "Backrow Removal 4",
+                        "hosted_item": "backrowremoval4",
+                        "access_rules": ["$card_rule|backrowremoval4"],
+                        "visibility_rules": ["$card_visibility|backrowremoval4"],
+                    },
+                    {
+                        "name": "Backrow Removal 5",
+                        "hosted_item": "backrowremoval5",
+                        "access_rules": ["$card_rule|backrowremoval5"],
+                        "visibility_rules": ["$card_visibility|backrowremoval5"],
+                    },
+                    {
+                        "name": "Backrow Removal 6",
+                        "hosted_item": "backrowremoval6",
+                        "access_rules": ["$card_rule|backrowremoval6"],
+                        "visibility_rules": ["$card_visibility|backrowremoval6"],
+                    },
+                ],
+                "map_locations": [
+                    {
+                        "map": "map2",
+                        "x": 40,
+                        "y": 85
+                    }
+                ]
+            },
         ]
     }
 ]

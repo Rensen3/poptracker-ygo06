@@ -25,6 +25,9 @@ function dump_table(o, depth)
 end
 
 function tableContains(table, element)
+    if table == nil then
+        return false
+    end
     for _, value in pairs(table) do
       if value == element then
         return true

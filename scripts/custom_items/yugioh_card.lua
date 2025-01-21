@@ -7,7 +7,6 @@ function YuGiOhCard:init(name, code, Cid)
     self.state = 0
     self.loop = true
     self.Cid = Cid
-    self.AcquiredCount = 0
     self.max_quantity = 3
     self.in_pack = {}
     self:Icon()
@@ -22,24 +21,8 @@ function YuGiOhCard:Icon()
     end
 end
 
-function YuGiOhCard:increment()
-    local target = self.AcquiredCount + 1
-    if target > self.max_quantity then
-        target = 0
-    end
-    self:changeAcquiredCount(target)
-end
-
-function YuGiOhCard:decrement()
-    local target = self.AcquiredCount - 1
-    if target < 0 then
-        target = self.max_quantity
-    end
-    self:changeAcquiredCount(target)
-end
-
 function YuGiOhCard:setActive(active)
-    self:setProperty("active",active)
+    self:propertyChanged("active",active)
 end
 
 function YuGiOhCard:getActive()
@@ -67,18 +50,12 @@ function YuGiOhCard:setInPack(value)
     self.in_pack = value
 end
 
-function YuGiOhCard:changeAcquiredCount(count)
-    self:setProperty("AcquiredCount", count)
-end
-
 function YuGiOhCard:onLeftClick()
     if not self.Active then
         self:setActive(true)
         for _, card in ipairs(find_card(self.Cid)) do
             card:setActive(true)
         end
-    else
-        self:increment()
     end
 end
 
@@ -108,37 +85,33 @@ end
 function YuGiOhCard:save()
     local saveData = {}
     saveData["active"] = self.Active
-    saveData["AcquiredCount"] = self.AcquiredCount
+    saveData["Cid"] = self.Cid
     return saveData
 end
 
 function YuGiOhCard:load(data)
     if data["active"] ~= nil then
-        self:setProperty("active",data["active"])
+        self:propertyChanged("active",data["active"])
     end
-    if data["AcquiredCount"] ~= nil then
-        self:setProperty("AcquiredCount",data["AcquiredCount"])
+    if data["Cid"] ~= nil then
+        self:propertyChanged("Cid",data["Cid"])
     end
     return true
 end
 
 function YuGiOhCard:propertyChanged(key, value)
-    print(string.format("Yugioh card key %s with value %s",key,value))
+    -- print(string.format("Yugioh card key %s with value %s",key,value))
     if key == "active" then
         self.Active = value
-        self:Icon()
-    end
-    if key == "AcquiredCount" then
-        self.AcquiredCount = value
+    --    self:Icon()
     end
     if key == "CId" then
         self.Cid = value
-        self.Icon()
+    --    self.Icon()
     end
 end
 
 function YuGiOhCard:reset()
     self:propertyChanged("active", false)
-    self:propertyChanged("AcquiredCount", 0)
     self.in_pack = {}
 end
