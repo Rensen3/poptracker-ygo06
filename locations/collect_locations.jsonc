@@ -8,7 +8,7 @@
           {
             "name":"Obtain Cards",
             "access_rules": [
-              "finalcountdown"
+              "[finalcountdown]"
             ],
           },
           {
@@ -31,7 +31,7 @@
           {
             "name":"Obtain Cards",
             "access_rules": [
-              "victoryd"
+              "[victoryd]"
             ],
           },
           {
@@ -54,7 +54,7 @@
           {
             "name":"Obtain Cards",
             "access_rules": [
-              "ojamadeltahurricane, ojamagreen, ojamayellow, ojamablack"
+              "[ojamadeltahurricane], [ojamagreen], [ojamayellow], [ojamablack]"
             ],
           },
           {
@@ -93,7 +93,7 @@
             "name": "Obtain Cards",
             "item_count": 1,
             "access_rules": [
-              "hamon"
+              "[hamon]"
             ],
           },
           {
@@ -117,7 +117,7 @@
             "name": "Obtain Cards",
             "item_count": 1,
             "access_rules": [
-              "raviel"
+              "[raviel]"
             ],
           },
           {
@@ -141,7 +141,7 @@
             "name": "Obtain Cards",
             "item_count": 1,
             "access_rules": [
-              "uria"
+              "[uria]"
             ],
           },
           {
@@ -165,7 +165,7 @@
             "name": "Obtain Cards",
             "item_count": 1,
             "access_rules": [
-              "hugerevolution, oppressedpeople, unitedresistance, peoplerunningabout"
+              "[hugerevolution], [oppressedpeople], [unitedresistance], [peoplerunningabout]"
             ]
           },
           {
@@ -204,7 +204,7 @@
             "name": "Obtain Cards",
             "item_count": 1,
             "access_rules": [
-              "perfectlyultimategreatmoth, petitmoth, cocoonofevolution"
+              "[perfectlyultimategreatmoth], [petitmoth], [cocoonofevolution]"
             ]
           },
           {
@@ -238,7 +238,7 @@
             "name": "Obtain Cards",
             "item_count": 1,
             "access_rules": [
-              "valkyrionthemagnawarrior, alphathemagnetwarrior, betathemagnetwarrior, gammathemagnetwarrior"
+              "[valkyrionthemagnawarrior], [alphathemagnetwarrior], [betathemagnetwarrior], [gammathemagnetwarrior]"
             ]
           },
           {
@@ -277,7 +277,7 @@
             "name": "Obtain Cards",
             "item_count": 1,
             "access_rules": [
-              "darksage, darkmagician, timewizard"
+              "[darksage], [darkmagician], [timewizard]"
             ]
           },
           {
@@ -311,7 +311,7 @@
             "name": "Obtain Cards",
             "item_count": 1,
             "access_rules": [
-              "destinyboard, spiritmessagei, spiritmessagen, spiritmessagea, spiritmessagel"
+              "[destinyboard], [spiritmessagei], [spiritmessagen], [spiritmessagea], [spiritmessagel]"
             ]
           },
           {
@@ -355,7 +355,7 @@
             "name": "Obtain Cards",
             "item_count": 1,
             "access_rules": [
-              "x-headcannon, y-dragonhead, z-metaltank, xy-dragoncannon, xz-tankcannon, yz-tankdragon, xyz-dragoncannon"
+              "[x-headcannon], [y-dragonhead], [z-metaltank], [xy-dragoncannon], [xz-tankcannon], [yz-tankdragon], [xyz-dragoncannon]"
             ]
           },
           {
@@ -409,7 +409,7 @@
             "name": "Obtain Cards",
             "item_count": 1,
             "access_rules": [
-              "x-headcannon, y-dragonhead, z-metaltank, xyz-dragoncannon, v-tigerjet, w-wingcatapult, vw-tigercatapult, vwxyz-dragoncatapultcannon"
+              "[x-headcannon], [y-dragonhead], [z-metaltank], [xyz-dragoncannon], [v-tigerjet], [w-wingcatapult], [vw-tigercatapult], [vwxyz-dragoncatapultcannon]"
             ]
           },
           {
@@ -468,7 +468,7 @@
             "name": "Obtain Cards",
             "item_count": 1,
             "access_rules": [
-              "gateguardian, kazejin, suijin, sangaofthethunder"
+              "[gateguardian], [kazejin], [suijin], [sangaofthethunder]"
             ]
           },
           {
@@ -507,7 +507,7 @@
             "name": "Obtain Cards",
             "item_count": 1,
             "access_rules": [
-              "darkscorpioncombination, donzaloog, darkscorpion-chicktheyellow, darkscorpion-meanaethethorn, darkscorpion-gorgthestrong, cliffthetrapremover"
+              "[darkscorpioncombination], [donzaloog], [darkscorpion-chicktheyellow], [darkscorpion-meanaethethorn], [darkscorpion-gorgthestrong], [cliffthetrapremover]"
             ]
           },
           {
@@ -556,7 +556,7 @@
             "name": "Obtain Cards",
             "item_count": 1,
             "access_rules": [
-              "exodiatheforbiddenone, leftarmoftheforbiddenone, rightarmoftheforbiddenone, leftlegoftheforbiddenone, rightlegoftheforbiddenone"
+              "[exodiatheforbiddenone], [leftarmoftheforbiddenone], [rightarmoftheforbiddenone], [leftlegoftheforbiddenone], [rightlegoftheforbiddenone]"
             ]
           },
           {

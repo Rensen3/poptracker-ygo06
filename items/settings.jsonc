@@ -61,5 +61,9 @@
         "overlay_background": "#000000",
         "min_quantity": 0,
         "max_quantity": 91
+    },
+    {
+        "name": "update", "type": "toggle",
+        "codes": "update"
     }
 ]

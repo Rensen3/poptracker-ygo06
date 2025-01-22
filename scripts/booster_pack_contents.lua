@@ -1,3 +1,5 @@
+CURRENT_BOOSTERE_PACK_CONTENTS = {}
+
 BOOSTERPACK_CONTENTS = {
        ["legendofb.e.w.d."] = {
               2,

@@ -2,6 +2,7 @@ YuGiOhCard = class(CustomItemYuGiOhCard)
 
 function YuGiOhCard:init(name, code, Cid)
     self:createItem(name)
+    self.name = name
     self.code = code
     self.Active = false
     self.state = 0
@@ -22,7 +23,9 @@ function YuGiOhCard:Icon()
 end
 
 function YuGiOhCard:setActive(active)
-    self:propertyChanged("active",active)
+    if self.Active ~= active then
+        self:propertyChanged("active", active)
+    end
 end
 
 function YuGiOhCard:getActive()
@@ -50,7 +53,16 @@ function YuGiOhCard:setInPack(value)
     self.in_pack = value
 end
 
+function YuGiOhCard:getName()
+    return self.name
+end
+
+function YuGiOhCard:getCode()
+    return self.code
+end
+
 function YuGiOhCard:onLeftClick()
+    print("Invoke Rightclick on: "..self.Cid)
     if not self.Active then
         self:setActive(true)
         for _, card in ipairs(find_card(self.Cid)) do
@@ -60,11 +72,25 @@ function YuGiOhCard:onLeftClick()
 end
 
 function YuGiOhCard:onRightClick()
+    print("Invoke Rightclick on: "..self.Cid)
     self:setActive(not self.Active)
     for _, card in ipairs(find_card(self.Cid)) do
         card:setActive(self.Active)
     end
 end
+
+function YuGiOhCard:onMiddleClick()
+    print("Invoke Middleclick on: "..self.Cid)
+    for _, pack in ipairs(CURRENT_BOOSTERE_PACK_CONTENTS) do
+        local packItem = Tracker:FindObjectForCode(pack)
+        if tableContains(pack, self.Cid) then
+            packItem:SetOverlay("<--")
+        else
+            packItem:SetOverlay("")
+        end
+    end
+end
+
 
 function YuGiOhCard:canProvideCode(code)
     if code == self.code then
@@ -103,15 +129,15 @@ function YuGiOhCard:propertyChanged(key, value)
     -- print(string.format("Yugioh card key %s with value %s",key,value))
     if key == "active" then
         self.Active = value
-    --    self:Icon()
+        self:Icon()
     end
     if key == "CId" then
         self.Cid = value
-    --    self.Icon()
+        self.Icon()
     end
 end
 
 function YuGiOhCard:reset()
-    self:propertyChanged("active", false)
     self.in_pack = {}
+    self:propertyChanged("active", false)
 end

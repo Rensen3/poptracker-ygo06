@@ -79,7 +79,7 @@ function challenge_visibility(challenge)
     return not tableContains(REMOVED_CHALLENGES, challenge)
 end
 
-function diffuculty_level(level)
+function difficulty_level(level)
     level = tonumber(level)
     return level >= Difficulty_Beaters and level >= Difficulty_Monster_Removal and level >= Difficulty_Backrow_Removal
 end

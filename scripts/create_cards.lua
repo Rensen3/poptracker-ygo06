@@ -196,18 +196,26 @@ card_locations = {
     ["Beaters 13"] = {"beaters13", 12},
     ["Beaters 14"] = {"beaters14", 13},
     ["Beaters 15"] = {"beaters15", 14},
-    ["Monster Removal 1"] = {"monsterremoval1", 15},
-    ["Monster Removal 2"] = {"monsterremoval2", 16},
-    ["Monster Removal 3"] = {"monsterremoval3", 17},
-    ["Monster Removal 4"] = {"monsterremoval4", 18},
-    ["Monster Removal 5"] = {"monsterremoval5", 19},
-    ["Monster Removal 6"] = {"monsterremoval6", 20},
-    ["Backrow Removal 1"] = {"backrowremoval1", 21},
-    ["Backrow Removal 2"] = {"backrowremoval2", 22},
-    ["Backrow Removal 3"] = {"backrowremoval3", 23},
-    ["Backrow Removal 4"] = {"backrowremoval4", 24},
-    ["Backrow Removal 5"] = {"backrowremoval5", 25},
-    ["Backrow Removal 6"] = {"backrowremoval6", 26},
+    ["Monster Removal 1"] = {"monsterremoval1", 0},
+    ["Monster Removal 2"] = {"monsterremoval2", 1},
+    ["Monster Removal 3"] = {"monsterremoval3", 2},
+    ["Monster Removal 4"] = {"monsterremoval4", 3},
+    ["Monster Removal 5"] = {"monsterremoval5", 4},
+    ["Monster Removal 6"] = {"monsterremoval6", 5},
+    ["Monster Removal 7"] = {"monsterremoval7", 6},
+    ["Monster Removal 8"] = {"monsterremoval8", 7},
+    ["Monster Removal 9"] = {"monsterremoval9", 8},
+    ["Monster Removal 10"] = {"monsterremoval10", 9},
+    ["Backrow Removal 1"] = {"backrowremoval1", 11},
+    ["Backrow Removal 2"] = {"backrowremoval2", 12},
+    ["Backrow Removal 3"] = {"backrowremoval3", 13},
+    ["Backrow Removal 4"] = {"backrowremoval4", 14},
+    ["Backrow Removal 5"] = {"backrowremoval5", 15},
+    ["Backrow Removal 6"] = {"backrowremoval6", 16},
+    ["Backrow Removal 7"] = {"backrowremoval7", 17},
+    ["Backrow Removal 8"] = {"backrowremoval8", 18},
+    ["Backrow Removal 9"] = {"backrowremoval9", 19},
+    ["Backrow Removal 10"] = {"backrowremoval10", 20},
     ["LD01 1"] = {"ld01allexceptlevel4forbidden1", 0},
     ["LD01 2"] = {"ld01allexceptlevel4forbidden2", 1},
     ["LD01 3"] = {"ld01allexceptlevel4forbidden3", 2},
@@ -545,6 +553,12 @@ card_locations = {
     ["TD17 10"] = {"td1710xquickspell10", 109},
     ["TD17 11"] = {"td1710xquickspell11", 110},
     ["TD17 12"] = {"td1710xquickspell12", 111},
+    ["TD18 1"] = {"td18theforbidden1", 0},
+    ["TD18 2"] = {"td18theforbidden2", 1},
+    ["TD18 3"] = {"td18theforbidden3", 2},
+    ["TD18 4"] = {"td18theforbidden4", 3},
+    ["TD18 5"] = {"td18theforbidden5", 4},
+    ["TD18 6"] = {"td18theforbidden6", 5},
     ["TD19 1"] = {"td1920turns1", 112},
     ["TD19 2"] = {"td1920turns2", 113},
     ["TD19 3"] = {"td1920turns3", 114},
@@ -592,6 +606,11 @@ card_locations = {
     ["TD25 4"] = {"td25mothgrowsup4", 156},
     ["TD25 5"] = {"td25mothgrowsup5", 157},
     ["TD25 6"] = {"td25mothgrowsup6", 158},
+    ["TD26 1"] = {"td26magneticpower1", 6},
+    ["TD26 2"] = {"td26magneticpower2", 7},
+    ["TD26 3"] = {"td26magneticpower3", 8},
+    ["TD26 4"] = {"td26magneticpower4", 9},
+    ["TD26 5"] = {"td26magneticpower5", 10},
     ["TD27 1"] = {"td27darksage1", 159},
     ["TD27 2"] = {"td27darksage2", 160},
     ["TD27 3"] = {"td27darksage3", 161},
@@ -699,6 +718,7 @@ card_locations = {
     ["TD44 10"] = {"td44fusionsummon10", 263},
     ["TD44 11"] = {"td44fusionsummon11", 264},
     ["TD44 12"] = {"td44fusionsummon12", 265},
+    ["TD44 13"] = {"td44fusionsummon13", 265},
     ["TD45 1"] = {"td45bigdamageatonce1", 266},
     ["TD45 2"] = {"td45bigdamageatonce2", 267},
     ["TD45 3"] = {"td45bigdamageatonce3", 268},
@@ -749,7 +769,7 @@ function create_cards()
     for name, content in pairs(card_locations) do
         code = content[1]
         cid = content[2]
-        card_items[code] = YuGiOhCard(name, code, cid)
+        table.insert(card_items, YuGiOhCard(name, code, cid))
     end
 end
 
@@ -764,5 +784,10 @@ function find_card(cid)
 end
 
 function find_card_by_code(code)
-    return card_items[code]
+    for _, card in ipairs(card_items) do
+        if card.code == code then
+            return card
+        end
+    end
+    return nil
 end

@@ -313,7 +313,7 @@
                         "name": "Beat Challenge",
                         "item_count": 1,
                         "access_rules": [
-                             "ld07largedeckaunlock, [$diffuculty_level|2]"
+                             "ld07largedeckaunlock, [$difficulty_level|2]"
                          ],
 
                     },
@@ -339,7 +339,7 @@
                         "name": "Beat Challenge",
                         "item_count": 1,
                         "access_rules": [
-                             "ld08largedeckbunlock, [$diffuculty_level|2]"
+                             "ld08largedeckbunlock, [$difficulty_level|2]"
                          ],
 
                     },
@@ -631,7 +631,7 @@
                         "name": "Beat Challenge",
                         "item_count": 1,
                         "access_rules": [
-                             "ld13allexceptmonstersforbiddenunlock, [$diffuculty_level|2]"
+                             "ld13allexceptmonstersforbiddenunlock, [$difficulty_level|2]"
                          ],
 
                     },
@@ -1339,7 +1339,7 @@
                         "name": "Beat Challenge",
                         "item_count": 1,
                         "access_rules": [
-                             "ld22alllimitedcardsforbiddenunlock, [$diffuculty_level|2]"
+                             "ld22alllimitedcardsforbiddenunlock, [$difficulty_level|2]"
                          ],
 
                     },
@@ -1365,7 +1365,7 @@
                         "name": "Beat Challenge",
                         "item_count": 1,
                         "access_rules": [
-                             "ld23refertomar05banlistunlock, [$diffuculty_level|3]"
+                             "ld23refertomar05banlistunlock, [$difficulty_level|3]"
                          ],
 
                     },
@@ -1391,7 +1391,7 @@
                         "name": "Beat Challenge",
                         "item_count": 1,
                         "access_rules": [
-                             "ld24refertosept04banlistunlock, [$diffuculty_level|3]"
+                             "ld24refertosept04banlistunlock, [$difficulty_level|3]"
                          ],
 
                     },
@@ -1417,7 +1417,7 @@
                         "name": "Beat Challenge",
                         "item_count": 1,
                         "access_rules": [
-                             "ld25lowlifepointsunlock, , [$diffuculty_level|2]"
+                             "ld25lowlifepointsunlock, , [$difficulty_level|2]"
                          ],
 
                     },
@@ -1875,7 +1875,7 @@
                         "name": "Beat Challenge",
                         "item_count": 1,
                         "access_rules": [
-                             "ld32deckswithmultiplesforbiddenunlock, [$diffuculty_level|2]"
+                             "ld32deckswithmultiplesforbiddenunlock, [$difficulty_level|2]"
                          ],
 
                     },
@@ -1901,7 +1901,7 @@
                         "name": "Beat Challenge",
                         "item_count": 1,
                         "access_rules": [
-                             "ld33specialsummonsforbiddenunlock, [$diffuculty_level|3]"
+                             "ld33specialsummonsforbiddenunlock, [$difficulty_level|3]"
                          ],
 
                     },
@@ -2347,7 +2347,7 @@
                         "name": "Beat Challenge",
                         "item_count": 1,
                         "access_rules": [
-                             "ld40refertosept05banlistunlock, [$diffuculty_level|3]"
+                             "ld40refertosept05banlistunlock, [$difficulty_level|3]"
                          ],
 
                     },
@@ -2373,7 +2373,7 @@
                         "name": "Beat Challenge",
                         "item_count": 1,
                         "access_rules": [
-                             "ld41refertosept03banlistunlock, [$diffuculty_level|3]"
+                             "ld41refertosept03banlistunlock, [$difficulty_level|3]"
                          ],
 
                     },
@@ -3522,6 +3522,42 @@
                         "hosted_item": "td18theforbiddenunlock",
                         "access_rules": ["td18theforbiddenunlock"]
                     },
+                    {
+                        "name": "TD18 1",
+                        "hosted_item": "td18theforbidden1",
+                        "access_rules": ["$card_rule|td18theforbidden1"],
+                        "visibility_rules": ["$card_visibility|td18theforbidden1"],
+                    },
+                    {
+                        "name": "TD18 2",
+                        "hosted_item": "td18theforbidden2",
+                        "access_rules": ["$card_rule|td18theforbidden2"],
+                        "visibility_rules": ["$card_visibility|td18theforbidden2"],
+                    },
+                    {
+                        "name": "TD18 3",
+                        "hosted_item": "td18theforbidden3",
+                        "access_rules": ["$card_rule|td18theforbidden3"],
+                        "visibility_rules": ["$card_visibility|td18theforbidden3"],
+                    },
+                    {
+                        "name": "TD18 4",
+                        "hosted_item": "td18theforbidden4",
+                        "access_rules": ["$card_rule|td18theforbidden4"],
+                        "visibility_rules": ["$card_visibility|td18theforbidden4"],
+                    },
+                    {
+                        "name": "TD18 5",
+                        "hosted_item": "td18theforbidden5",
+                        "access_rules": ["$card_rule|td18theforbidden5"],
+                        "visibility_rules": ["$card_visibility|td18theforbidden5"],
+                    },
+                    {
+                        "name": "TD18 6",
+                        "hosted_item": "td18theforbidden6",
+                        "access_rules": ["$card_rule|td18theforbidden6"],
+                        "visibility_rules": ["$card_visibility|td18theforbidden6"],
+                    },
                 ],
                 "visibility_rules": ["$challenge_visibility|TD18 The Forbidden"],
                 "map_locations": [
@@ -3539,7 +3575,7 @@
                         "name": "Beat Challenge",
                         "item_count": 1,
                         "access_rules": [
-                             "[td1920turns1], [td1920turns2], [td1920turns3], [td1920turns4], [td1920turns5], td1920turnsunlock"
+                             "[td1920turns1], [td1920turns2], [td1920turns3], [td1920turns4], [td1920turns5], [finalcountdown], td1920turnsunlock"
                          ],
 
                     },
@@ -3577,6 +3613,11 @@
                         "hosted_item": "td1920turns5",
                         "access_rules": ["$card_rule|td1920turns5"],
                         "visibility_rules": ["$card_visibility|td1920turns5"],
+                    },
+                    {
+                        "name": "Final Countdown",
+                        "hosted_item": "finalcountdown",
+                        "access_rules": ["$card_rule|finalcountdown"],
                     },
                 ],
                 "visibility_rules": ["$challenge_visibility|TD19 20 Turns"],
@@ -3645,7 +3686,7 @@
                 ]
             },
             {
-                "name": "TD21 Victory D",
+                "name": "TD21 Victory D.",
                 "sections": [
                     {
                         "name": "Beat Challenge",
@@ -3997,6 +4038,62 @@
                 ]
             },
             {
+                "name": "TD26 Magnetic Power",
+                "sections": [
+                    {
+                        "name": "Beat Challenge",
+                        "item_count": 1,
+                        "access_rules": [
+                             "[td26magneticpower1], [td26magneticpower2], [td26magneticpower3], [td26magneticpower4], [td26magneticpower5], td26magneticpowerunlock"
+                         ],
+
+                    },
+                    {
+                        "name": "TD26 Magnetic Power Unlock",
+                        "hosted_item": "td26magneticpowerunlock",
+                        "access_rules": ["td26magneticpowerunlock"]
+                    },
+                    {
+                        "name": "TD26 1",
+                        "hosted_item": "td26magneticpower1",
+                        "access_rules": ["$card_rule|td26magneticpower1"],
+                        "visibility_rules": ["$card_visibility|td26magneticpower1"],
+                    },
+                    {
+                        "name": "TD26 2",
+                        "hosted_item": "td26magneticpower2",
+                        "access_rules": ["$card_rule|td26magneticpower2"],
+                        "visibility_rules": ["$card_visibility|td26magneticpower2"],
+                    },
+                    {
+                        "name": "TD26 3",
+                        "hosted_item": "td26magneticpower3",
+                        "access_rules": ["$card_rule|td26magneticpower3"],
+                        "visibility_rules": ["$card_visibility|td26magneticpower3"],
+                    },
+                    {
+                        "name": "TD26 4",
+                        "hosted_item": "td26magneticpower4",
+                        "access_rules": ["$card_rule|td26magneticpower4"],
+                        "visibility_rules": ["$card_visibility|td26magneticpower4"],
+                    },
+                    {
+                        "name": "TD26 5",
+                        "hosted_item": "td26magneticpower5",
+                        "access_rules": ["$card_rule|td26magneticpower5"],
+                        "visibility_rules": ["$card_visibility|td26magneticpower5"],
+                    },
+                ],
+                "visibility_rules": ["$challenge_visibility|TD26 Magnetic Power"],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 25,
+                        "y": 105
+                    }
+                ]
+            },
+            {
                 "name": "TD27 Dark Sage",
                 "sections": [
                     {
@@ -4047,7 +4144,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 25,
+                        "x": 40,
                         "y": 105
                     }
                 ]
@@ -4073,7 +4170,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 40,
+                        "x": 55,
                         "y": 105
                     }
                 ]
@@ -4099,7 +4196,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 55,
+                        "x": 70,
                         "y": 105
                     }
                 ]
@@ -4155,7 +4252,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 70,
+                        "x": 85,
                         "y": 105
                     }
                 ]
@@ -4229,7 +4326,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 85,
+                        "x": 100,
                         "y": 105
                     }
                 ]
@@ -4291,7 +4388,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 100,
+                        "x": 115,
                         "y": 105
                     }
                 ]
@@ -4377,7 +4474,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 115,
+                        "x": 130,
                         "y": 105
                     }
                 ]
@@ -4463,7 +4560,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 130,
+                        "x": 145,
                         "y": 105
                     }
                 ]
@@ -4507,7 +4604,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 145,
+                        "x": 160,
                         "y": 105
                     }
                 ]
@@ -4593,7 +4690,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 160,
+                        "x": 175,
                         "y": 105
                     }
                 ]
@@ -4649,8 +4746,8 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 175,
-                        "y": 105
+                        "x": 10,
+                        "y": 120
                     }
                 ]
             },
@@ -4735,7 +4832,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 10,
+                        "x": 25,
                         "y": 120
                     }
                 ]
@@ -4803,7 +4900,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 25,
+                        "x": 40,
                         "y": 120
                     }
                 ]
@@ -4859,7 +4956,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 40,
+                        "x": 55,
                         "y": 120
                     }
                 ]
@@ -4921,7 +5018,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 55,
+                        "x": 70,
                         "y": 120
                     }
                 ]
@@ -4947,7 +5044,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 70,
+                        "x": 85,
                         "y": 120
                     }
                 ]
@@ -5003,7 +5100,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 85,
+                        "x": 100,
                         "y": 120
                     }
                 ]
@@ -5096,12 +5193,18 @@
                         "access_rules": ["$card_rule|td44fusionsummon12"],
                         "visibility_rules": ["$card_visibility|td44fusionsummon12"],
                     },
+                    {
+                        "name": "TD44 13",
+                        "hosted_item": "td44fusionsummon13",
+                        "access_rules": ["$card_rule|td44fusionsummon13"],
+                        "visibility_rules": ["$card_visibility|td44fusionsummon13"],
+                    },
                 ],
                 "visibility_rules": ["$challenge_visibility|TD44 Fusion Summon"],
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 100,
+                        "x": 115,
                         "y": 120
                     }
                 ]
@@ -5157,7 +5260,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 115,
+                        "x": 130,
                         "y": 120
                     }
                 ]
@@ -5237,7 +5340,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 130,
+                        "x": 145,
                         "y": 120
                     }
                 ]
@@ -5293,7 +5396,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 145,
+                        "x": 160,
                         "y": 120
                     }
                 ]
@@ -5361,7 +5464,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 160,
+                        "x": 175,
                         "y": 120
                     }
                 ]
@@ -5435,8 +5538,8 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 175,
-                        "y": 120
+                        "x": 10,
+                        "y": 135
                     }
                 ]
             },
@@ -5509,12 +5612,11 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 10,
+                        "x": 25,
                         "y": 135
                     }
                 ]
             },
-
         ]
     }
 ]

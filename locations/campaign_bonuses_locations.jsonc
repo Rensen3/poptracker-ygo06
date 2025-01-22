@@ -75,7 +75,7 @@
                         "name": "Attack with over 3000 ATK",
                         "item_count": 1,
                         "access_rules": [
-                             "maxatkbonus1, maxatkbonus2, maxatkbonus3, maxatkbonus4, maxatkbonus5"
+                             "[maxatkbonus1], [maxatkbonus2], [maxatkbonus3], [maxatkbonus4], [maxatkbonus5]"
                          ],
                     },
                     {
@@ -124,7 +124,7 @@
                         "name": "Deal over 4000 at once",
                         "item_count": 1,
                         "access_rules": [
-                             "maxdamagebonus1, maxdamagebonus2, maxdamagebonus3, maxdamagebonus4, maxdamagebonus5"
+                             "[maxdamagebonus1], [maxdamagebonus2], [maxdamagebonus3], [maxdamagebonus4], [maxdamagebonus5]"
                          ],
                     },
                     {
@@ -173,7 +173,7 @@
                         "name": "Bonus",
                         "item_count": 1,
                         "access_rules": [
-                             "tributesummonbonus1, tributesummonbonus2, tributesummonbonus3, tributesummonbonus4, tributesummonbonus5"
+                             "[tributesummonbonus1], [tributesummonbonus2], [tributesummonbonus3], [tributesummonbonus4], [tributesummonbonus5]"
                          ],
                     },
                     {
@@ -222,7 +222,7 @@
                         "name": "Bonus",
                         "item_count": 1,
                         "access_rules": [
-                             "fusionsummonbonus1, fusionsummonbonus2, fusionsummonbonus3, fusionsummonbonus4, fusionsummonbonus5, fusionsummonbonus6, fusionsummonbonus7, fusionsummonbonus8, fusionsummonbonus9, fusionsummonbonus10, fusionsummonbonus11, fusionsummonbonus12"
+                             "[fusionsummonbonus1], [fusionsummonbonus2], [fusionsummonbonus3], [fusionsummonbonus4], [fusionsummonbonus5], [fusionsummonbonus6], [fusionsummonbonus7], [fusionsummonbonus8], [fusionsummonbonus9], [fusionsummonbonus10], [fusionsummonbonus11], [fusionsummonbonus12]"
                          ],
                     },
                     {
@@ -313,7 +313,7 @@
                         "name": "Bonus",
                         "item_count": 1,
                         "access_rules": [
-                             "ritualsummonbonus1, ritualsummonbonus2, ritualsummonbonus3, ritualsummonbonus4, ritualsummonbonus5"
+                             "[ritualsummonbonus1], [ritualsummonbonus2], [ritualsummonbonus3], [ritualsummonbonus4], [ritualsummonbonus5]"
                          ],
                     },
                     {
@@ -362,7 +362,7 @@
                         "name": "Bonus",
                         "item_count": 1,
                         "access_rules": [
-                             "nospellcardsbonus1, nospellcardsbonus2, nospellcardsbonus3, nospellcardsbonus4, nospellcardsbonus5"
+                             "[nospellcardsbonus1], [nospellcardsbonus2], [nospellcardsbonus3], [nospellcardsbonus4], [nospellcardsbonus5]"
                          ],
                     },
                     {
@@ -411,7 +411,7 @@
                         "name": "Bonus",
                         "item_count": 1,
                         "access_rules": [
-                             "notrapcardsbonus1, notrapcardsbonus2, notrapcardsbonus3, notrapcardsbonus4, notrapcardsbonus5"
+                             "[notrapcardsbonus1], [notrapcardsbonus2], [notrapcardsbonus3], [notrapcardsbonus4], [notrapcardsbonus5]"
                          ],
                     },
                     {
@@ -460,7 +460,7 @@
                         "name": "Bonus",
                         "item_count": 1,
                         "access_rules": [
-                             "over20000lpbonus1, over20000lpbonus2, over20000lpbonus3, over20000lpbonus4, over20000lpbonus5, over20000lpbonus6, over20000lpbonus7, over20000lpbonus8, over20000lpbonus9"
+                             "[over20000lpbonus1], [over20000lpbonus2], [over20000lpbonus3], [over20000lpbonus4], [over20000lpbonus5], [over20000lpbonus6], [over20000lpbonus7], [over20000lpbonus8], [over20000lpbonus9]"
                          ],
                     },
                     {
@@ -533,7 +533,7 @@
                         "name": "500LP or less",
                         "item_count": 1,
                         "access_rules": [
-                             "lowlpbonus1, lowlpbonus2, lowlpbonus3, lowlpbonus4, lowlpbonus5"
+                             "[lowlpbonus1], [lowlpbonus2], [lowlpbonus3], [lowlpbonus4], [lowlpbonus5]"
                          ],
                     },
                     {
@@ -582,7 +582,7 @@
                         "name": "Less than 100LP",
                         "item_count": 1,
                         "access_rules": [
-                             "extremelylowlpbonus1, extremelylowlpbonus2, extremelylowlpbonus3, extremelylowlpbonus4, extremelylowlpbonus5"
+                             "[extremelylowlpbonus1], [extremelylowlpbonus2], [extremelylowlpbonus3], [extremelylowlpbonus4], [extremelylowlpbonus5]"
                          ],
                     },
                     {
@@ -631,7 +631,7 @@
                         "name": "5 or less Cards left",
                         "item_count": 1,
                         "access_rules": [
-                             "lowdeckbonus1, lowdeckbonus2, lowdeckbonus3, lowdeckbonus4, lowdeckbonus5"
+                             "[lowdeckbonus1], [lowdeckbonus2], [lowdeckbonus3], [lowdeckbonus4], [lowdeckbonus5]"
                          ],
                     },
                     {
@@ -680,7 +680,7 @@
                         "name": "Win with no cards in your deck",
                         "item_count": 1,
                         "access_rules": [
-                             "extremelylowdeckbonus1, extremelylowdeckbonus2, extremelylowdeckbonus3, extremelylowdeckbonus4, extremelylowdeckbonus5"
+                             "[extremelylowdeckbonus1], [extremelylowdeckbonus2], [extremelylowdeckbonus3], [extremelylowdeckbonus4], [extremelylowdeckbonus5]"
                          ],
                     },
                     {
@@ -729,7 +729,7 @@
                         "name": "Damage or alt win",
                         "item_count": 1,
                         "access_rules": [
-                             "effectdamageonlybonus1, effectdamageonlybonus2, effectdamageonlybonus3, effectdamageonlybonus4, effectdamageonlybonus5",
+                             "[effectdamageonlybonus1], [effectdamageonlybonus2], [effectdamageonlybonus3], [effectdamageonlybonus4], [effectdamageonlybonus5]",
                              "@Campaign Bonuses/Last Turn Finish Bonus/Bonus",
                              "@Campaign Bonuses/Destiny Board Finish Bonus/Bonus",
                              "@Campaign Bonuses/Exodia Finish Bonus/Bonus"
@@ -781,7 +781,7 @@
                         "name": "Win by deckout",
                         "item_count": 1,
                         "access_rules": [
-                             "nomorecardsbonus1, nomorecardsbonus2, nomorecardsbonus3, nomorecardsbonus4, nomorecardsbonus5"
+                             "[nomorecardsbonus1], [nomorecardsbonus2], [nomorecardsbonus3], [nomorecardsbonus4], [nomorecardsbonus5]"
                          ],
                     },
                     {
@@ -830,7 +830,7 @@
                         "name": "Bonus",
                         "item_count": 1,
                         "access_rules": [
-                             "opponentsturnfinishbonus1, opponentsturnfinishbonus2, opponentsturnfinishbonus3, opponentsturnfinishbonus4, opponentsturnfinishbonus5"
+                             "[opponentsturnfinishbonus1], [opponentsturnfinishbonus2], [opponentsturnfinishbonus3], [opponentsturnfinishbonus4], [opponentsturnfinishbonus5]"
                          ],
                     },
                     {
@@ -879,7 +879,7 @@
                         "name": "Bonus",
                         "item_count": 1,
                         "access_rules": [
-                             "exodiafinishbonus1, exodiafinishbonus2, exodiafinishbonus3, exodiafinishbonus4, exodiafinishbonus5, exodiafinishbonus6"
+                             "[exodiafinishbonus1], [exodiafinishbonus2], [exodiafinishbonus3], [exodiafinishbonus4], [exodiafinishbonus5], [exodiafinishbonus6]"
                          ],
                     },
                     {
@@ -934,7 +934,7 @@
                         "name": "Bonus",
                         "item_count": 1,
                         "access_rules": [
-                             "lastturnfinishbonus1, lastturnfinishbonus2, lastturnfinishbonus3, lastturnfinishbonus4, lastturnfinishbonus5"
+                             "[lastturnfinishbonus1], [lastturnfinishbonus2], [lastturnfinishbonus3], [lastturnfinishbonus4], [lastturnfinishbonus5]"
                          ],
                     },
                     {
@@ -983,7 +983,7 @@
                         "name": "Bonus",
                         "item_count": 1,
                         "access_rules": [
-                             "finalcountdownfinishbonus1, finalcountdownfinishbonus2, finalcountdownfinishbonus3, finalcountdownfinishbonus4, finalcountdownfinishbonus5"
+                             "[finalcountdownfinishbonus1], [finalcountdownfinishbonus2], [finalcountdownfinishbonus3], [finalcountdownfinishbonus4], [finalcountdownfinishbonus5]"
                          ],
                     },
                     {
@@ -1032,7 +1032,7 @@
                         "name": "Bonus",
                         "item_count": 1,
                         "access_rules": [
-                             "destinyboardfinishbonus1, destinyboardfinishbonus2, destinyboardfinishbonus3, destinyboardfinishbonus4, destinyboardfinishbonus5, destinyboardfinishbonus6, destinyboardfinishbonus7, destinyboardfinishbonus8, destinyboardfinishbonus9, destinyboardfinishbonus10"
+                             "[destinyboardfinishbonus1], [destinyboardfinishbonus2], [destinyboardfinishbonus3], [destinyboardfinishbonus4], [destinyboardfinishbonus5], [destinyboardfinishbonus6], [destinyboardfinishbonus7], [destinyboardfinishbonus8], [destinyboardfinishbonus9], [destinyboardfinishbonus10]"
                          ],
                     },
                     {
@@ -1111,8 +1111,8 @@
                         "name": "Yata-Lock",
                         "item_count": 1,
                         "access_rules": [
-                             "banlistseptember2003, yata-garasufinishbonus1, yata-garasufinishbonus2, yata-garasufinishbonus3, yata-garasufinishbonus4, yata-garasufinishbonus5",
-                             "nobanlist, yata-garasufinishbonus1, yata-garasufinishbonus2, yata-garasufinishbonus3, yata-garasufinishbonus4, yata-garasufinishbonus5"
+                             "banlistseptember2003, [yata-garasufinishbonus1], [yata-garasufinishbonus2], [yata-garasufinishbonus3], [yata-garasufinishbonus4], [yata-garasufinishbonus5]",
+                             "nobanlist, [yata-garasufinishbonus1], [yata-garasufinishbonus2], [yata-garasufinishbonus3], [yata-garasufinishbonus4], [yata-garasufinishbonus5]"
                          ],
                     },
                     {
@@ -1161,7 +1161,7 @@
                         "name": "Deal the final blow",
                         "item_count": 1,
                         "access_rules": [
-                             "skullservantfinishbonus1, skullservantfinishbonus2, skullservantfinishbonus3, skullservantfinishbonus4, skullservantfinishbonus5"
+                             "[skullservantfinishbonus1], [skullservantfinishbonus2], [skullservantfinishbonus3], [skullservantfinishbonus4], [skullservantfinishbonus5]"
                          ],
                     },
                     {
@@ -1210,7 +1210,7 @@
                         "name": "Win with 5730 LP",
                         "item_count": 1,
                         "access_rules": [
-                             "konamibonus1, konamibonus2, konamibonus3, konamibonus4, konamibonus5"
+                             "[konamibonus1], [konamibonus2], [konamibonus3], [konamibonus4], [konamibonus5]"
                          ],
                     },
                     {
@@ -1393,6 +1393,30 @@
                         "access_rules": ["$card_rule|monsterremoval6"],
                         "visibility_rules": ["$card_visibility|monsterremoval6"],
                     },
+                    {
+                        "name": "Monster Removal 7",
+                        "hosted_item": "monsterremoval7",
+                        "access_rules": ["$card_rule|monsterremoval7"],
+                        "visibility_rules": ["$card_visibility|monsterremoval7"],
+                    },
+                    {
+                        "name": "Monster Removal 8",
+                        "hosted_item": "monsterremoval8",
+                        "access_rules": ["$card_rule|monsterremoval8"],
+                        "visibility_rules": ["$card_visibility|monsterremoval8"],
+                    },
+                    {
+                        "name": "Monster Removal 9",
+                        "hosted_item": "monsterremoval9",
+                        "access_rules": ["$card_rule|monsterremoval9"],
+                        "visibility_rules": ["$card_visibility|monsterremoval9"],
+                    },
+                    {
+                        "name": "Monster Removal 10",
+                        "hosted_item": "monsterremoval10",
+                        "access_rules": ["$card_rule|monsterremoval10"],
+                        "visibility_rules": ["$card_visibility|monsterremoval10"],
+                    },
                 ],
                 "map_locations": [
                     {
@@ -1440,6 +1464,30 @@
                         "hosted_item": "backrowremoval6",
                         "access_rules": ["$card_rule|backrowremoval6"],
                         "visibility_rules": ["$card_visibility|backrowremoval6"],
+                    },
+                    {
+                        "name": "Back 7",
+                        "hosted_item": "backrowremoval7",
+                        "access_rules": ["$card_rule|backrowremoval7"],
+                        "visibility_rules": ["$card_visibility|backrowremoval7"],
+                    },
+                    {
+                        "name": "Back 8",
+                        "hosted_item": "backrowremoval8",
+                        "access_rules": ["$card_rule|backrowremoval8"],
+                        "visibility_rules": ["$card_visibility|backrowremoval8"],
+                    },
+                    {
+                        "name": "Back 9",
+                        "hosted_item": "backrowremoval9",
+                        "access_rules": ["$card_rule|backrowremoval9"],
+                        "visibility_rules": ["$card_visibility|backrowremoval9"],
+                    },
+                    {
+                        "name": "Back 10",
+                        "hosted_item": "backrowremoval10",
+                        "access_rules": ["$card_rule|backrowremoval10"],
+                        "visibility_rules": ["$card_visibility|backrowremoval10"],
                     },
                 ],
                 "map_locations": [

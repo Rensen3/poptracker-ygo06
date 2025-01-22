@@ -63,11 +63,11 @@ end
 
 function watch_pack2(code)
   local active = Tracker:FindObjectForCode(code).Active
-  if BOOSTERPACK_CONTENTS[code] ~= nil then
-    for _, content_card in pairs(BOOSTERPACK_CONTENTS[code]) do
+  if CURRENT_BOOSTERE_PACK_CONTENTS[code] ~= nil then
+    for _, content_card in ipairs(CURRENT_BOOSTERE_PACK_CONTENTS[code]) do
       local cards = find_card(content_card)
       if cards ~= nil then
-        for _, card in pairs(cards) do
+        for _, card in ipairs(cards) do
           card:addInPack(code, active)
         end
       end

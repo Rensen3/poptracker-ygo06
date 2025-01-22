@@ -100,22 +100,13 @@ function apply_slot_data(slot_data)
 		elseif key == "removed challenges" then
 			REMOVED_CHALLENGES = slot_data["removed challenges"]
 		elseif key == "progression_cards" then
-			--ScriptHost:RunScriptAsync("scripts/autotracking/progression_cards.lua", {
-			--	["progression_cards"] = slot_data["progression_cards"],
-			--	["progression_cards_in_start"] = slot_data["progression_cards_in_start"],
-			--	["CARD_AMOUNT"] = CARD_AMOUNT,
-			--	["dump_table"] = dump_table,
-			--	["find_card_by_code"] = find_card_by_code,
-			--	["tableHasKey"] = tableHasKey,
-			--	["find_card"] = find_card
-			--})
 			progression_card_slot_data(slot_data)
 		end
 	end
 end
 
 function apply_progression_cards(slot_data, bonus, card_number, additional_key)
-	local lower_bonus = bonus:lower():gsub(" ", ""):gsub("'",""):gsub(",","")
+	local lower_bonus = bonus:lower():gsub(" ", ""):gsub("'",""):gsub(",",""):gsub("%.","")
 	if tableHasKey(slot_data["progression_cards"], additional_key) then
 		for _, card_id in ipairs(slot_data["progression_cards"][additional_key]) do
 			local card = find_card_by_code(lower_bonus..card_number)
@@ -125,9 +116,13 @@ function apply_progression_cards(slot_data, bonus, card_number, additional_key)
 			else
 				card:setCId(card_id)
 				item.Name = CARD_ID[card_id]
+				item:SetOverlay(CARD_ID[card_id])
+				item:SetOverlayFontSize(8)
 				card_number = card_number + 1
 			end
 		end
+	else
+		print("ERROR: no key found for "..additional_key)
 	end
 	return card_number
 end
@@ -136,7 +131,7 @@ function progression_card_slot_data(args)
 	print("Running Slot Data")
 	for bonus, data in pairs(CARD_AMOUNT) do
 		local card_number = 1
-		local lower_bonus = bonus:lower():gsub(" ", ""):gsub("'",""):gsub(",","")
+		local lower_bonus = bonus:lower():gsub(" ", ""):gsub("'",""):gsub(",",""):gsub("%.","")
 		card_number = apply_progression_cards(args, bonus, card_number, bonus)
 		for _, additional_key in ipairs(data[2]) do
 			card_number = apply_progression_cards(args, bonus, card_number, additional_key)
@@ -150,7 +145,6 @@ function progression_card_slot_data(args)
 			end
 			card_number = card_number + 1
 		end
-		Archipelago:StatusUpdate(Archipelago.ClientStatus.PLAYING)
 	end
 	if tableHasKey(args, "progression_cards_in_start") then
     	for _, card_id in ipairs(args["progression_cards_in_start"]) do
@@ -162,10 +156,22 @@ function progression_card_slot_data(args)
     end
 end
 
+function apply_booster_pack_contents(slot_data)
+	if tableHasKey(slot_data, "booster_pack_contents") then
+		local packs_with_contents = {}
+		for pack, contents in pairs(slot_data["booster_pack_contents"]) do
+			local lower_pack = pack:lower():gsub(" ", ""):gsub("'",""):gsub(",",""):gsub(",","")
+			packs_with_contents[lower_pack] = contents
+		end
+		return packs_with_contents
+	else
+		return BOOSTERPACK_CONTENTS
+	end
+end
+
 -- called right after an AP slot is connected
 function onClear(slot_data)
 	-- use bulk update to pause logic updates until we are done resetting all items/locations
-	Tracker.BulkUpdate = true	
 	-- print(dump_table(slot_data))
 	PLAYER_NUMBER = Archipelago.PlayerNumber or -1
 	TEAM_NUMBER = Archipelago.TeamNumber or 0
@@ -226,6 +232,7 @@ function onClear(slot_data)
 	beaten_cha = {}
 	Archipelago:SetNotify({COLLECTION_ID})
 	Archipelago:Get({COLLECTION_ID})
+	CURRENT_BOOSTERE_PACK_CONTENTS = apply_booster_pack_contents(slot_data)
 	COLLECTED_IN_BOOSTER = slot_data["progression_cards_in_booster"]
 	updateCollection({})
 	Tracker.BulkUpdate = false
@@ -314,16 +321,15 @@ function onLocation(location_id, location_name)
 
 function updateCollection(collection_data)
 	print("Collection_Data: ")
-	if type(collection_data) ~= 'table' then
-		print(collection_data)
-		return
-	end
-	print(dump_table(collection_data))
-	for card_id, amount in pairs(collection_data) do
-		for _, card in ipairs(find_card(tonumber(card_id))) do
-			card:setActive(amount > 0)
+	Tracker.BulkUpdate = true
+	if collection_data ~= nil then
+		for card_id, amount in pairs(collection_data) do
+			for _, card in ipairs(find_card(tonumber(card_id))) do
+				card:setActive(amount > 0)
+			end
 		end
 	end
+	Tracker.BulkUpdate = false
 end
 
 function onNotify(key, value, old_value)
@@ -361,7 +367,7 @@ end
 
 -- add AP callbacks
 -- un-/comment as needed
-Archipelago:AddClearHandler("clear handler", onClear)
+Archipelago:AddClearHandler("clear handler", onClearHandler)
 if AUTOTRACKER_ENABLE_ITEM_TRACKING then
 	Archipelago:AddItemHandler("item handler", onItem)
 end

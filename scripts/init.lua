@@ -5,6 +5,7 @@ ENABLE_DEBUG_LOG = true
 local variant = Tracker.ActiveVariantUID
 -- check variant info
 IS_ITEMS_ONLY = variant:find("itemsonly")
+Tracker.AllowDeferredLogicUpdate = true
 
 print("-- Example Tracker --")
 print("Loaded variant: ", variant)
@@ -56,6 +57,7 @@ Tracker:AddLayouts("layouts/broadcast.jsonc")
 -- Tracker:AddLayouts("layouts/card_collection.jsonc")
 Tracker:AddLayouts("layouts/collect_cards.jsonc")
 
+ScriptHost:LoadScript("scripts/autotracking/poptracker_pack_onClear_BulkUpdate.lua")
 -- AutoTracking for Poptracker
 if PopVersion and PopVersion >= "0.18.0" then
     ScriptHost:LoadScript("scripts/autotracking.lua")
