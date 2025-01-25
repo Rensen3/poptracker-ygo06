@@ -6,6 +6,7 @@ function forceUpdate()
 end
 
 function onClearHandler(slot_data)
+    print("BulkUpdate onClearHandler: "..tostring(Tracker.BulkUpdate))
     -- Pause running logic rules.
     ---- From PopTracker documentation: "bool .BulkUpdate: can be set to true from Lua to pause running logic rules."
     Tracker.BulkUpdate = true
@@ -27,6 +28,7 @@ function onClearHandler(slot_data)
         ---- be used to unpause running logic rules.
         local handlerName = "AP onClearHandler"
         local function frameCallback()
+            print("Remove frame handler")
             ---- The FrameHandler (this function) does not need to be run more than once, so the first thing it does is
             ---- remove itself from PopTracker's current FrameHandlers, so that it will not be run again on the next
             ---- frame.
@@ -51,6 +53,46 @@ function onClearHandler(slot_data)
         Tracker.BulkUpdate = false
         ---- Standard printing to the console.
         print("Error: onClear failed:")
+        print(err)
+    end
+end
+
+function onNotifyLaunchHandler(key, value, old_value)
+    print("BulkUpdate onNotifyLaunchHandler: "..tostring(Tracker.BulkUpdate))
+    Tracker.BulkUpdate = true
+    local ok, err = pcall(onNotifyLaunch, key, value, old_value)
+    if ok then
+        local handlerName = "AP onNotifyLaunchHandler"
+        local function frameCallback()
+            print("Remove frame handler")
+            ScriptHost:RemoveOnFrameHandler(handlerName)
+            Tracker.BulkUpdate = false
+            forceUpdate()
+        end
+        ScriptHost:AddOnFrameHandler(handlerName, frameCallback)
+    else
+        Tracker.BulkUpdate = false
+        print("Error: onNotifyLaunch failed:")
+        print(err)
+    end
+end
+
+function onNotifyHandler(key, value)
+    print("BulkUpdate onNotifyHandler: "..tostring(Tracker.BulkUpdate))
+    Tracker.BulkUpdate = true
+    local ok, err = pcall(onNotify, key, value)
+    if ok then
+        local handlerName = "AP onNotifyHandler"
+        local function frameCallback()
+            print("Remove frame handler")
+            ScriptHost:RemoveOnFrameHandler(handlerName)
+            Tracker.BulkUpdate = false
+            forceUpdate()
+        end
+        ScriptHost:AddOnFrameHandler(handlerName, frameCallback)
+    else
+        Tracker.BulkUpdate = false
+        print("Error: onNotify failed:")
         print(err)
     end
 end

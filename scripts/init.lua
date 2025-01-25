@@ -57,7 +57,7 @@ Tracker:AddLayouts("layouts/broadcast.jsonc")
 -- Tracker:AddLayouts("layouts/card_collection.jsonc")
 Tracker:AddLayouts("layouts/collect_cards.jsonc")
 
-ScriptHost:LoadScript("scripts/autotracking/poptracker_pack_onClear_BulkUpdate.lua")
+ScriptHost:LoadScript("scripts/autotracking/bulkUpdate.lua")
 -- AutoTracking for Poptracker
 if PopVersion and PopVersion >= "0.18.0" then
     ScriptHost:LoadScript("scripts/autotracking.lua")

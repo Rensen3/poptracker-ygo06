@@ -121,8 +121,6 @@ function apply_progression_cards(slot_data, bonus, card_number, additional_key)
 				card_number = card_number + 1
 			end
 		end
-	else
-		print("ERROR: no key found for "..additional_key)
 	end
 	return card_number
 end
@@ -157,7 +155,7 @@ function progression_card_slot_data(args)
 end
 
 function apply_booster_pack_contents(slot_data)
-	if tableHasKey(slot_data, "booster_pack_contents") then
+	if tableHasKey(slot_data, "booster_pack_contents") and #slot_data["booster_pack_contents"] > 0 then
 		local packs_with_contents = {}
 		for pack, contents in pairs(slot_data["booster_pack_contents"]) do
 			local lower_pack = pack:lower():gsub(" ", ""):gsub("'",""):gsub(",",""):gsub(",","")
@@ -171,6 +169,7 @@ end
 
 -- called right after an AP slot is connected
 function onClear(slot_data)
+	print("BulkUpdate onClear: "..tostring(Tracker.BulkUpdate))
 	-- use bulk update to pause logic updates until we are done resetting all items/locations
 	-- print(dump_table(slot_data))
 	PLAYER_NUMBER = Archipelago.PlayerNumber or -1
@@ -235,11 +234,11 @@ function onClear(slot_data)
 	CURRENT_BOOSTERE_PACK_CONTENTS = apply_booster_pack_contents(slot_data)
 	COLLECTED_IN_BOOSTER = slot_data["progression_cards_in_booster"]
 	updateCollection({})
-	Tracker.BulkUpdate = false
 end
 
 -- called when an item gets collected
 function onItem(index, item_id, item_name, player_number)
+	print("BulkUpdate onItem: "..tostring(Tracker.BulkUpdate))
 	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
 		print(string.format("called onItem: %s, %s, %s, %s, %s", index, item_id, item_name, player_number, CUR_INDEX))
 	end
@@ -298,6 +297,7 @@ end
 
 -- called when a location gets cleared
 function onLocation(location_id, location_name)
+	print("BulkUpdate onLocation: "..tostring(Tracker.BulkUpdate))
 	local value = LOCATION_MAPPING[location_id]
 	if not value then
 	  if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -321,7 +321,6 @@ function onLocation(location_id, location_name)
 
 function updateCollection(collection_data)
 	print("Collection_Data: ")
-	Tracker.BulkUpdate = true
 	if collection_data ~= nil then
 		for card_id, amount in pairs(collection_data) do
 			for _, card in ipairs(find_card(tonumber(card_id))) do
@@ -329,10 +328,10 @@ function updateCollection(collection_data)
 			end
 		end
 	end
-	Tracker.BulkUpdate = false
 end
 
 function onNotify(key, value, old_value)
+	print("BulkUpdate onNotify: "..tostring(Tracker.BulkUpdate))
 	print("onNotify "..key)
 	if value ~= old_value then
 		if key == COLLECTION_ID then
@@ -342,6 +341,7 @@ function onNotify(key, value, old_value)
 end
 
 function onNotifyLaunch(key, value)
+	print("BulkUpdate onNotifyLaunch: "..tostring(Tracker.BulkUpdate))
 	print("onNotifyLaunch "..key)
 	if key == COLLECTION_ID then
 		updateCollection(value)
@@ -376,5 +376,5 @@ if AUTOTRACKER_ENABLE_LOCATION_TRACKING then
 end
 -- Archipelago:AddScoutHandler("scout handler", onScout)
 -- Archipelago:AddBouncedHandler("bounce handler", onBounce)
-Archipelago:AddSetReplyHandler("notify handler", onNotify)
-Archipelago:AddRetrievedHandler("notify launch handler", onNotifyLaunch)
+Archipelago:AddSetReplyHandler("notify handler", onNotifyHandler)
+Archipelago:AddRetrievedHandler("notify launch handler", onNotifyLaunchHandler)

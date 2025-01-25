@@ -63,10 +63,12 @@ end
 
 function YuGiOhCard:onLeftClick()
     print("Invoke Rightclick on: "..self.Cid)
-    if not self.Active then
-        self:setActive(true)
-        for _, card in ipairs(find_card(self.Cid)) do
-            card:setActive(true)
+    for _, pack in ipairs(CURRENT_BOOSTERE_PACK_CONTENTS) do
+        local packItem = Tracker:FindObjectForCode(pack)
+        if tableContains(pack, self.Cid) then
+            packItem:SetOverlay("<--")
+        else
+            packItem:SetOverlay("")
         end
     end
 end
