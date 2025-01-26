@@ -62,15 +62,18 @@ function YuGiOhCard:getCode()
 end
 
 function YuGiOhCard:onLeftClick()
-    print("Invoke Rightclick on: "..self.Cid)
-    for _, pack in ipairs(CURRENT_BOOSTERE_PACK_CONTENTS) do
+    print("Invoke Leftclick on: "..self.Cid)
+    Tracker.BulkUpdate = true
+    for pack, content in pairs(CURRENT_BOOSTERE_PACK_CONTENTS) do
         local packItem = Tracker:FindObjectForCode(pack)
-        if tableContains(pack, self.Cid) then
+        if tableContains(content, self.Cid) then
             packItem:SetOverlay("<--")
         else
             packItem:SetOverlay("")
         end
     end
+    Tracker.BulkUpdate = false
+    forceUpdate()
 end
 
 function YuGiOhCard:onRightClick()
