@@ -4,14 +4,14 @@
   // for more info on the manifest check: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#manifest
   "name": "Yu-Gi-Oh! 2006 poptracker",
   "game_name": "Yu-Gi-Oh! 2006",
-  "package_version": "0.0.0.1",
+  "package_version": "0.0.0.2",
   "package_uid": "yg06_pack",
   // enables SNES memory autotracking interface - remove/change if not needed
   "platform": "gba",
   "author": "rensen",
   "min_poptracker_version": "0.25.9",
   // put the version you tested against here!
-  "target_poptracker_version": "0.30.0",
+  "target_poptracker_version": "0.30.2",
   "variants": {
     "standard": {
       "display_name": "Map Tracker",
