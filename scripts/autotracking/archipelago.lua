@@ -117,6 +117,7 @@ function apply_progression_cards(slot_data, bonus, card_number, additional_key)
 				card:setCId(card_id)
 				item.Name = CARD_ID[card_id]
 				item:SetOverlay(CARD_ID[card_id])
+				item:SetOverlayAlign("left")
 				item:SetOverlayFontSize(8)
 				card_number = card_number + 1
 			end

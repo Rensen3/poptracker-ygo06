@@ -48,6 +48,8 @@ ScriptHost:LoadScript("scripts/booster_pack_contents.lua")
   "monsterdestroycollection"
  }
 
+ booster_last_status = {}
+
 
  function initialize_watch_items()
   for _, pack in ipairs(boosterpacks) do
@@ -63,6 +65,11 @@ end
 
 function watch_pack2(code)
   local active = Tracker:FindObjectForCode(code).Active
+  if booster_last_status[code] == nil or booster_last_status[code] ~= active then
+    booster_last_status[code] = active
+  else
+    return
+  end
   if CURRENT_BOOSTERE_PACK_CONTENTS[code] ~= nil then
     for _, content_card in ipairs(CURRENT_BOOSTERE_PACK_CONTENTS[code]) do
       local cards = find_card(content_card)
