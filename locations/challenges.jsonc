@@ -199,6 +199,104 @@
                 ]
             },
             {
+                "name": "LD03 ATK 1500 or more forbidden",
+                "sections": [
+                    {
+                        "name": "Beat Challenge",
+                        "item_count": 1,
+                        "access_rules": [
+                             "[ld03atk1500ormoreforbidden1], [ld03atk1500ormoreforbidden2], [ld03atk1500ormoreforbidden3], [ld03atk1500ormoreforbidden4], [ld03atk1500ormoreforbidden5], [ld03atk1500ormoreforbidden6], [ld03atk1500ormoreforbidden7], [ld03atk1500ormoreforbidden8], [ld03atk1500ormoreforbidden9], [ld03atk1500ormoreforbidden10], [ld03atk1500ormoreforbidden11], [ld03atk1500ormoreforbidden12], ld03atk1500ormoreforbiddenunlock"
+                         ],
+
+                    },
+                    {
+                        "name": "LD03 ATK 1500 or more forbidden Unlock",
+                        "hosted_item": "ld03atk1500ormoreforbiddenunlock",
+                        "access_rules": ["ld03atk1500ormoreforbiddenunlock"]
+                    },
+                    {
+                        "name": "LD03 1",
+                        "hosted_item": "ld03atk1500ormoreforbidden1",
+                        "access_rules": ["$card_rule|ld03atk1500ormoreforbidden1"],
+                        "visibility_rules": ["$card_visibility|ld03atk1500ormoreforbidden1"],
+                    },
+                    {
+                        "name": "LD03 2",
+                        "hosted_item": "ld03atk1500ormoreforbidden2",
+                        "access_rules": ["$card_rule|ld03atk1500ormoreforbidden2"],
+                        "visibility_rules": ["$card_visibility|ld03atk1500ormoreforbidden2"],
+                    },
+                    {
+                        "name": "LD03 3",
+                        "hosted_item": "ld03atk1500ormoreforbidden3",
+                        "access_rules": ["$card_rule|ld03atk1500ormoreforbidden3"],
+                        "visibility_rules": ["$card_visibility|ld03atk1500ormoreforbidden3"],
+                    },
+                    {
+                        "name": "LD03 4",
+                        "hosted_item": "ld03atk1500ormoreforbidden4",
+                        "access_rules": ["$card_rule|ld03atk1500ormoreforbidden4"],
+                        "visibility_rules": ["$card_visibility|ld03atk1500ormoreforbidden4"],
+                    },
+                    {
+                        "name": "LD03 5",
+                        "hosted_item": "ld03atk1500ormoreforbidden5",
+                        "access_rules": ["$card_rule|ld03atk1500ormoreforbidden5"],
+                        "visibility_rules": ["$card_visibility|ld03atk1500ormoreforbidden5"],
+                    },
+                    {
+                        "name": "LD03 6",
+                        "hosted_item": "ld03atk1500ormoreforbidden6",
+                        "access_rules": ["$card_rule|ld03atk1500ormoreforbidden6"],
+                        "visibility_rules": ["$card_visibility|ld03atk1500ormoreforbidden6"],
+                    },
+                    {
+                        "name": "LD02 7",
+                        "hosted_item": "ld03atk1500ormoreforbidden7",
+                        "access_rules": ["$card_rule|ld03atk1500ormoreforbidden7"],
+                        "visibility_rules": ["$card_visibility|ld03atk1500ormoreforbidden7"],
+                    },
+                    {
+                        "name": "LD02 8",
+                        "hosted_item": "ld03atk1500ormoreforbidden8",
+                        "access_rules": ["$card_rule|ld03atk1500ormoreforbidden8"],
+                        "visibility_rules": ["$card_visibility|ld03atk1500ormoreforbidden8"],
+                    },
+                    {
+                        "name": "LD02 9",
+                        "hosted_item": "ld03atk1500ormoreforbidden9",
+                        "access_rules": ["$card_rule|ld03atk1500ormoreforbidden9"],
+                        "visibility_rules": ["$card_visibility|ld03atk1500ormoreforbidden9"],
+                    },
+                    {
+                        "name": "LD02 10",
+                        "hosted_item": "ld03atk1500ormoreforbidden10",
+                        "access_rules": ["$card_rule|ld03atk1500ormoreforbidden10"],
+                        "visibility_rules": ["$card_visibility|ld03atk1500ormoreforbidden10"],
+                    },
+                    {
+                        "name": "LD02 11",
+                        "hosted_item": "ld03atk1500ormoreforbidden11",
+                        "access_rules": ["$card_rule|ld03atk1500ormoreforbidden11"],
+                        "visibility_rules": ["$card_visibility|ld03atk1500ormoreforbidden11"],
+                    },
+                    {
+                        "name": "LD02 12",
+                        "hosted_item": "ld03atk1500ormoreforbidden12",
+                        "access_rules": ["$card_rule|ld03atk1500ormoreforbidden12"],
+                        "visibility_rules": ["$card_visibility|ld03atk1500ormoreforbidden12"],
+                    },
+                ],
+                "visibility_rules": ["$challenge_visibility|LD03 ATK 1500 or more forbidden"],
+                "map_locations": [
+                    {
+                        "map": "map1",
+                        "x": 40,
+                        "y": 10
+                    }
+                ]
+            },
+            {
                 "name": "LD04 Flip Effects forbidden",
                 "sections": [
                     {
@@ -219,7 +317,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 40,
+                        "x": 55,
                         "y": 10
                     }
                 ]
@@ -245,7 +343,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 55,
+                        "x": 70,
                         "y": 10
                     }
                 ]
@@ -301,7 +399,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 70,
+                        "x": 85,
                         "y": 10
                     }
                 ]
@@ -327,7 +425,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 85,
+                        "x": 100,
                         "y": 10
                     }
                 ]
@@ -353,7 +451,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 100,
+                        "x": 115,
                         "y": 10
                     }
                 ]
@@ -379,7 +477,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 115,
+                        "x": 130,
                         "y": 10
                     }
                 ]
@@ -459,7 +557,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 130,
+                        "x": 145,
                         "y": 10
                     }
                 ]
@@ -545,7 +643,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 145,
+                        "x": 160,
                         "y": 10
                     }
                 ]
@@ -619,7 +717,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 160,
+                        "x": 175,
                         "y": 10
                     }
                 ]
@@ -645,7 +743,7 @@
                 "map_locations": [
                     {
                         "map": "map1",
-                        "x": 175,
+                        "x": 190,
                         "y": 10
                     }
                 ]

@@ -18,7 +18,8 @@ function card_rule(code)
     local card = find_card_by_code(code)
     if card ~= nil then
         for pack, pack_active in pairs(card:getInPack()) do
-            if pack_active then
+            local packItem = Tracker:FindObjectForCode(pack)
+            if pack_active or (packItem ~=nil and packItem.Active) then
                 return 1
             end
         end

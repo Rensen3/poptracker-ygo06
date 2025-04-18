@@ -115,11 +115,28 @@ function apply_progression_cards(slot_data, bonus, card_number, additional_key)
 				print("ERROR: not enough slots for '"..bonus.."' Index: "..card_number)
 			else
 				card:setCId(card_id)
+				for pack, content in pairs(CURRENT_BOOSTER_PACK_CONTENTS) do
+					if tableContains(content, card_id) then
+						card:addInPack(pack, false)
+					end
+				end
 				item.Name = CARD_ID[card_id]
 				item:SetOverlay(CARD_ID[card_id])
 				item:SetOverlayAlign("left")
 				item:SetOverlayFontSize(8)
 				card_number = card_number + 1
+			end
+		end
+		for _, card_code in ipairs(collect_cards) do
+			local card = find_card_by_code(card_code)
+			if card == nil then
+				print("ERROR: not found '"..card_code)
+			else
+				for pack, content in pairs(CURRENT_BOOSTER_PACK_CONTENTS) do
+					if tableContains(content, card:getCId()) then
+						card:addInPack(pack, false)
+					end
+				end
 			end
 		end
 	end
@@ -156,7 +173,7 @@ function progression_card_slot_data(args)
 end
 
 function apply_booster_pack_contents(slot_data)
-	if tableHasKey(slot_data, "booster_pack_contents") and #slot_data["booster_pack_contents"] > 0 then
+	if tableHasKey(slot_data, "booster_pack_contents") and tablelength(slot_data["booster_pack_contents"]) > 0 then
 		local packs_with_contents = {}
 		for pack, contents in pairs(slot_data["booster_pack_contents"]) do
 			local lower_pack = pack:lower():gsub(" ", ""):gsub("'",""):gsub(",",""):gsub(",","")
@@ -176,6 +193,11 @@ function onClear(slot_data)
 	PLAYER_NUMBER = Archipelago.PlayerNumber or -1
 	TEAM_NUMBER = Archipelago.TeamNumber or 0
 	CUR_INDEX = -1
+	CURRENT_BOOSTER_PACK_CONTENTS = apply_booster_pack_contents(slot_data)
+	COLLECTED_IN_BOOSTER = slot_data["progression_cards_in_booster"]
+	for _, card in ipairs(card_items) do
+		card:reset()
+	end
 	-- reset locations
 	for _, mapping_entry in pairs(LOCATION_MAPPING) do
 		for _, location_table in ipairs(mapping_entry) do
@@ -221,19 +243,23 @@ function onClear(slot_data)
 			end
 		end
 	end
-	for _, card in ipairs(card_items) do
-		card:reset()
-	end
-	apply_slot_data(slot_data)
 	LOCAL_ITEMS = {}
 	GLOBAL_ITEMS = {}
 	COLLECTION_ID = "ygo06_collection_"..TEAM_NUMBER.."_"..PLAYER_NUMBER
 	beaten_co = {}
 	beaten_cha = {}
+	for _, challenge in ipairs(CHALLENGES) do
+		cha = Tracker:FindObjectForCode('@'..challenge)
+		if cha.AccessibilityLevel == AccessibilityLevel.Cleared then
+			table.insert(beaten_cha, cha.FullID)
+		end
+	end
+
+	REMOVED_CHALLENGES = {}
 	Archipelago:SetNotify({COLLECTION_ID})
 	Archipelago:Get({COLLECTION_ID})
-	CURRENT_BOOSTERE_PACK_CONTENTS = apply_booster_pack_contents(slot_data)
-	COLLECTED_IN_BOOSTER = slot_data["progression_cards_in_booster"]
+	print("Boosterpack Contents")
+	apply_slot_data(slot_data)
 	updateCollection({})
 end
 

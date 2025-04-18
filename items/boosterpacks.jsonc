@@ -15,7 +15,7 @@
     "name": "PHARAOH'S SERVANT","type": "toggle",
     "allow_disabled": true,
     "img": "images/boosterpacks/PHARAOH'S SERVANT.png",
-    "codes": "pharaoh'sservant"
+    "codes": "pharaohsservant"
     },
     {
     "name": "PHARAONIC GUARDIAN","type": "toggle",
@@ -45,7 +45,7 @@
     "name": "MAGICIAN'S FORCE","type": "toggle",
     "allow_disabled": true,
     "img": "images/boosterpacks/MAGICIAN'S FORCE.png",
-    "codes": "magician'sforce"
+    "codes": "magiciansforce"
     },
     {
     "name": "DARK CRISIS","type": "toggle",

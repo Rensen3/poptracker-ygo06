@@ -197,8 +197,10 @@ function updateGoal(_)
     local itemCol3 = Tracker:FindObjectForCode("campaigntier5column3")
     local itemCol4 = Tracker:FindObjectForCode("campaigntier5column4")
     local itemFinal = Tracker:FindObjectForCode("campaigntier5column5")
-    local co_beaten = #beaten_co
-    local cha_beaten = #beaten_cha
+    local co_beaten = tablelength(beaten_co)
+    local cha_beaten = tablelength(beaten_cha)
+    print(dump_table(beaten_cha))
+    print(cha_beaten)
 
     itemCol3.Active = column3co <= co_beaten - bool_to_number[itemCol3.Active] and column3cha <= cha_beaten
     itemCol4.Active = column4co <= co_beaten - bool_to_number[itemCol4.Active] and column4cha <= cha_beaten

@@ -63,13 +63,18 @@ end
 
 function YuGiOhCard:onLeftClick()
     print("Invoke Leftclick on: "..self.Cid)
+    print(dump_table(self.in_pack))
     Tracker.BulkUpdate = true
-    for pack, content in pairs(CURRENT_BOOSTERE_PACK_CONTENTS) do
+    for pack, content in pairs(CURRENT_BOOSTER_PACK_CONTENTS) do
         local packItem = Tracker:FindObjectForCode(pack)
-        if tableContains(content, self.Cid) then
-            packItem:SetOverlay("<--")
+        if packItem ~= nil then
+            if tableContains(content, self.Cid) then
+                packItem:SetOverlay("<--")
+            else
+                packItem:SetOverlay("")
+            end
         else
-            packItem:SetOverlay("")
+            print(pack.." not found")
         end
     end
     Tracker.BulkUpdate = false
@@ -86,7 +91,7 @@ end
 
 function YuGiOhCard:onMiddleClick()
     print("Invoke Middleclick on: "..self.Cid)
-    for _, pack in ipairs(CURRENT_BOOSTERE_PACK_CONTENTS) do
+    for _, pack in ipairs(CURRENT_BOOSTER_PACK_CONTENTS) do
         local packItem = Tracker:FindObjectForCode(pack)
         if tableContains(pack, self.Cid) then
             packItem:SetOverlay("<--")

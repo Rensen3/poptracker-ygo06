@@ -223,7 +223,7 @@ BOOSTERPACK_CONTENTS = {
               10,
               518,
        },
-       ["pharaoh'sservant"] = {
+       ["pharaohsservant"] = {
               767,
               793,
               612,
@@ -692,7 +692,7 @@ BOOSTERPACK_CONTENTS = {
               811,
               825,
        },
-       ["magician'sforce"] = {
+       ["magiciansforce"] = {
               1277,
               1275,
               620,
@@ -3606,4 +3606,4 @@ BOOSTERPACK_CONTENTS = {
        },
 }
 
-CURRENT_BOOSTERE_PACK_CONTENTS = BOOSTERPACK_CONTENTS
+CURRENT_BOOSTER_PACK_CONTENTS = BOOSTERPACK_CONTENTS

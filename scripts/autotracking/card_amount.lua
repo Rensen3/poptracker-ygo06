@@ -42,6 +42,7 @@ CARD_AMOUNT = {
     ["Backrow Removal"] = {10, {}},
     ["LD01 All except Level 4 forbidden"] = {12, {}},
     ["LD02 Medium/high Level forbidden"] = {12, {}},
+    ["LD03 ATK 1500 or more forbidden"] = {12, {}},
     ["LD06 Traps forbidden"] = {5, {"No Trap Cards Bonus"}},
     ["LD10 All except LV monsters forbidden"] = {9, {}},
     ["LD11 All except Fairies forbidden"] = {10, {}},
